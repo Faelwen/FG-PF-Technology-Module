@@ -119,9 +119,55 @@ def populate_armor(xml_ref_armor):
 
         for row in csvreader:
             item_number += 1
-            [i_type, i_subtype, i_price, i_armor_bonus, i_maxbonus, i_penalty,
-            i_spellfail, i_speed30, i_speed20, i_weight, i_capacity, i_usage,
-            i_craft, i_description] = row
+            [i_type, i_subtype, i_name, i_price, i_armor_bonus, i_maxbonus,
+            i_penalty, i_spellfail, i_speed30, i_speed20, i_weight, i_capacity,
+            i_usage, i_craft, i_description] = row
+            #Ref
+            item_ref = prefix + "{:04d}".format(item_number)
+            xml_ref = etree.SubElement(xml_ref_armor, item_ref)
+            #Type
+            xml_ref_type = etree.SubElement(xml_ref, "type", type="string")
+            xml_ref_type.text = i_type.strip()
+            #Subtype
+            xml_ref_subtype = etree.SubElement(xml_ref, "subtype", type="string")
+            xml_ref_subtype.text = i_subtype.strip()
+            #Name
+            xml_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            xml_ref_name.text = i_name.strip()
+            #Price
+            xml_ref_cost = etree.SubElement(xml_ref, "cost", type="string")
+            xml_ref_cost.text = i_price.strip()
+            #Armor bonus
+            xml_ref_ac = etree.SubElement(xml_ref, "ac", type="number")
+            xml_ref_ac.text = i_armor_bonus.strip()
+            #Max dex bonus
+            if i_maxbonus != "—":
+                xml_ref_maxdex = etree.SubElement(xml_ref, "maxstatbonus", type="number")
+                xml_ref_maxdex.text = i_maxbonus.strip()
+            #Armor check penalty
+            xml_ref_penalty = etree.SubElement(xml_ref, "checkpenalty", type="number")
+            xml_ref_penalty.text = i_penalty.strip()
+            #Arcane spell failure
+            xml_ref_fail = etree.SubElement(xml_ref, "spellfailure", type="number")
+            xml_ref_fail.text = i_spellfail.strip()
+            #Speed 20 feet
+            if i_speed20 != "—":
+                xml_ref_speed20 = etree.SubElement(xml_ref, "speed20", type="number")
+                xml_ref_speed20.text = i_speed20.strip()
+            #Speed 30 feet
+            if i_speed30 != "—":
+                xml_ref_speed30 = etree.SubElement(xml_ref, "speed30", type="number")
+                xml_ref_speed30.text = i_speed30.strip()
+            #Weight
+            xml_ref_weight = etree.SubElement(xml_ref, "weight", type="number")
+            xml_ref_weight.text = i_weight.strip()
+            #Crafting
+            xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
+            xml_ref_reqs.text = i_craft.strip()
+            #Description
+            xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
+            xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+
 
 
 def populate_weapon(xml_ref_weapons):
