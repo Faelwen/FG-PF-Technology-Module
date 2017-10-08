@@ -122,10 +122,44 @@ def generate_xml_structure(xml_root):
     populate_cybertech(xml_ref_equipment)
     populate_feats(xml_ref_feats)
     populate_pharmaceuticals(xml_ref_equipment)
+    populate_skills(xml_ref_skills)
     populate_spells(xml_ref_spells)
     populate_tech_gear(xml_ref_equipment)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_skills(xml_ref_skills):
+    with open(skills_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        skill_number = 0
+        prefix = "skill"
+
+        for row in csvreader:
+            skill_number += 1
+            [i_name, i_ability, i_trained, i_penmult, i_description] = row
+            #Ref
+            skill_ref = prefix + "{:04d}".format(skill_number)
+            xml_ref = etree.SubElement(xml_ref_skills, skill_ref)
+            #Name
+            skill_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            skill_ref_name.text = i_name.strip()
+            #Ability
+            skill_ref_ability = etree.SubElement(xml_ref, "ability", type="string")
+            skill_ref_ability.text = i_ability.strip();
+            #Trained
+            skill_ref_trained = etree.SubElement(xml_ref, "trained", type="number")
+            if i_trained.strip() == "no":
+                skill_ref_trained.text = "0"
+            else:
+                skill_ref_trained.text = "1"
+            #AC penalty multiplier
+            skill_ref_mult = etree.SubElement(xml_ref, "armorcheckpenalty", type="number")
+            skill_ref_mult.text = i_penmult.strip()
+            #Description
+            skill_ref_desc = etree.SubElement(xml_ref, "text", type="formattedtext")
+            skill_ref_desc.text = i_description.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
 
 
 def populate_feats(xml_ref_feats):
@@ -133,7 +167,7 @@ def populate_feats(xml_ref_feats):
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
         feat_number = 0
-        prefix = "spell"
+        prefix = "feat"
 
         for row in csvreader:
             feat_number += 1
