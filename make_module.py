@@ -125,8 +125,22 @@ def generate_xml_structure(xml_root):
     populate_skills(xml_ref_skills)
     populate_spells(xml_ref_spells)
     populate_tech_gear(xml_ref_equipment)
+    populate_timeworn_tables(xml_ref_tables)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_timeworn_tables(xml_ref_tables):
+    with open(timeworntables_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+
+        for row in csvreader:
+            [i_ref, i_data] = row
+            #Ref
+            xml_ref = etree.SubElement(xml_ref_tables, i_ref.strip())
+            #Data
+            xml_ref.text = i_data.strip()
 
 
 def populate_skills(xml_ref_skills):
