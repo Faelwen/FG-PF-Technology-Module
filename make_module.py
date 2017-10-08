@@ -4,11 +4,12 @@ import csv
 from lxml import etree
 import html
 
-csv_files = ("Armor.csv",)
 module_file_name = "TechnologyGuide.mod"
 xml_definition_file = "definition.xml"
 xml_database_file = "db.xml"
 license_file = "license.html"
+armor_csv_file = "data/Armor.csv"
+weapon_csv_file = "data/Weapons.csv"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -94,7 +95,7 @@ def generate_xml_structure(xml_root):
     xml_reference = etree.SubElement(xml_root, "reference", static="true")
     xml_ref_armor = etree.SubElement(xml_reference,"armor")
     xml_ref_equipment = etree.SubElement(xml_reference,"equipment")
-    xml_ref_weapons = etree.SubElement(xml_reference,"feats")
+    xml_ref_feats = etree.SubElement(xml_reference,"feats")
     xml_ref_npcdata = etree.SubElement(xml_reference,"npcdata")
     xml_ref_skills = etree.SubElement(xml_reference,"skills")
     xml_ref_spells = etree.SubElement(xml_reference,"spells")
@@ -105,6 +106,93 @@ def generate_xml_structure(xml_root):
     populate_library_entries(xml_library_entries)
     populate_license(xml_root)
 
+    populate_armor(xml_ref_armor)
+    populate_weapon(xml_ref_weapon)
+
+
+def populate_armor(xml_ref_armor):
+    with open(armor_csv_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        item_number = 0
+        prefix = "armor"
+
+        for row in csvreader:
+            item_number += 1
+            [i_type, i_subtype, i_price, i_armor_bonus, i_maxbonus, i_penalty,
+            i_spellfail, i_speed30, i_speed20, i_weight, i_capacity, i_usage,
+            i_craft, i_description] = row
+
+
+def populate_weapon(xml_ref_weapons):
+    with open(weapon_csv_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        item_number = 0
+        prefix = "weapon"
+
+        for row in csvreader:
+            item_number += 1
+            [i_type, i_subtype, i_name, i_price, i_dmg_s, i_dmg_m, i_critical,
+            i_range, i_capacity, i_usage, i_weight, i_dmg_type, i_special,
+            i_description, i_crafting, i_bonus, i_cl, i_aura] = row
+            #Ref
+            item_ref = prefix + "{:04d}".format(item_number)
+            xml_ref = etree.SubElement(xml_ref_weapons, item_ref)
+            #Type
+            xml_ref_type = etree.SubElement(xml_ref, "type", type="string")
+            xml_ref_type.text = i_type.strip()
+            #Subtype
+            xml_ref_subtype = etree.SubElement(xml_ref, "subtype", type="string")
+            xml_ref_subtype.text = i_subtype.strip()
+            #Name
+            xml_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            xml_ref_name.text = i_name.strip()
+            #Price
+            xml_ref_cost = etree.SubElement(xml_ref, "cost", type="string")
+            xml_ref_cost.text = i_price.strip()
+            #Damage
+            xml_ref_damage = etree.SubElement(xml_ref, "damage", type="string")
+            xml_ref_damage.text = i_dmg_m.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Critical
+            xml_ref_crit = etree.SubElement(xml_ref, "critical", type="string")
+            xml_ref_crit.text = i_critical.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Range
+            if i_range != "":
+                xml_ref_range = etree.SubElement(xml_ref, "range", type="number")
+                xml_ref_range.text = i_range.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Weight
+            xml_ref_weight = etree.SubElement(xml_ref, "weight", type="number")
+            xml_ref_weight.text = i_weight.strip()
+            #Damage type
+            if i_dmg_type != "—":
+                xml_ref_damagetype = etree.SubElement(xml_ref, "damagetype", type="string")
+                xml_ref_damagetype.text = i_dmg_type.strip()
+            #Properties
+            if i_special != "—":
+                xml_ref_prop = etree.SubElement(xml_ref, "properties", type="string")
+                xml_ref_prop.text = i_special.strip()
+            #Description
+            xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
+            xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Crafting
+            xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
+            xml_ref_reqs.text = i_crafting.strip()
+            #Bonus
+            if i_bonus != "":
+                xml_ref_bonus = etree.SubElement(xml_ref, "bonus", type="number")
+                xml_ref_bonus.text = i_bonus.strip()
+            #Aura
+            if i_aura != "":
+                xml_ref_aura = etree.SubElement(xml_ref, "aura", type="string")
+                xml_ref_aura.text = i_aura.strip()
+            #CL
+            if i_cl != "":
+                xml_ref_cl = etree.SubElement(xml_ref, "cl", type="number")
+                xml_ref_cl.text = i_cl.strip()
+
+
+weapon_csv_file
 
 def main():
     xml_root = etree.Element('root', version="2.0")
