@@ -10,6 +10,8 @@ xml_database_file = "db.xml"
 license_file = "license.html"
 armor_csv_file = "data/Armor.csv"
 artifact_csv_file = "data/Artifacts.csv"
+ai_file = "data/Artificial Intelligences.csv"
+
 weapon_csv_file = "data/Weapons.csv"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
@@ -109,7 +111,21 @@ def generate_xml_structure(xml_root):
 
     populate_armor(xml_ref_armor)
     populate_artifact(xml_ref_equipment)
+    populate_ai(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_ai(xml_ref_npcdata):
+    with open(ai_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+
+        for row in csvreader:
+            [i_ref, i_data] = row
+            #Ref
+            xml_ref = etree.SubElement(xml_ref_npcdata, i_ref)
+            #Data
+            xml_ref.text = i_data
 
 
 def populate_armor(xml_ref_armor):
