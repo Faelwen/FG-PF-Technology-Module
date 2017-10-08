@@ -121,9 +121,63 @@ def generate_xml_structure(xml_root):
     populate_ai(xml_ref_npcdata)
     populate_cybertech(xml_ref_equipment)
     populate_pharmaceuticals(xml_ref_equipment)
+    populate_spells(xml_ref_spells)
     populate_tech_gear(xml_ref_equipment)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_spells(xml_ref_spells):
+    with open(spells_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        spell_number = 0
+        prefix = "spell"
+
+        for row in csvreader:
+            spell_number += 1
+            [i_name, i_school, i_level, i_components, i_castingtime,
+            i_range, i_target, i_duration, i_save, i_sr, i_description] = row
+            #Ref
+            spell_ref = prefix + "{:04d}".format(spell_number)
+            xml_ref = etree.SubElement(xml_ref_spells, spell_ref)
+            #Name
+            spell_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            spell_ref_name.text = i_name.strip()
+            #School
+            spell_ref_school = etree.SubElement(xml_ref, "school", type="string")
+            spell_ref_school.text = i_school.strip()
+            #Level
+            spell_ref_level = etree.SubElement(xml_ref, "level", type="string")
+            spell_ref_level.text = i_level.strip()
+            #Components
+            spell_ref_component = etree.SubElement(xml_ref, "components", type="string")
+            spell_ref_component.text = i_components.strip()
+            #Casting time
+            spell_ref_casttime = etree.SubElement(xml_ref, "castingtime", type="string")
+            spell_ref_casttime.text = i_castingtime.strip()
+            #Range
+            spell_ref_range = etree.SubElement(xml_ref, "range", type="string")
+            spell_ref_range.text = i_range.strip()
+            #Target/Area/Effect
+            spell_ref_target = etree.SubElement(xml_ref, "effect", type="string")
+            spell_ref_target.text = i_target.strip()
+            #Duration
+            spell_ref_duration = etree.SubElement(xml_ref, "duration", type="string")
+            spell_ref_duration.text = i_duration.strip()
+            #Save
+            spell_ref_save = etree.SubElement(xml_ref, "save", type="string")
+            spell_ref_save.text = i_save.strip()
+            #Spell resistance
+            spell_ref_sr = etree.SubElement(xml_ref, "sr", type="string")
+            spell_ref_sr.text = i_sr.strip()
+            #Description
+            spell_ref_description = etree.SubElement(xml_ref, "description", type="formattedtext")
+            spell_ref_description.text = i_description.strip().replace('\u2014','-').replace('\u2013','-')
+            #Source
+            spell_ref_source = etree.SubElement(xml_ref, "source", type="string")
+            spell_ref_source.text = "Technology Guide"
+
 
 
 def populate_tech_gear(xml_ref_equipment):
