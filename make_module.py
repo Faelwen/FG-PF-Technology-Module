@@ -11,8 +11,13 @@ license_file = "license.html"
 armor_csv_file = "data/Armor.csv"
 artifact_csv_file = "data/Artifacts.csv"
 ai_file = "data/Artificial Intelligences.csv"
+cybertech_file = "data/Cybertech.csv"
+feats_file = "data/Feats.csv"
+skills_file = "data/Skills.csv"
+spells_file = "data/Spells.csv"
+tech_gear_file = "data/Technological Gear.csv"
+timeworntables_file = "data/TimewornTables.csv"
 traps_file = "data/Traps.csv"
-
 weapon_csv_file = "data/Weapons.csv"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
@@ -113,8 +118,47 @@ def generate_xml_structure(xml_root):
     populate_armor(xml_ref_armor)
     populate_artifact(xml_ref_equipment)
     populate_ai(xml_ref_npcdata)
+    populate_cybertech(xml_ref_equipment)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_cybertech(xml_ref_equipment):
+    with open(cybertech_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        item_number = 0
+        prefix = "cybertech"
+
+        for row in csvreader:
+            item_number += 1
+            [i_type, i_subtype, i_name, i_price, i_weight, i_implant,
+            i_installDC, i_description, i_crafting] = row
+            #Ref
+            item_ref = prefix + "{:04d}".format(item_number)
+            xml_ref = etree.SubElement(xml_ref_equipment, item_ref)
+            #Type
+            xml_ref_type = etree.SubElement(xml_ref, "type", type="string")
+            xml_ref_type.text = i_type.strip()
+            #Subtype
+            xml_ref_subtype = etree.SubElement(xml_ref, "subtype", type="string")
+            xml_ref_subtype.text = i_subtype.strip()
+            #Name
+            xml_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            xml_ref_name.text = i_name.strip()
+            #Price
+            xml_ref_cost = etree.SubElement(xml_ref, "cost", type="string")
+            xml_ref_cost.text = i_price.strip()
+            #Weight
+            if i_weight != "":
+                xml_ref_weight = etree.SubElement(xml_ref, "weight", type="number")
+                xml_ref_weight.text = i_weight.strip()
+            #Description
+            xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
+            xml_ref_desc.text = "<p><b>Implant:</b> {0}; <b>Install:</b> {1}</p>{2}".format(i_implant, i_installDC, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Crafting
+            xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
+            xml_ref_reqs.text = i_crafting.strip()
 
 
 def populate_ai(xml_ref_npcdata):
