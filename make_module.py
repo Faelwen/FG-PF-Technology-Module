@@ -52,7 +52,7 @@ def populate_license(xml_root):
     xml_license_text.text = license_test
 
 
-def generate_xml_deffile():
+def generate_xml_def_file():
     xml_def_root = etree.Element('root')
     xml_def_name = etree.SubElement(xml_def_root, "name")
     xml_def_name.text = module_name
@@ -64,7 +64,7 @@ def generate_xml_deffile():
         file.write(etree.tostring(xml_def_root,pretty_print=True,encoding="iso-8859-1",xml_declaration=True).decode("iso-8859-1"))
 
 
-def generate_xml_dbfile(xml_root):
+def generate_xml_db_file(xml_root):
     with open(xml_database_file, 'w', encoding="iso-8859-1") as file:
         xmldoc = html.unescape(etree.tostring(xml_root,pretty_print=True,encoding="iso-8859-1",xml_declaration=True).decode("iso-8859-1"))
         file.write(xmldoc)
@@ -83,8 +83,7 @@ def copy_to_Fantasy_Grounds():
     print("Module copied to Fantasy Grounds")
 
 
-def main():
-    xml_root = etree.Element('root', version="2.0")
+def generate_xml_structure(xml_root):
     xml_libraries = etree.SubElement(xml_root, "library", static="true")
     xml_library = etree.SubElement(xml_libraries, library_tag_name)
     xml_library_name = etree.SubElement(xml_library, "name", type="string")
@@ -101,14 +100,17 @@ def main():
     xml_ref_spells = etree.SubElement(xml_reference,"spells")
     xml_ref_tables = etree.SubElement(xml_reference,"tables")
     xml_ref_weapon = etree.SubElement(xml_reference,"weapon")
-
     xml_lists = etree.SubElement(xml_root, "lists", static="true")
 
     populate_library_entries(xml_library_entries)
     populate_license(xml_root)
 
-    generate_xml_deffile()
-    generate_xml_dbfile(xml_root)
+
+def main():
+    xml_root = etree.Element('root', version="2.0")
+    generate_xml_structure(xml_root)
+    generate_xml_db_file(xml_root)
+    generate_xml_def_file()
     generate_module()
     copy_to_Fantasy_Grounds()
 
