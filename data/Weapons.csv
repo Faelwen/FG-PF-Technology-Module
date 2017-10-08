@@ -1,0 +1,33 @@
+Type	Subtype	Martial Weapons	Price	Dmg (S)	Dmg (M)	Critical	Range	Capacity	Usage	Weight	Type1	Special
+Weapon	Martial One-Handed Melee	Laser torch	6000 gp	1d8	1d10	x3	—	10	1 charge	4	fire	touch
+Weapon	Martial One-Handed Melee	Stun baton	5000 gp	Special	Special	x2	—	10	1 charge/round	2	bludgeoning and electricity	touch
+Weapon	Exotic Light Melee	Monowhip	70000 gp	1d10	2d6	18-20/x3	—	10	1 charge/round	1	slashing	performance, reach, touch
+Weapon	Exotic One-Handed Melee	Null blade	58835 gp	1d8	1d10	19-20/x2	—	10	1 charge/round	4	slashing	—
+Weapon	Exotic Two-Handed Melee	Chainsaw	2700 gp	1d12	3d6	18-20/x2	—	10	1 charge/hour	10	slashing	deadly, distracting
+Weapon	Firearm One-Handed Ranged	Arc pistol	10000 gp	1d6	1d8	x2	50	10	1 charge	2	electricity	semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Dart gun	3000 gp	1d3	1d4	x2	30	1 nanite canister	1 charge	2	piercing	—
+Weapon	Firearm One-Handed Ranged	Death ray	140000 gp	Special	Special	—	200	1 nanite canister	Varies	1	special	slow-firing, touch
+Weapon	Firearm One-Handed Ranged	EMP pistol	12000 gp	1d10	2d6	x2	50	10	1 charge	2	electricity	semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Flare gun	300 gp	1d6	1d8	x3	240	1	Disposable	1	fire	slow-firing, touch
+Weapon	Firearm One-Handed Ranged	Gravity pistol	95000 gp	1d6	1d8	x2	50	10	1 charge	2	force	semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Laser pistol	10000 gp	1d6	1d8	x2	50	10	1 charge	2	fire	semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Mindrender	56000 gp	Special	Special	x2	40	1 nanite canister	2 charges	2	special	slow-firing, touch
+Weapon	Firearm One-Handed Ranged	Sonic pistol	13000 gp	1d6	1d8	x2	50	10	1 charge	2	sonic	semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Stun gun	3000 gp	1d6	1d8	x2	20	10	1 charge	3	—	nonlethal, semi-automatic, touch
+Weapon	Firearm One-Handed Ranged	Zero pistol	10000 gp	1d6	1d8	x2	50	10	1 charge	2	cold	semi-automatic, touch
+Weapon	Firearm Two-Handed Ranged	Arc rifle	20000 gp	1d10	2d6	x2	150	20	1 charge	6	electricity	automatic, touch
+Weapon	Firearm Two-Handed Ranged	Autograpnel	4000 gp	1d6+6	1d8+6	x3	30	20	1 charge	10	piercing	grapple, slow-firing
+Weapon	Firearm Two-Handed Ranged	EMP rifle	24000 gp	2d6	3d6	x2	150	20	1 charge	6	electricity	automatic, touch
+Weapon	Firearm Two-Handed Ranged	Gravity rifle	165000 gp	1d10	2d6	x2	150	20	1 charge	6	force	automatic, touch
+Weapon	Firearm Two-Handed Ranged	Id rifle	50000 gp	Special	Special	x2	50	1 nanite canister	1 charge	5	special	slow-firing, touch
+Weapon	Firearm Two-Handed Ranged	Laser rifle	20000 gp	1d10	2d6	x2	150	20	1 charge	6	fire	automatic, touch
+Weapon	Firearm Two-Handed Ranged	Sonic rifle	26000 gp	1d10	2d6	x2	150	20	1 charge	6	sonic	automatic, touch
+Weapon	Firearm Two-Handed Ranged	Zero rifle	20000 gp	1d10	2d6	x2	150	20	1 charge	6	cold	automatic, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Atom gun	144000 gp	Special	Special	—	40	—	—	24	special	scatter, slow-firing, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Grenade launcher	8000 gp	Varies	Varies	— 	100	20	(5 genades)	8	varies	slow-firing
+Weapon	Heavy Weaponry Two-Handed Ranged	Nuclear resonator	90000 gp	Special	Special	18-20/x2	80	20	5 charges	11	sonic	slow-firing, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Plasmathrower	30000 gp	2d10	4d6	19-20/x2	60	20	2 charges	15	electricity and fire	automatic or slow-firing, scatter, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Rail gun	30000 gp	3d8	3d10	x4	200	10	1 charge 	14	bluggeoning and piercing	slow-firing, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Rocket launcher	10800 gp	8d6	12d6	—	120	10	1 (disposable)	10	bludgeoning and fire	slow-firing, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	Vortex gun	182000 gp	8d6	10d6	19-20/x2	100	30	10 charges	15	force	slow-firing, scatter, touch
+Weapon	Heavy Weaponry Two-Handed Ranged	X-laser	40000 gp	6d4	5d6	x4	200	20	5 charges	10	fire	touch
