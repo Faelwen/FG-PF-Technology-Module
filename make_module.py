@@ -9,6 +9,7 @@ xml_definition_file = "definition.xml"
 xml_database_file = "db.xml"
 license_file = "license.html"
 armor_csv_file = "data/Armor.csv"
+artifact_csv_file = "data/Artifacts.csv"
 weapon_csv_file = "data/Weapons.csv"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
@@ -107,6 +108,7 @@ def generate_xml_structure(xml_root):
     populate_license(xml_root)
 
     populate_armor(xml_ref_armor)
+    populate_artifact(xml_ref_equipment)
     populate_weapon(xml_ref_weapon)
 
 
@@ -168,6 +170,36 @@ def populate_armor(xml_ref_armor):
             xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
             xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
 
+
+def populate_artifact(xml_ref_equipment):
+    with open(artifact_csv_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        item_number = 0
+        prefix = "artifact"
+
+        for row in csvreader:
+            item_number += 1
+            [i_type, i_subtype, i_name, i_weight, i_capacity, i_usage, i_description] = row
+            #Ref
+            item_ref = prefix + "{:04d}".format(item_number)
+            xml_ref = etree.SubElement(xml_ref_equipment, item_ref)
+            #Type
+            xml_ref_type = etree.SubElement(xml_ref, "type", type="string")
+            xml_ref_type.text = i_type.strip()
+            #Subtype
+            xml_ref_subtype = etree.SubElement(xml_ref, "subtype", type="string")
+            xml_ref_subtype.text = i_subtype.strip()
+            #Name
+            xml_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            xml_ref_name.text = i_name.strip()
+            #Weight
+            if i_weight != "":
+                xml_ref_weight = etree.SubElement(xml_ref, "weight", type="number")
+                xml_ref_weight.text = i_weight.strip()
+            #Description
+            xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
+            xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
 
 
 def populate_weapon(xml_ref_weapons):
