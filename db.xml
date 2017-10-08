@@ -1891,7 +1891,79 @@
         <prerequisites type="string">Craft DC 18; Cost 10 gp, craft technological item, production lab</prerequisites>
       </techgear0135>
     </equipment>
-    <feats/>
+    <feats>
+      <spell0001>
+        <name type="string">Craft Cybernetics</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Technologist, Heal 9 ranks, Knowledge (engineering) 9 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You can build cyberware and install it in a creature's body.</frame><p>You can create cybernetic items. Creating a cybernetic item takes 1 day for every 1,000 gp in the item's price. To create the object, you must use up raw materials costing half of this total price. See Crafting High-Tech Items for more information.</p> <p>You can repair a broken cybernetic item if it is one that you could make. Doing so costs half the raw materials and half the time it would take to craft that item from scratch.</p> <p>You can also install a cybernetic item in a creature's body. See the Cybertech section for more information on installing cyberware.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0001>
+      <spell0002>
+        <name type="string">Craft Pharmaceutical</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Technologist, Heal 9 ranks, Knowledge (nature) 9 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You can craft pharmaceuticals.</frame><p>You can create any pharmaceutical or poison. Creating a pharmaceutical takes 2 hours if its base price is 250 gp or less; otherwise, the creation of the pharmaceutical takes 1 day for every 1,000 gp in its price. To create the pharmaceutical or poison, you must use up raw materials costing half of this total price. See Crafting High-Tech Items for more information.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0002>
+      <spell0003>
+        <name type="string">Craft Technological Arms and Armor</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Technologist, Craft (mechanical) 7 ranks, Knowledge (engineering) 7 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You can build technological weapons and armor</frame><p>You can create technological weapons or armor. Creating a technological weapon or suit of armor takes 1 day for every 1,000 gp in the item's price. To create the object, you must use up raw materials costing half of this total price. See Crafting High-Tech Items for more information.</p> <p>You can also repair a broken technological weapon or suit of armor if it is one that you could make. Doing so costs half the raw materials and half the time it would take to craft that item from scratch.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0003>
+      <spell0004>
+        <name type="string">Craft Technological Item</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Technologist, Craft (mechanical) 5, Knowledge (engineering) 5 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You can craft technological gear and items.</frame><p>You can create technological gear. Creating a piece of technological gear takes 1 day for every 1,000 gp in the item's price. To create the object, you must use up raw materials costing half of this total price. See Crafting High-Tech Items for more information.</p> <p>You can also repair a broken technological item if it is one that you could make. Doing so costs half the raw materials and half the time it would take to craft that item from scratch.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0004>
+      <spell0005>
+        <name type="string">Robot's Bane</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Knowledge (engineering) 5 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You have trained to avoid the attacks and effects employed by robots and technology and to combat them effectively.</frame><p>You gain a +1 bonus on attack and damage rolls against creatures with the robot subtype. Additionally, you gain a +1 dodge bonus to your AC and a +1 bonus on saving throws against attacks and effects from robots. If you have at least 11 ranks in Knowledge (engineering), these bonuses increase to +2. If you have at least 17 ranks in Knowledge (engineering), these bonuses increase to +3.</p></benefit>
+        <special type="formattedtext"><p>If you have constructs as a favored enemy, you can use your favored enemy bonus toward constructs in place of the bonus granted by this feat if it's larger. These bonuses do not stack with those granted by other abilities that allow you to add your favored enemy bonus to AC or on saving throws.</p></special>
+        <source type="string">Technology Guide</source>
+      </spell0005>
+      <spell0006>
+        <name type="string">Scavenger's Luck</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Knowledge (engineering) 1 rank</prerequisites>
+        <benefit type="formattedtext"><frame>You coax better behavior out of timeworn technology.</frame><p>When your check for using a piece of timeworn technology results in a glitch, you can roll again. You must choose to reroll before determining the specific glitch, and must take the second result, even if it's worse. When you use timeworn technology, it doesn't automatically glitch on a natural 1.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0006>
+      <spell0007>
+        <name type="string">Technologist</name>
+        <type type="string">Technological</type>
+        <benefit type="formattedtext"><frame>You are familiar with the basic mechanics of technology.</frame><p>You are considered to be trained in any skill used against a technology-based subject. If the skill in question requires training to use even against non-technological subjects, you must still have ranks in that skill in order to gain the benefit of Technologist.</p></benefit>
+        <normal type="formattedtext"><p>You treat all skill checks made against technology as if they were untrained skill checks. This may mean that you cannot attempt certain skill checks, even if you possess ranks in the skill in question.</p></normal>
+        <source type="string">Technology Guide</source>
+      </spell0007>
+      <spell0008>
+        <name type="string">Technology Adept</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Dex 13, Exotic Weapon Proficiency (firearms), Point-Blank Shot</prerequisites>
+        <benefit type="formattedtext"><frame>You utilize high-tech firearms to maximum effect.</frame><p>When you attack with a technological firearm that consumes charges, the save DC of any effect caused by that firearm increases by 1. If your bonuses from Point-Blank Shot apply, it increases by 2 instead.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0008>
+      <spell0009>
+        <name type="string">Technophobe</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Improved Sunder</prerequisites>
+        <benefit type="formattedtext"><frame>Smashing technological abominations brings you joy.</frame><p>When you reduce a robot to 0 hit points or destroy a technological item possessed by an enemy, you receive a +2 morale bonus on ability checks, attack rolls, saving throws, and skill checks for a number of rounds equal to your Wisdom bonus (minimum 1 round). You receive this bonus for destroying an unattended object so long as it was in the possession of an enemy within the last round.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0009>
+      <spell0010>
+        <name type="string">Wrest Charge</name>
+        <type type="string">Technological</type>
+        <prerequisites type="string">Disable Device 5 ranks, Knowledge (engineering) 5 ranks</prerequisites>
+        <benefit type="formattedtext"><frame>You can extract a charge from otherwise depleted technology.</frame><p>With a successful DC 20 Disable Device check, you can jury-rig a depleted (but not destroyed) battery so it provides 1 more charge. Using this charge or failing your check by 5 or more permanently depletes the battery. </p> <p>You can attempt the same check to add 1 last charge to a discharged piece of timeworn technology. Regardless of the outcome, no other attempts can be made, even by another person. Using this feat takes 1 minute. You can attempt to wrest a charge as a move action by taking a -10 penalty on your check. This feat does not stack with the charge cycling deed.</p></benefit>
+        <source type="string">Technology Guide</source>
+      </spell0010>
+    </feats>
     <npcdata>
       <analyst-ai><charisma type="number">12</charisma> <constitution type="number">0</constitution> <cr type="number">12</cr> <dexterity type="number">0</dexterity> <feats type="string">Alertness, Combat Expertise, Craft Technological Item, Improved Initiative, Improved Iron Will, Iron Will, Technologist</feats> <fortitudesave type="number">4</fortitudesave> <hp type="number">0</hp> <init type="number">11</init> <intelligence type="number">24</intelligence> <languages type="string">Abyssal, Aklo, Androffan, Common, Draconic, Dwarven, Elven, Giant, Gnome, Goblin, Halfling, Hallit, Kellish, Orc, Osiriani, Polyglot, Skald, Tien, Varisian, Vudrani</languages> <locked type="number">1</locked> <name type="string">Analyst AI</name> <reflexsave type="number">4</reflexsave> <senses type="string">Perception +15</senses> <skills type="string">Appraise +19, Craft (mechanical) +19, Diplomacy +13, Disable Device +19, Heal +13, Linguistics +23, Knowledge (engineering) +23, Knowledge (geography) +23, Knowledge (history) +23, Knowledge (nature) +23, Knowledge (religion) +23, Perception +15, Sense Motive +15</skills> <specialqualities type="string">expert knowledge, multi-core processor, remote consult</specialqualities> <spelldisplaymode type="string">action</spelldisplaymode> <spellset> </spellset> <strength type="number">0</strength> <text type="formattedtext"> <p>Analyst AIs serve as expert systems to assist researchers. When not actively engaged in a project, they use their vast intellects and processing capabilities to ponder profound philosophical questions of existence.</p> <h>Special Abilities</h> <p><b>Expert Knowledge (Ex) </b>An analyst AI treats all Knowledge skills as class skills and can make all Knowledge skill checks untrained.</p> <p><b>Multi-Core Processor (Ex)</b> When an analyst AI takes 10 on an Intelligence- or Wisdom-based skill check, it rolls a d20 as well. If the die exceeds 10, it uses that instead.</p> <p><b>Remote Consult (Ex)</b> An analyst AI uses its Intelligence modifier instead of its Dexterity modifier on Disable Device checks. Additionally, while in contact with an ally, it can use aid another on that ally's skill checks. This adds an additional round to the skill check, or multiple rounds for complicated questions. For every 5 points by which the AI's result exceeds 10, the bonus on the ally's check increases by 1.</p> <p></p> </text> <token type="token"></token> <type type="string">N artificial intelligence</type> <willsave type="number">11</willsave> <wisdom type="number">12</wisdom></analyst-ai>
       <security-ai><charisma type="number">14</charisma> <constitution type="number">0</constitution> <cr type="number">8</cr> <dexterity type="number">0</dexterity> <feats type="string">Alertness, Improved Initiative, Point-Blank Shot, Precise Shot, Technologist</feats> <fortitudesave type="number">2</fortitudesave> <hp type="number">0</hp> <init type="number">6</init> <intelligence type="number">14</intelligence> <languages type="string">Androffan, Common, Hallit</languages> <locked type="number">0</locked> <name type="string">Security AI</name> <reflexsave type="number">2</reflexsave> <senses type="string">Perception +16</senses> <skills type="string">Bluff +10, Diplomacy +10, Intimidate +10, Knowledge (engineering) +10, Knowledge (geography) +10, Perception +16, Profession (soldier) +11, Sense Motive +16</skills> <specialattacks type="string">precision targeting</specialattacks> <spelldisplaymode type="string">action</spelldisplaymode> <strength type="number">0</strength> <text type="formattedtext"> <p>Security AIs control the defenses and robots of high-security Androffan facilities.</p> <h>Special Abilities</h> <p><b>Precision Targeting (Ex)</b> Robots and technological traps controlled by a security AI gain an insight bonus equal to the AI's Intelligence bonus on ranged attack rolls.</p> </text> <token type="token"></token> <type type="string">LN artifical intelligence</type> <willsave type="number">9</willsave> <wisdom type="number">16</wisdom></security-ai>

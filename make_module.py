@@ -120,11 +120,53 @@ def generate_xml_structure(xml_root):
     populate_artifact(xml_ref_equipment)
     populate_ai(xml_ref_npcdata)
     populate_cybertech(xml_ref_equipment)
+    populate_feats(xml_ref_feats)
     populate_pharmaceuticals(xml_ref_equipment)
     populate_spells(xml_ref_spells)
     populate_tech_gear(xml_ref_equipment)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon)
+
+
+def populate_feats(xml_ref_feats):
+    with open(feats_file, 'r',encoding="utf-8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
+        row = next(csvreader) #skip header
+        feat_number = 0
+        prefix = "spell"
+
+        for row in csvreader:
+            feat_number += 1
+            [i_name, i_prereqs, i_effect1, i_effect2, i_benefit,
+            i_normal, i_special] = row
+            #Ref
+            feat_ref = prefix + "{:04d}".format(feat_number)
+            xml_ref = etree.SubElement(xml_ref_feats, feat_ref)
+            #Name
+            feat_ref_name = etree.SubElement(xml_ref, "name", type="string")
+            feat_ref_name.text = i_name.strip()
+            #Type
+            feat_ref_type = etree.SubElement(xml_ref, "type", type="string")
+            feat_ref_type.text = "Technological"
+            #Prerequisites
+            if i_prereqs != "—":
+                feat_ref_prereqs = etree.SubElement(xml_ref, "prerequisites", type="string")
+                feat_ref_prereqs.text = i_prereqs.strip()
+            #Benefit
+            feat_ref_benefit = etree.SubElement(xml_ref, "benefit", type="formattedtext")
+            feat_ref_benefit.text = "<frame>{0}</frame>{1}".format(i_effect2, i_benefit).strip().replace('\u2014','-').replace('\u2013','-')
+            #Normal
+            if i_normal != "":
+                feat_ref_normal = etree.SubElement(xml_ref, "normal", type="formattedtext")
+                feat_ref_normal.text = i_normal.strip().replace('\u2014','-').replace('\u2013','-')
+            #Special
+            if i_special != "":
+                feat_ref_special = etree.SubElement(xml_ref, "special", type="formattedtext")
+                feat_ref_special.text = i_special.strip().replace('\u2014','-').replace('\u2013','-')
+            #Source
+            feat_ref_source = etree.SubElement(xml_ref, "source", type="string")
+            feat_ref_source.text = "Technology Guide"
+
 
 
 def populate_spells(xml_ref_spells):
