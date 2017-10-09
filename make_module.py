@@ -20,6 +20,7 @@ tech_gear_file = "data/Technological Gear.csv"
 timeworntables_file = "data/TimewornTables.csv"
 traps_file = "data/Traps.csv"
 weapon_csv_file = "data/Weapons.csv"
+artifact_rules_file = "data/artifacts.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -69,7 +70,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"HA.Weapon",
                     "Link type":"librarylink",
                     "Window class":"reference_weapontablelist",
-                    "Record name": "lists.weapon@" + module_name}]
+                    "Record name": "lists.weapon@" + module_name},
+                    {"Entry name":"[Rules] Artifacts",
+                    "Entry tag":"IA.Artifacts",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.artifactrules@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -201,36 +207,33 @@ def generate_xml_structure(xml_root):
     xml_list_armor_description = etree.SubElement(xml_list_armor, "description", type="string")
     xml_list_armor_description.text = "Armor"
     xml_list_armor_groups = etree.SubElement(xml_list_armor, "groups")
-
     #artifact library
     xml_list_artifact = etree.SubElement(xml_lists, "artifact")
     xml_list_artifact_description = etree.SubElement(xml_list_artifact, "description", type="string")
     xml_list_artifact_description.text = "artifact"
     xml_list_artifact_groups = etree.SubElement(xml_list_artifact, "groups")
-
     #cybertech library
     xml_list_cybertech = etree.SubElement(xml_lists, "cybertech")
     xml_list_cybertech_description = etree.SubElement(xml_list_cybertech, "description", type="string")
     xml_list_cybertech_description.text = "cybertech"
     xml_list_cybertech_groups = etree.SubElement(xml_list_cybertech, "groups")
-
     #pharmaceutical library
     xml_list_pharmaceutical = etree.SubElement(xml_lists, "pharmaceutical")
     xml_list_pharmaceutical_description = etree.SubElement(xml_list_pharmaceutical, "description", type="string")
     xml_list_pharmaceutical_description.text = "pharmaceutical"
     xml_list_pharmaceutical_groups = etree.SubElement(xml_list_pharmaceutical, "groups")
-
     #technological gear library
     xml_list_techgear = etree.SubElement(xml_lists, "techgear")
     xml_list_techgear_description = etree.SubElement(xml_list_techgear, "description", type="string")
     xml_list_techgear_description.text = "techgear"
     xml_list_techgear_groups = etree.SubElement(xml_list_techgear, "groups")
-
     #Weapon library
     xml_list_weapon = etree.SubElement(xml_lists, "weapon")
     xml_list_weapon_description = etree.SubElement(xml_list_weapon, "description", type="string")
     xml_list_weapon_description.text = "weapon"
     xml_list_weapon_groups = etree.SubElement(xml_list_weapon, "groups")
+    #Artifact rules
+    xml_list_artifactrules = etree.SubElement(xml_lists, "artifactrules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -247,6 +250,7 @@ def generate_xml_structure(xml_root):
     populate_timeworn_tables(xml_ref_tables)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment, xml_list_weapon_groups)
+    populate_artifact_rules(xml_list_artifactrules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -601,7 +605,7 @@ def populate_pharmaceuticals(xml_ref_equipment, xml_allitemslist, xml_itemlist):
             xml_itemlist_section_item_ref_cost = etree.SubElement(xml_itemlist_section_item_ref, "cost", type="string")
             xml_itemlist_section_item_ref_cost.text = i_price.strip()
             xml_itemlist_section_item_ref_weight = etree.SubElement(xml_itemlist_section_item_ref, "weight", type="string")
-            xml_itemlist_section_item_ref_weight.text = "0 lbs."
+            xml_itemlist_section_item_ref_weight.text = "- lbs."
             previous_type = i_type
             previous_subtype = i_subtype
 
@@ -923,6 +927,15 @@ def populate_weapon(xml_ref_weapons, xml_allitemslist, xml_weaponlist):
             xml_weaponlist_section_weapon_ref_properties.text = i_special.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
             xml_weaponlist_section_weapon_ref_damagetype = etree.SubElement(xml_weaponlist_section_weapon_ref, "damagetype", type="string")
             xml_weaponlist_section_weapon_ref_damagetype.text = i_dmg_type.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+
+
+def populate_artifact_rules(xml_list_artifactrules):
+    xml_list_artifactrules_name = etree.SubElement(xml_list_artifactrules, "name", type="string")
+    xml_list_artifactrules_name.text = "Technological Artifacts"
+    xml_list_artifactrules_text = etree.SubElement(xml_list_artifactrules, "text", type="formattedtext")
+    with open(artifact_rules_file, 'r') as file:
+        artifact_rules = file.read()
+    xml_list_artifactrules_text.text = artifact_rules
 
 
 
