@@ -23,6 +23,7 @@ weapon_csv_file = "data/Weapons.csv"
 artifact_rules_file = "data/artifacts.html"
 archetype_rules_file = "data/Technology-Themed Archetypes.html"
 ai_rules_file = "data/ai.html"
+craft_rules_file = "data/Crafting High-Tech Items.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -87,7 +88,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"KA.ArtificialIntelligences",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
-                    "Record name": "lists.AIRules@" + module_name}]
+                    "Record name": "lists.AIRules@" + module_name},
+                    {"Entry name":"[Rules] Crafting",
+                    "Entry tag":"LA.Crafting",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.CraftingRules@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -250,7 +256,8 @@ def generate_xml_structure(xml_root):
     xml_list_archetyperules = etree.SubElement(xml_lists, "archetyperules")
     #AI rules
     xml_list_airules = etree.SubElement(xml_lists, "AIRules")
-
+    #AI rules
+    xml_list_craftingrules = etree.SubElement(xml_lists, "CraftingRules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -270,6 +277,7 @@ def generate_xml_structure(xml_root):
     populate_artifact_rules(xml_list_artifactrules)
     populate_archetypes_rules(xml_list_archetyperules)
     populate_ai_rules(xml_list_airules)
+    populate_craft_rules(xml_list_craftingrules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -970,6 +978,15 @@ def populate_ai_rules(xml_list_airules):
     with open(ai_rules_file, 'r') as file:
         ai_rules = file.read()
     xml_list_airules_text.text = ai_rules
+
+
+def populate_craft_rules(xml_list_craftrules):
+    xml_list_craftrules_name = etree.SubElement(xml_list_craftrules, "name", type="string")
+    xml_list_craftrules_name.text = "Crafting High-Tech Items"
+    xml_list_craftrules_text = etree.SubElement(xml_list_craftrules, "text", type="formattedtext")
+    with open(craft_rules_file, 'r') as file:
+        ai_rules = file.read()
+    xml_list_craftrules_text.text = ai_rules
 
 
 def main():
