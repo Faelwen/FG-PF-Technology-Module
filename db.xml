@@ -61,13 +61,20 @@
           </librarylink>
           <name type="string">[Items] Weapon</name>
         </HA.Weapon>
-        <IA.Artifacts>
+        <JA.Archetypes>
+          <librarylink type="windowreference">
+            <class>referencetextwide</class>
+            <recordname>lists.archetyperules.archetypelist@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Rules] Archetypes</name>
+        </JA.Archetypes>
+        <JA.Artifacts>
           <librarylink type="windowreference">
             <class>referencetextwide</class>
             <recordname>lists.artifactrules@Technology Guide</recordname>
           </librarylink>
           <name type="string">[Rules] Artifacts</name>
-        </IA.Artifacts>
+        </JA.Artifacts>
       </entries>
     </TechnologyGuide>
   </library>
@@ -7679,6 +7686,193 @@
 <link class="item" recordname="reference.equipment.artifact0011"><b>Solar Generator</b></link>
 </text>
     </artifactrules>
+    <archetyperules><archetypelist>
+<name type="string">Technology-Themed Archetypes</name>
+<text type="formattedtext">
+<p>With an archetype, you can further adjust and specialize a character to fill a more focused role by replacing some of your class abilities with others that fall into specific themes.</p>
+
+<h>Cyber-Soldier (Fighter Archetype)</h>
+<p>Cyber-soldiers replace fallible flesh with precision-crafted machinery. Some seek to exceed the limitations of humanoid flesh, while others become cyber-soldiers through drastic repairs necessitated by horrific injuries. A cyber-soldier has the following class features.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.cybernetic-combat"><b>Cybernetic Combat (Ex)</b></link>: At 5th level, a cyber-soldier gains a +1 bonus on attack rolls and damage rolls with implanted weapons, cybernetic arms, and melee or thrown weapons wielded with a cybernetic arm. Weapons wielded with two cybernetic arms receive double the bonus, except when such weapons are thrown. This damage bonus increases by 1 for every 4 levels gained. This attack bonus does not stack with the attack bonus for weapon training. A cyber-soldier gains a slam attack for each cybernetic arm. These attacks deal 1d6 points of bludgeoning damage for a Medium cyber-soldier and 1d4 points of bludgeoning damage for a Small cyber-soldier. This ability replaces weapon training 1.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.improved-implantation"><b>Improved Implantation (Ex)</b></link> At 7th level, a cyber-soldier can exceed the normal limitations on cybertech implantation. His brain and body slots each accommodate one more piece of cybertech than normal. In addition, his limit on implantation points increases by 1/2 his cyber-soldier level. He can allocate these points between his Intelligence and Constitution scores as he chooses. At 15th level, his body slot can accommodate two more pieces of cybertech than normal. This ability replaces armor training 2 and 4.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.resilience"><b>Resilience (Ex)</b></link> At 19th level, a cyber-soldier has a reservoir of 5 temporary hit points for each piece of implanted cybertech in his body. Lost temporary hit points are recovered at the rate of 10 points per hour. This ability replaces armor mastery.</p>
+
+<h>Iron Priest (Cleric Archetype)</h>
+<p>Iron priests preach of the messengers from beyond the stars, envoys of the divine brought in a falling star. Iron priests can affect robots and other unliving constructs with channeled energy, but lack power over the undead. An iron priest has the following class features.</p>
+<p><b>Class Skills</b>: The iron priest's class skills are Appraise (Int), Craft (Int), Diplomacy (Cha), Disable Device (Dex), Heal (Wis), Knowledge (engineering) (Int), Knowledge (history) (Int), Knowledge (local), Knowledge (religion) (Int), Linguistics (Int), Profession (Wis), Spellcraft (Int), and Survival (Wis).</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.channel-energy"><b>Channel Energy (Su)</b></link>: When an iron priest channels energy to heal or harm living creatures, she heals or harms constructs with the clockwork or robot subtypes as well. Constructs without those subtypes are also affected, but gain only half the normal amount of healing or take only half the normal amount of damage, as appropriate. An iron priest cannot harm or heal undead with channel energy. This ability alters channel energy.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.spontaneous-casting"><b>Spontaneous Casting</b></link>: An iron priest can spontaneously cast <i>make whole</i> and <i>greater make whole</i> in place of <i>cure</i>/<i>inflict moderate wounds</i> and <i>cure</i>/<i>inflict critical wounds</i>, regardless of whether she channels positive or negative energy. This ability alters casting.</p>
+
+<h>Technic Scavenger (Rogue Archetype)</h>
+<p>A technic scavenger lives for the discovery of new technological wonders scraped from the depths of strange ruins, metal caverns, and outlandish junkyards. She is well-versed in all the ways that technology can be used to protect sites, as well as the ways in which it can malfunction.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.technic-training"><b>Technic Training (Ex)</b></link>: A technic scavenger adds 1/2 her rogue level to Perception skill checks to locate mechanical or high-tech traps and to Disable Device skill checks against these traps (minimum +1). She gains Technologist as a bonus feat. She cannot use Disable Device to disarm magical traps. This ability replaces trapfinding.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.lucky-glitch"><b>Lucky Glitch (Ex)</b></link>: Starting at 4th level, whenever a technic scavenger triggers a glitch when using a timeworn technological item, she rolls twice and can choose which of the two glitch effects actually occurs. A technic scavenger always adds her level to rolls to determine what kind of glitch occurs, and treats rolls of over 100 as 100. This ability replaces uncanny dodge.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.robot-slayer"><b>Robot Slayer (Ex)</b></link>: At 8th level, a technic scavenger knows just where to strike robots to incapacitate and disable them. When she deals sneak attack damage to a robot, she ignores all hardness that robot possesses. This ability replaces improved uncanny dodge.</p>
+
+<h>Savage Technologist (Barbarian Archetype)</h>
+<p>Rather than rejecting technology, Savage Technologists wield technology's own weapons against it. A savage technologist has the following class features.</p>
+<p><b>Class skills</b>: Acrobatics (Dex), Climb (Str), Craft (Int), Diplomacy (Cha), Intimidate (Cha), Knowledge (local) (Int), Perception (Wis), Sense Motive Wis), Perception (Wis), Ride (Dex), Survival (Wis), and Swim (Str).</p>
+<p><b>Weapon and Armor Proficiency</b>: A savage technologist is proficient with all simple and martial weapons, all firearms, light armor, and shields (except tower shields).</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.rage"><b>Rage (Ex)</b></link>: A savage technologist can enter rage as a barbarian, except she gains a morale bonus to Strength and Dexterity instead of Strength and Constitution, and she does not take a penalty to Armor Class. She retains the bonus on Will saving throws. When a barbarian ability would increase the savage technologist's Strength while raging, it increases her Dexterity instead. This ability alters rage.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.sword-and-gun"><b>Sword and Gun (Ex)</b></link>: At 2nd level, when a raging savage technologist wields a one-handed firearm in one hand and a light or one-handed melee weapon in the other, she can make ranged attacks with the firearm without provoking attacks of opportunity. She also gains the benefits of the Two Weapon Fighting feat, but only if all attacks are made with those weapons. This ability replaces Uncanny Dodge. </p>
+<p><link class="referencefeat" recordname="lists.archetyperules.primal-magnetism"><b>Primal Magnetism (Ex)</b></link>: At 3rd level, a savage technologist adds her Strength modifier on Diplomacy checks when interacting with tribal cultures. She can expend 2 rounds of rage (even if not raging) to add a bonus equal to 1/2 her barbarian level on a Diplomacy check.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.crack-shot"><b>Crack Shot (Ex)</b></link>: At 5th level, a savage technologist adds her Dexterity modifier to her damage rolls when making ranged attacks with a firearm while raging. This ability replaces Improved Uncanny Dodge.</p>
+
+<h>Techslinger (Gunslinger Archetype)</h>
+<p>Techslingers spurn unreliable gunpowder weapons in favor of high-tech armaments. They learn to master the quirks of timeworn technology and methods of keeping weapons charged in a primitive world. Techslingers still start play with the black powder blunderbuss, pistol, or rifle granted by the gunsmith class ability, but they gain specialized powers for use after they gain weapons of advanced technology. A techslinger has the following class features.</p>
+<p><b>Deeds</b>: Techslingers have access to all gunslinger deeds, except as noted below for new deeds that replace standard gunslinger deeds.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.covet-charge"><i>Covet Charge (Ex)</i></link>: At 1st level, a techslinger can spend 1 grit point to use 1 charge fewer than normal when firing a technological weapon (minimum 0), as long as the weapon has enough charges remaining to be fired at least once. This deed replaces deadeye.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.reliable"><i>Reliable (Ex)</i></link>: At 1st level, a techslinger can spend 1 grit point as a free action to prevent a timeworn firearm from glitching. This deed replaces quick clear.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.charge-recycling"><i>Charge Recycling (Ex)</i></link>: At 11th level, by spending 1 grit point, a techslinger can grant 1 temporary charge to a technological firearm, even if the firearm normally can no longer be recharged. This charge must be used within 1 hour or it fades. The techslinger can grant temporary charges to multiple firearms as long as she has enough grit, but temporary charges do not stack with themselves in the same firearm. At 15th level, the techslinger can grant 2 temporary charges when she uses this deed, and at 19th level, she can grant 3 temporary charges. This deed replaces expert loading.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.heavy-weaponry-deeds"><i>Heavy Weaponry Deeds (Ex)</i></link>: At 11th level, as long as the techslinger has at least 1 grit point, she can treat a heavy weapon as a firearm for the purpose of using deeds.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.bonus-feats"><b>Bonus Feats</b></link>: A techslinger can select Technologist as a bonus feat, even though it's neither a combat nor a grit feat.</p>
+<p><link class="referencefeat" recordname="lists.archetyperules.technic-training"><b>Technic Training (Ex)</b></link>: Starting at 5th level, a techslinger can select one specific type of advanced technology firearm (such as a laser pistol, mindrender, stun gun, or zero rifle). Thereafter, she gains a bonus equal to her Dexterity modifier on damage rolls when using that firearm. Furthermore, she treats all detrimental glitches of timeworn versions of her selected firearm as a result of no glitch. (She can retain the effects of beneficial glitches if she wishes.) Every 4 levels thereafter (9th, 13th, and 17th), the techslinger selects another type of advanced technology firearm, gaining these bonuses for those types as well. This ability replaces gun training. </p>
+</text>
+</archetypelist>
+<cybernetic-combat>
+<name type="string">Cybernetic Combat (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 5th level, a cyber-soldier gains a +1 bonus on attack rolls and damage rolls with implanted weapons, cybernetic arms, and melee or thrown weapons wielded with a cybernetic arm. Weapons wielded with two cybernetic arms receive double the bonus, except when such weapons are thrown. This damage bonus increases by 1 for every 4 levels gained. This attack bonus does not stack with the attack bonus for weapon training. A cyber-soldier gains a slam attack for each cybernetic arm. These attacks deal 1d6 points of bludgeoning damage for a Medium cyber-soldier and 1d4 points of bludgeoning damage for a Small cyber-soldier. This ability replaces weapon training 1.</p></benefit>
+<text type="formattedtext"><p>At 5th level, a cyber-soldier gains a +1 bonus on attack rolls and damage rolls with implanted weapons, cybernetic arms, and melee or thrown weapons wielded with a cybernetic arm. Weapons wielded with two cybernetic arms receive double the bonus, except when such weapons are thrown. This damage bonus increases by 1 for every 4 levels gained. This attack bonus does not stack with the attack bonus for weapon training. A cyber-soldier gains a slam attack for each cybernetic arm. These attacks deal 1d6 points of bludgeoning damage for a Medium cyber-soldier and 1d4 points of bludgeoning damage for a Small cyber-soldier. This ability replaces weapon training 1.</p></text>
+</cybernetic-combat>
+<improved-implantation>
+<name type="string">Improved Implantation (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 7th level, a cyber-soldier can exceed the normal limitations on cybertech implantation. His brain and body slots each accommodate one more piece of cybertech than normal. In addition, his limit on implantation points increases by 1/2 his cyber-soldier level. He can allocate these points between his Intelligence and Constitution scores as he chooses. At 15th level, his body slot can accommodate two more pieces of cybertech than normal. This ability replaces armor training 2 and 4.</p></benefit>
+<text type="formattedtext"><p>At 7th level, a cyber-soldier can exceed the normal limitations on cybertech implantation. His brain and body slots each accommodate one more piece of cybertech than normal. In addition, his limit on implantation points increases by 1/2 his cyber-soldier level. He can allocate these points between his Intelligence and Constitution scores as he chooses. At 15th level, his body slot can accommodate two more pieces of cybertech than normal. This ability replaces armor training 2 and 4.</p></text>
+</improved-implantation>
+<resilience>
+<name type="string">Resilience (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 19th level, a cyber-soldier has a reservoir of 5 temporary hit points for each piece of implanted cybertech in his body. Lost temporary hit points are recovered at the rate of 10 points per hour. This ability replaces armor mastery.</p></benefit>
+<text type="formattedtext"><p>At 19th level, a cyber-soldier has a reservoir of 5 temporary hit points for each piece of implanted cybertech in his body. Lost temporary hit points are recovered at the rate of 10 points per hour. This ability replaces armor mastery.</p></text>
+</resilience>
+<channel-energy>
+<name type="string">Channel Energy (Su)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>When an iron priest channels energy to heal or harm living creatures, she heals or harms constructs with the clockwork or robot subtypes as well. Constructs without those subtypes are also affected, but gain only half the normal amount of healing or take only half the normal amount of damage, as appropriate. An iron priest cannot harm or heal undead with channel energy. This ability alters channel energy.</p></benefit>
+<text type="formattedtext"><p>When an iron priest channels energy to heal or harm living creatures, she heals or harms constructs with the clockwork or robot subtypes as well. Constructs without those subtypes are also affected, but gain only half the normal amount of healing or take only half the normal amount of damage, as appropriate. An iron priest cannot harm or heal undead with channel energy. This ability alters channel energy.</p></text>
+</channel-energy>
+<spontaneous-casting>
+<name type="string">Spontaneous Casting</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>An iron priest can spontaneously cast <i>make whole</i> and <i>greater make whole</i> in place of <i>cure</i>/<i>inflict moderate wounds</i> and <i>cure</i>/<i>inflict critical wounds</i>, regardless of whether she channels positive or negative energy. This ability alters casting.</p></benefit>
+<text type="formattedtext"><p>An iron priest can spontaneously cast <i>make whole</i> and <i>greater make whole</i> in place of <i>cure</i>/<i>inflict moderate wounds</i> and <i>cure</i>/<i>inflict critical wounds</i>, regardless of whether she channels positive or negative energy. This ability alters casting.</p></text>
+</spontaneous-casting>
+<technic-training>
+<name type="string">Technic Training (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>A technic scavenger adds 1/2 her rogue level to Perception skill checks to locate mechanical or high-tech traps and to Disable Device skill checks against these traps (minimum +1). She gains Technologist as a bonus feat. She cannot use Disable Device to disarm magical traps. This ability replaces trapfinding.</p></benefit>
+<text type="formattedtext"><p>A technic scavenger adds 1/2 her rogue level to Perception skill checks to locate mechanical or high-tech traps and to Disable Device skill checks against these traps (minimum +1). She gains Technologist as a bonus feat. She cannot use Disable Device to disarm magical traps. This ability replaces trapfinding.</p></text>
+</technic-training>
+<lucky-glitch>
+<name type="string">Lucky Glitch (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>Starting at 4th level, whenever a technic scavenger triggers a glitch when using a timeworn technological item, she rolls twice and can choose which of the two glitch effects actually occurs. A technic scavenger always adds her level to rolls to determine what kind of glitch occurs, and treats rolls of over 100 as 100. This ability replaces uncanny dodge.</p></benefit>
+<text type="formattedtext"><p>Starting at 4th level, whenever a technic scavenger triggers a glitch when using a timeworn technological item, she rolls twice and can choose which of the two glitch effects actually occurs. A technic scavenger always adds her level to rolls to determine what kind of glitch occurs, and treats rolls of over 100 as 100. This ability replaces uncanny dodge.</p></text>
+</lucky-glitch>
+<robot-slayer>
+<name type="string">Robot Slayer (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 8th level, a technic scavenger knows just where to strike robots to incapacitate and disable them. When she deals sneak attack damage to a robot, she ignores all hardness that robot possesses. This ability replaces improved uncanny dodge.</p></benefit>
+<text type="formattedtext"><p>At 8th level, a technic scavenger knows just where to strike robots to incapacitate and disable them. When she deals sneak attack damage to a robot, she ignores all hardness that robot possesses. This ability replaces improved uncanny dodge.</p></text>
+</robot-slayer>
+<rage>
+<name type="string">Rage (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>A savage technologist can enter rage as a barbarian, except she gains a morale bonus to Strength and Dexterity instead of Strength and Constitution, and she does not take a penalty to Armor Class. She retains the bonus on Will saving throws. When a barbarian ability would increase the savage technologist's Strength while raging, it increases her Dexterity instead. This ability alters rage.</p></benefit>
+<text type="formattedtext"><p>A savage technologist can enter rage as a barbarian, except she gains a morale bonus to Strength and Dexterity instead of Strength and Constitution, and she does not take a penalty to Armor Class. She retains the bonus on Will saving throws. When a barbarian ability would increase the savage technologist's Strength while raging, it increases her Dexterity instead. This ability alters rage.</p></text>
+</rage>
+<sword-and-gun>
+<name type="string">Sword and Gun (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 2nd level, when a raging savage technologist wields a one-handed firearm in one hand and a light or one-handed melee weapon in the other, she can make ranged attacks with the firearm without provoking attacks of opportunity. She also gains the benefits of the Two Weapon Fighting feat, but only if all attacks are made with those weapons. This ability replaces Uncanny Dodge.</p></benefit>
+<text type="formattedtext"><p>At 2nd level, when a raging savage technologist wields a one-handed firearm in one hand and a light or one-handed melee weapon in the other, she can make ranged attacks with the firearm without provoking attacks of opportunity. She also gains the benefits of the Two Weapon Fighting feat, but only if all attacks are made with those weapons. This ability replaces Uncanny Dodge.</p></text>
+</sword-and-gun>
+<primal-magnetism>
+<name type="string">Primal Magnetism (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 3rd level, a savage technologist adds her Strength modifier on Diplomacy checks when interacting with tribal cultures. She can expend 2 rounds of rage (even if not raging) to add a bonus equal to 1/2 her barbarian level on a Diplomacy check.</p></benefit>
+<text type="formattedtext"><p>At 3rd level, a savage technologist adds her Strength modifier on Diplomacy checks when interacting with tribal cultures. She can expend 2 rounds of rage (even if not raging) to add a bonus equal to 1/2 her barbarian level on a Diplomacy check.</p></text>
+</primal-magnetism>
+<crack-shot>
+<name type="string">Crack Shot (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 5th level, a savage technologist adds her Dexterity modifier to her damage rolls when making ranged attacks with a firearm while raging. This ability replaces Improved Uncanny Dodge.</p></benefit>
+<text type="formattedtext"><p>At 5th level, a savage technologist adds her Dexterity modifier to her damage rolls when making ranged attacks with a firearm while raging. This ability replaces Improved Uncanny Dodge.</p></text>
+</crack-shot>
+<covet-charge>
+<name type="string">Covet Charge (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 1st level, a techslinger can spend 1 grit point to use 1 charge fewer than normal when firing a technological weapon (minimum 0), as long as the weapon has enough charges remaining to be fired at least once. This deed replaces deadeye.</p></benefit>
+<text type="formattedtext"><p>At 1st level, a techslinger can spend 1 grit point to use 1 charge fewer than normal when firing a technological weapon (minimum 0), as long as the weapon has enough charges remaining to be fired at least once. This deed replaces deadeye.</p></text>
+</covet-charge>
+<reliable>
+<name type="string">Reliable (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 1st level, a techslinger can spend 1 grit point as a free action to prevent a timeworn firearm from glitching. This deed replaces quick clear.</p></benefit>
+<text type="formattedtext"><p>At 1st level, a techslinger can spend 1 grit point as a free action to prevent a timeworn firearm from glitching. This deed replaces quick clear.</p></text>
+</reliable>
+<charge-recycling>
+<name type="string">Charge Recycling (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 11th level, by spending 1 grit point, a techslinger can grant 1 temporary charge to a technological firearm, even if the firearm normally can no longer be recharged. This charge must be used within 1 hour or it fades. The techslinger can grant temporary charges to multiple firearms as long as she has enough grit, but temporary charges do not stack with themselves in the same firearm. At 15th level, the techslinger can grant 2 temporary charges when she uses this deed, and at 19th level, she can grant 3 temporary charges. This deed replaces expert loading.</p></benefit>
+<text type="formattedtext"><p>At 11th level, by spending 1 grit point, a techslinger can grant 1 temporary charge to a technological firearm, even if the firearm normally can no longer be recharged. This charge must be used within 1 hour or it fades. The techslinger can grant temporary charges to multiple firearms as long as she has enough grit, but temporary charges do not stack with themselves in the same firearm. At 15th level, the techslinger can grant 2 temporary charges when she uses this deed, and at 19th level, she can grant 3 temporary charges. This deed replaces expert loading.</p></text>
+</charge-recycling>
+<heavy-weaponry-deeds>
+<name type="string">Heavy Weaponry Deeds (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 11th level, as long as the techslinger has at least 1 grit point, she can treat a heavy weapon as a firearm for the purpose of using deeds.</p></benefit>
+<text type="formattedtext"><p>At 11th level, as long as the techslinger has at least 1 grit point, she can treat a heavy weapon as a firearm for the purpose of using deeds.</p></text>
+</heavy-weaponry-deeds>
+<bonus-feats>
+<name type="string">Bonus Feats</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>A techslinger can select Technologist as a bonus feat, even though it's neither a combat nor a grit feat.</p></benefit>
+<text type="formattedtext"><p>A techslinger can select Technologist as a bonus feat, even though it's neither a combat nor a grit feat.</p></text>
+</bonus-feats>
+<technic-training>
+<name type="string">Technic Training (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>Starting at 5th level, a techslinger can select one specific type of advanced technology firearm (such as a laser pistol, mindrender, stun gun, or zero rifle). Thereafter, she gains a bonus equal to her Dexterity modifier on damage rolls when using that firearm. Furthermore, she treats all detrimental glitches of timeworn versions of her selected firearm as a result of no glitch. (She can retain the effects of beneficial glitches if she wishes.)</p><p>Every 4 levels thereafter (9th, 13th, and 17th), the techslinger selects another type of advanced technology firearm, gaining these bonuses for those types as well. This ability replaces gun training.</p></benefit>
+<text type="formattedtext"><p>Starting at 5th level, a techslinger can select one specific type of advanced technology firearm (such as a laser pistol, mindrender, stun gun, or zero rifle). Thereafter, she gains a bonus equal to her Dexterity modifier on damage rolls when using that firearm. Furthermore, she treats all detrimental glitches of timeworn versions of her selected firearm as a result of no glitch. (She can retain the effects of beneficial glitches if she wishes.)</p><p>Every 4 levels thereafter (9th, 13th, and 17th), the techslinger selects another type of advanced technology firearm, gaining these bonuses for those types as well. This ability replaces gun training.</p></text>
+</technic-training></archetyperules>
   </lists>
   <License static="true">
     <librarylink type="windowreference">

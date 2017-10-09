@@ -21,6 +21,7 @@ timeworntables_file = "data/TimewornTables.csv"
 traps_file = "data/Traps.csv"
 weapon_csv_file = "data/Weapons.csv"
 artifact_rules_file = "data/artifacts.html"
+archetype_rules_file = "data/Technology-Themed Archetypes.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -71,8 +72,13 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"reference_weapontablelist",
                     "Record name": "lists.weapon@" + module_name},
+                    {"Entry name":"[Rules] Archetypes",
+                    "Entry tag":"JA.Archetypes",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.archetyperules.archetypelist@" + module_name},
                     {"Entry name":"[Rules] Artifacts",
-                    "Entry tag":"IA.Artifacts",
+                    "Entry tag":"JA.Artifacts",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.artifactrules@" + module_name}]
@@ -234,6 +240,9 @@ def generate_xml_structure(xml_root):
     xml_list_weapon_groups = etree.SubElement(xml_list_weapon, "groups")
     #Artifact rules
     xml_list_artifactrules = etree.SubElement(xml_lists, "artifactrules")
+    #Archetype rules
+    xml_list_archetyperules = etree.SubElement(xml_lists, "archetyperules")
+
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -251,6 +260,7 @@ def generate_xml_structure(xml_root):
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment, xml_list_weapon_groups)
     populate_artifact_rules(xml_list_artifactrules)
+    populate_archetypes_rules(xml_list_archetyperules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -938,9 +948,11 @@ def populate_artifact_rules(xml_list_artifactrules):
     xml_list_artifactrules_text.text = artifact_rules
 
 
+def populate_archetypes_rules(xml_list_archetyperules):
+    with open(archetype_rules_file, 'r') as file:
+        archetype_rules = file.read()
+    xml_list_archetyperules.text = archetype_rules
 
-
-weapon_csv_file
 
 def main():
     xml_root = etree.Element('root', version="2.0")
