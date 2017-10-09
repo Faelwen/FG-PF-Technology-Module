@@ -39,7 +39,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"BA.AllItems",
                     "Link type":"librarylink",
                     "Window class":"reference_equipmenttablelist",
-                    "Record name": "lists.Allitems@" + module_name}]
+                    "Record name": "lists.Allitems@" + module_name},
+                    {"Entry name":"[Items] Armor",
+                    "Entry tag":"CA.Armor",
+                    "Link type":"librarylink",
+                    "Window class":"reference_armortablelist",
+                    "Record name": "lists.armor@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -166,10 +171,18 @@ def generate_xml_structure(xml_root):
     xml_list_allitems_groups_weapon_subdescription.text = "Weapon"
     xml_list_allitems_groups_weapon_equipment = etree.SubElement(xml_list_allitems_groups_weapon, "equipment")
 
+    #Armor library
+    xml_list_armor = etree.SubElement(xml_lists, "armor")
+    xml_list_armor_description = etree.SubElement(xml_list_armor, "description", type="string")
+    xml_list_armor_description.text = "Armor"
+    xml_list_armor_groups = etree.SubElement(xml_list_armor, "groups")
+
+
+
     populate_library_entries(xml_library_entries)
     populate_license(xml_root)
 
-    populate_armor(xml_ref_armor, xml_list_allitems_groups_armor_equipment)
+    populate_armor(xml_ref_armor, xml_list_allitems_groups_armor_equipment, xml_list_armor_groups)
     populate_artifact(xml_ref_equipment, xml_list_allitems_groups_artifacts_equipment)
     populate_ai(xml_ref_npcdata)
     populate_cybertech(xml_ref_equipment, xml_list_allitems_groups_cybertech_equipment)
@@ -493,12 +506,14 @@ def populate_traps(xml_ref_npcdata):
             xml_ref.text = i_data.strip()
 
 
-def populate_armor(xml_ref_armor, xml_allitemslist):
+def populate_armor(xml_ref_armor, xml_allitemslist, xml_armorlist):
     with open(armor_csv_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
         item_number = 0
         prefix = "armor"
+        previous_type = ""
+        previous_subtype = ""
 
         for row in csvreader:
             item_number += 1
@@ -550,6 +565,7 @@ def populate_armor(xml_ref_armor, xml_allitemslist):
             #Description
             xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
             xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #All item library ref
             xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
             xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
             xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
@@ -562,6 +578,41 @@ def populate_armor(xml_ref_armor, xml_allitemslist):
             xml_allitemslist_ref_cost.text = i_price
             xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
             xml_allitemslist_ref_weight.text = i_weight
+
+            #Armor library ref
+            if (i_type != previous_type) or (i_subtype != previous_subtype):
+                xml_armorlist_section = etree.SubElement(xml_armorlist, "{0}-{1}".format(i_type, i_subtype).replace(" ","-"))
+                xml_armorlist_section_description = etree.SubElement(xml_armorlist_section, "description", type="string")
+                xml_armorlist_section_description.text = i_type
+                xml_armorlist_section_subdescription = etree.SubElement(xml_armorlist_section, "subdescription", type="string")
+                xml_armorlist_section_subdescription.text = i_subtype
+                xml_armorlist_section_armor = etree.SubElement(xml_armorlist_section, "armor")
+            xml_armorlist_section_armor_ref = etree.SubElement(xml_armorlist_section_armor, item_ref)
+            xml_armorlist_section_armor_ref_link = etree.SubElement(xml_armorlist_section_armor_ref, "link", type="windowreference")
+            xml_armorlist_section_armor_ref_link_class = etree.SubElement(xml_armorlist_section_armor_ref_link, "class")
+            xml_armorlist_section_armor_ref_link_class.text = "item"
+            xml_armorlist_section_armor_ref_link_recordname = etree.SubElement(xml_armorlist_section_armor_ref_link, "recordname")
+            xml_armorlist_section_armor_ref_link_recordname.text = "reference.armor.{0}@{1}".format(item_ref, module_name)
+            xml_armorlist_section_armor_ref_name = etree.SubElement(xml_armorlist_section_armor_ref, "name", type="string")
+            xml_armorlist_section_armor_ref_name.text = i_name.strip()
+            #xml_armorlist_section_armor_ref_cost = etree.SubElement(xml_armorlist_section_armor_ref, "cost", type="string")
+            #xml_armorlist_section_armor_ref_cost = i_price.strip()
+            xml_armorlist_section_armor_ref_weight = etree.SubElement(xml_armorlist_section_armor_ref, "weight", type="string")
+            xml_armorlist_section_armor_ref_weight.text = i_weight.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-') + "lbs."
+            xml_armorlist_section_armor_ref_ac = etree.SubElement(xml_armorlist_section_armor_ref, "ac", type="string")
+            xml_armorlist_section_armor_ref_ac.text = i_armor_bonus.strip()
+            xml_armorlist_section_armor_ref_maxstatbonus = etree.SubElement(xml_armorlist_section_armor_ref, "maxstatbonus", type="string")
+            xml_armorlist_section_armor_ref_maxstatbonus.text = i_maxbonus.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_armorlist_section_armor_ref_checkpenalty = etree.SubElement(xml_armorlist_section_armor_ref, "checkpenalty", type="string")
+            xml_armorlist_section_armor_ref_checkpenalty.text = i_penalty.strip()
+            xml_armorlist_section_armor_ref_spellfailure = etree.SubElement(xml_armorlist_section_armor_ref, "spellfailure", type="string")
+            xml_armorlist_section_armor_ref_spellfailure.text = i_spellfail.strip() + "%"
+            xml_armorlist_section_armor_ref_speed30 = etree.SubElement(xml_armorlist_section_armor_ref, "speed30", type="string")
+            xml_armorlist_section_armor_ref_speed30.text = i_speed30.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_armorlist_section_armor_ref_speed20 = etree.SubElement(xml_armorlist_section_armor_ref, "speed20", type="string")
+            xml_armorlist_section_armor_ref_speed20.text = i_speed20.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            previous_type = i_type
+            previous_subtype = i_subtype
 
 
 

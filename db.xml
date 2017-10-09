@@ -19,6 +19,13 @@
           </librarylink>
           <name type="string">[Items] All Items</name>
         </BA.AllItems>
+        <CA.Armor>
+          <librarylink type="windowreference">
+            <class>reference_armortablelist</class>
+            <recordname>lists.armor@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Armor</name>
+        </CA.Armor>
       </entries>
     </TechnologyGuide>
   </library>
@@ -4870,6 +4877,329 @@
         </weapon>
       </groups>
     </Allitems>
+    <armor>
+      <description type="string">Armor</description>
+      <groups>
+        <Armor-Light>
+          <description type="string">Armor</description>
+          <subdescription type="string">Light</subdescription>
+          <armor>
+            <armor0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Chameleon suit</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">2</ac>
+              <maxstatbonus type="string">6</maxstatbonus>
+              <checkpenalty type="string">0</checkpenalty>
+              <spellfailure type="string">10%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0001>
+            <armor0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Deep diving suit</name>
+              <weight type="string">20lbs.</weight>
+              <ac type="string">3</ac>
+              <maxstatbonus type="string">5</maxstatbonus>
+              <checkpenalty type="string">-2</checkpenalty>
+              <spellfailure type="string">30%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0002>
+            <armor0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Gravity suit</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">Varies</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">0</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0003>
+            <armor0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Heavy weapon harness</name>
+              <weight type="string">10lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">6</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0004>
+            <armor0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Inssuit</name>
+              <weight type="string">10lbs.</weight>
+              <ac type="string">3</ac>
+              <maxstatbonus type="string">6</maxstatbonus>
+              <checkpenalty type="string">0</checkpenalty>
+              <spellfailure type="string">15%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0005>
+            <armor0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (black)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0006>
+            <armor0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (blue)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0007>
+            <armor0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (brown)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0008>
+            <armor0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0009@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (gray)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0009>
+            <armor0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0010@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (green)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0010>
+            <armor0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0011@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (orange)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0011>
+            <armor0012>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0012@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (prismatic)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0012>
+            <armor0013>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0013@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (red)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0013>
+            <armor0014>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0014@Technology Guide</recordname>
+              </link>
+              <name type="string">Scatterlight suit (white)</name>
+              <weight type="string">5lbs.</weight>
+              <ac type="string">1</ac>
+              <maxstatbonus type="string">8</maxstatbonus>
+              <checkpenalty type="string">-1</checkpenalty>
+              <spellfailure type="string">5%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0014>
+            <armor0015>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0015@Technology Guide</recordname>
+              </link>
+              <name type="string">Smart armor (compact form)</name>
+              <weight type="string">20lbs.</weight>
+              <ac type="string">4</ac>
+              <maxstatbonus type="string">4</maxstatbonus>
+              <checkpenalty type="string">-2</checkpenalty>
+              <spellfailure type="string">25%</spellfailure>
+              <speed30 type="string">30</speed30>
+              <speed20 type="string">20</speed20>
+            </armor0015>
+          </armor>
+        </Armor-Light>
+        <Armor-Medium>
+          <description type="string">Armor</description>
+          <subdescription type="string">Medium</subdescription>
+          <armor>
+            <armor0016>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0016@Technology Guide</recordname>
+              </link>
+              <name type="string">HEV suit</name>
+              <weight type="string">20lbs.</weight>
+              <ac type="string">4</ac>
+              <maxstatbonus type="string">3</maxstatbonus>
+              <checkpenalty type="string">-4</checkpenalty>
+              <spellfailure type="string">40%</spellfailure>
+              <speed30 type="string">20</speed30>
+              <speed20 type="string">15</speed20>
+            </armor0016>
+            <armor0017>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0017@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite ablative armor</name>
+              <weight type="string">35lbs.</weight>
+              <ac type="string">4</ac>
+              <maxstatbonus type="string">4</maxstatbonus>
+              <checkpenalty type="string">-3</checkpenalty>
+              <spellfailure type="string">20%</spellfailure>
+              <speed30 type="string">20</speed30>
+              <speed20 type="string">15</speed20>
+            </armor0017>
+            <armor0018>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0018@Technology Guide</recordname>
+              </link>
+              <name type="string">Panic suit</name>
+              <weight type="string">2lbs.</weight>
+              <ac type="string">2</ac>
+              <maxstatbonus type="string">2</maxstatbonus>
+              <checkpenalty type="string">-4</checkpenalty>
+              <spellfailure type="string">50%</spellfailure>
+              <speed30 type="string">20</speed30>
+              <speed20 type="string">15</speed20>
+            </armor0018>
+          </armor>
+        </Armor-Medium>
+        <Armor-Heavy>
+          <description type="string">Armor</description>
+          <subdescription type="string">Heavy</subdescription>
+          <armor>
+            <armor0019>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0019@Technology Guide</recordname>
+              </link>
+              <name type="string">Smart armor (expanded form)</name>
+              <weight type="string">20lbs.</weight>
+              <ac type="string">8</ac>
+              <maxstatbonus type="string">1</maxstatbonus>
+              <checkpenalty type="string">-5</checkpenalty>
+              <spellfailure type="string">35%</spellfailure>
+              <speed30 type="string">20</speed30>
+              <speed20 type="string">15</speed20>
+            </armor0019>
+            <armor0020>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0020@Technology Guide</recordname>
+              </link>
+              <name type="string">Spacesuit</name>
+              <weight type="string">35lbs.</weight>
+              <ac type="string">7</ac>
+              <maxstatbonus type="string">0</maxstatbonus>
+              <checkpenalty type="string">-8</checkpenalty>
+              <spellfailure type="string">50%</spellfailure>
+              <speed30 type="string">20</speed30>
+              <speed20 type="string">15</speed20>
+            </armor0020>
+          </armor>
+        </Armor-Heavy>
+        <Armor-Shield>
+          <description type="string">Armor</description>
+          <subdescription type="string">Shield</subdescription>
+          <armor>
+            <armor0021>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.armor.armor0021@Technology Guide</recordname>
+              </link>
+              <name type="string">Hard light shield</name>
+              <weight type="string">1lbs.</weight>
+              <ac type="string">2</ac>
+              <maxstatbonus type="string">-</maxstatbonus>
+              <checkpenalty type="string">0</checkpenalty>
+              <spellfailure type="string">10%</spellfailure>
+              <speed30 type="string">-</speed30>
+              <speed20 type="string">-</speed20>
+            </armor0021>
+          </armor>
+        </Armor-Shield>
+      </groups>
+    </armor>
   </lists>
   <License static="true">
     <librarylink type="windowreference">
