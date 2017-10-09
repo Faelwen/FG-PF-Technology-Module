@@ -26,6 +26,13 @@
           </librarylink>
           <name type="string">[Items] Armor</name>
         </CA.Armor>
+        <DA.Artifact>
+          <librarylink type="windowreference">
+            <class>reference_equipmenttablelist</class>
+            <recordname>lists.artifact@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Artifact</name>
+        </DA.Artifact>
         <HA.Weapon>
           <librarylink type="windowreference">
             <class>reference_weapontablelist</class>
@@ -368,24 +375,24 @@
       </artifact0002>
       <artifact0003>
         <type type="string">Technological Artifact</type>
+        <subtype type="string"></subtype>
+        <name type="string">Rebirthing chamber</name>
+        <weight type="number">1200</weight>
+        <description type="formattedtext"><p><b>Capacity:</b> ; <b>Usage:</b> 200 charges/day</p><p>This enclosed pod of metal and plastic contains a thinly padded bed on which to lay, and dozens of small vents along its interior. A rebirthing chamber cannot operate on its own power, and must be attached to an external power source. When a Small or Medium humanoid lies within a rebirthing chamber, the chamber automatically seals. Soporific gas fills the chamber, inducing a deathlike coma (Fortitude DC 30 each round negates; this is a poison effect). One minute after it seals, the chamber floods with nanites that first analyze, then reduce the occupant to its component molecules. The dismantling process deals 6d10 points of damage and 1d4 point of Constitution drain each round (Fortitude DC 30 half), a horrifically painful process should the occupant retain consciousness. Any gear worn by the occupant is dismantled and destroyed, with possibly catastrophic results for explosives and powered devices.</p> <p>Over the next 1d4 days, the nanites reconstruct and enhance the occupant, in effect optimizing its genetic code. The occupant wakes up with full memories of its prior existence, but in the body of a young adult of its race, halfway between the minimum and maximum age of its current age category. In the process, all ability scores receive a +2 inherent bonus.</p> <p>Each time a rebirthing chamber is used, there is a 10% chance its nanite reconstruction fails, leaving the host dead and without remains. Only a <i>miracle</i>, <i>true resurrection</i>, or <i>wish</i> can restore such a hapless victim. The nanite reservoir contains sufficient nanites for five rebirths, assuming it hasn't been previously used.</p> <p>A rebirthing chamber only works on humanoids and humanoid corporeal undead. It can even restore life to a long-dead corpse, so long as usable genetic information remains, but with a 25% chance of failure instead of 10%. For each day that passed without preservation such as <i>gentle repose</i>, the revived creature loses roughly 10% of its memories and gains 1 permanent negative level. If the negative levels gained exceed the creature's level, the revival fails. Intelligent corporeal undead retain their memories after revival, but lose all undead abilities and regain their original statistics and abilities from their time among the living. Effects that restore these negative levels also restore these lost memories.</p> <p>Attempts to rebirth a creature without a soul invariably fail, as do attempts to rebirth a creature from partial remains while the creature is still alive. A body is created and draws breath, but it lacks any intellect and dies 2d6 hours after the process is completed. </p></description>
+      </artifact0003>
+      <artifact0004>
+        <type type="string">Technological Artifact</type>
         <subtype type="string">Armor</subtype>
         <name type="string">Powered armor</name>
         <weight type="number">50</weight>
         <description type="formattedtext"><p><b>Capacity:</b> 100; <b>Usage:</b> </p><p>Powered armor represents the pinnacle of personal armor-a suit crafted of multiple skymetals and other materials designed to augment the wearer in numerous ways. The armor actually boosts land speed when worn, granting a +10 foot enhancement bonus to the wearer's speed. While worn, powered armor also grants a +6 enhancement bonus to Strength and Dexterity. Powered armor protects against energy and the environment as if it were a spacesuit. Powered armor has hardness 20 and 300 hit points. Powered armor is fitted with numerous small booster jets that grant the wearer a fly speed of 60 feet (with average maneuverability) in areas of no gravity and 20 feet (with poor maneuverability) in gravity.</p> <p>As a standard action, the wearer may activate the armor's self-repair system. The armor consumes a single charge and repairs 2d6 points of damage. Only 1 charge can be consumed per turn for this effect.</p> <p>In addition, the following technological wonders are integrated into a suit of powered armor-each of these devices drains power from the suit's charges as appropriate when they are activated and used.</p>  <ul><li>Camera in the helmet.</li> <li>Commset in the helmet.</li> <li>Fire extinguisher mounted on the left wrist.</li> <li>Flashlight mounted on the helmet.</li> <li>Gloves that can function grippers.</li> <li>Laser pistol mounted on the right forearm that leaves the hand free. Firing this laser pistol is always considered an off-hand attack, and the number of times it can be fired cannot be increased by feats like Improved Two Weapon Fighting.</li> <li>Magboots.</li> <li>Three medlances. Each medlance can be loaded with a single potion or pharmaceutical; activating an integrated medlance is an immediate action.</li> <li>Power receiver.</li> <li>Prismatic force field located on hips; activating this force field is a swift action.</li> <li>Radiation detector on the right wrist.</li> <li>Custom veemods in the visor grant a +10 bonus on Perception checks, low light vision, darkvision up to 120 feet, and all-around vision.</li></ul>  <p>Rumors persist of variant forms of powered armor, including suits sized for giants or that can function as vehicles for multiple creatures.</p></description>
-      </artifact0003>
-      <artifact0004>
+      </artifact0004>
+      <artifact0005>
         <type type="string">Technological Artifact</type>
         <subtype type="string">Head</subtype>
         <name type="string">Psychic imprinter</name>
         <weight type="number">10</weight>
         <description type="formattedtext"><p><b>Capacity:</b> ; <b>Usage:</b> 1 charge</p><p>A more advanced version of the neurocam, a psychic imprinter resembles a helmet with a closed and opaque visor. It can be adjusted to fit over the head a Small, Medium, or Large humanoid. In its recording mode, it records a complete mental image of that creator into its data banks. This functions as a neurocam's recording mode, except the DC for the Will save to resist is 30. This image remains until a new recording overwrites it.</p> <p>In its imprinting mode, the device writes its stored mental image over the mind of the creature wearing it, destroying the creature's original memories and personality in the process. The target retains its physical ability scores, racial abilities, and any racial Hit Dice. It gains the mental abilities, class levels, feats, skills, and spell-like abilities of the stored image in place of its own. A successful DC 30 Will saving throw negates erasure. An imprinter can be set to record the mental image of the target as the device overwrites its mind. Otherwise, the old personality is utterly destroyed in the process, beyond the reach of all means except a <i>miracle</i> or <i>wish</i> spell, or divine intervention.</p> <p>Stored memories can be transferred between neurocams and psychic imprinters without consuming charges from either device.</p></description>
-      </artifact0004>
-      <artifact0005>
-        <type type="string">Technological Artifact</type>
-        <subtype type="string"></subtype>
-        <name type="string">Rebirthing chamber</name>
-        <weight type="number">1200</weight>
-        <description type="formattedtext"><p><b>Capacity:</b> ; <b>Usage:</b> 200 charges/day</p><p>This enclosed pod of metal and plastic contains a thinly padded bed on which to lay, and dozens of small vents along its interior. A rebirthing chamber cannot operate on its own power, and must be attached to an external power source. When a Small or Medium humanoid lies within a rebirthing chamber, the chamber automatically seals. Soporific gas fills the chamber, inducing a deathlike coma (Fortitude DC 30 each round negates; this is a poison effect). One minute after it seals, the chamber floods with nanites that first analyze, then reduce the occupant to its component molecules. The dismantling process deals 6d10 points of damage and 1d4 point of Constitution drain each round (Fortitude DC 30 half), a horrifically painful process should the occupant retain consciousness. Any gear worn by the occupant is dismantled and destroyed, with possibly catastrophic results for explosives and powered devices.</p> <p>Over the next 1d4 days, the nanites reconstruct and enhance the occupant, in effect optimizing its genetic code. The occupant wakes up with full memories of its prior existence, but in the body of a young adult of its race, halfway between the minimum and maximum age of its current age category. In the process, all ability scores receive a +2 inherent bonus.</p> <p>Each time a rebirthing chamber is used, there is a 10% chance its nanite reconstruction fails, leaving the host dead and without remains. Only a <i>miracle</i>, <i>true resurrection</i>, or <i>wish</i> can restore such a hapless victim. The nanite reservoir contains sufficient nanites for five rebirths, assuming it hasn't been previously used.</p> <p>A rebirthing chamber only works on humanoids and humanoid corporeal undead. It can even restore life to a long-dead corpse, so long as usable genetic information remains, but with a 25% chance of failure instead of 10%. For each day that passed without preservation such as <i>gentle repose</i>, the revived creature loses roughly 10% of its memories and gains 1 permanent negative level. If the negative levels gained exceed the creature's level, the revival fails. Intelligent corporeal undead retain their memories after revival, but lose all undead abilities and regain their original statistics and abilities from their time among the living. Effects that restore these negative levels also restore these lost memories.</p> <p>Attempts to rebirth a creature without a soul invariably fail, as do attempts to rebirth a creature from partial remains while the creature is still alive. A body is created and draws breath, but it lacks any intellect and dies 2d6 hours after the process is completed. </p></description>
       </artifact0005>
       <artifact0006>
         <type type="string">Technological Artifact</type>
@@ -2953,27 +2960,27 @@
                 <class>referenceequipment</class>
                 <recordname>reference.equipment.artifact0003@Technology Guide</recordname>
               </link>
-              <name type="string">Powered armor</name>
+              <name type="string">Rebirthing chamber</name>
               <cost type="string"></cost>
-              <weight type="string">50</weight>
+              <weight type="string">1200</weight>
             </artifact0003>
             <artifact0004>
               <link type="windowreference">
                 <class>referenceequipment</class>
                 <recordname>reference.equipment.artifact0004@Technology Guide</recordname>
               </link>
-              <name type="string">Psychic imprinter</name>
+              <name type="string">Powered armor</name>
               <cost type="string"></cost>
-              <weight type="string">10</weight>
+              <weight type="string">50</weight>
             </artifact0004>
             <artifact0005>
               <link type="windowreference">
                 <class>referenceequipment</class>
                 <recordname>reference.equipment.artifact0005@Technology Guide</recordname>
               </link>
-              <name type="string">Rebirthing chamber</name>
+              <name type="string">Psychic imprinter</name>
               <cost type="string"></cost>
-              <weight type="string">1200</weight>
+              <weight type="string">10</weight>
             </artifact0005>
             <artifact0006>
               <link type="windowreference">
@@ -5207,6 +5214,134 @@
         </Armor-Shield>
       </groups>
     </armor>
+    <artifact>
+      <description type="string">artifact</description>
+      <groups>
+        <Technological-Artifact->
+          <description type="string">Technological Artifact</description>
+          <subdescription type="string"></subdescription>
+          <equipment>
+            <artifact0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Autodoc</name>
+              <cost type="string">-</cost>
+              <weight type="string">1200 lbs.</weight>
+            </artifact0001>
+            <artifact0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Extinction wave device</name>
+              <cost type="string">-</cost>
+              <weight type="string">1000 lbs.</weight>
+            </artifact0002>
+            <artifact0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Rebirthing chamber</name>
+              <cost type="string">-</cost>
+              <weight type="string">1200 lbs.</weight>
+            </artifact0003>
+          </equipment>
+        </Technological-Artifact->
+        <Technological-Artifact-Armor>
+          <description type="string">Technological Artifact</description>
+          <subdescription type="string">Armor</subdescription>
+          <equipment>
+            <artifact0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Powered armor</name>
+              <cost type="string">-</cost>
+              <weight type="string">50 lbs.</weight>
+            </artifact0004>
+          </equipment>
+        </Technological-Artifact-Armor>
+        <Technological-Artifact-Head>
+          <description type="string">Technological Artifact</description>
+          <subdescription type="string">Head</subdescription>
+          <equipment>
+            <artifact0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Psychic imprinter</name>
+              <cost type="string">-</cost>
+              <weight type="string">10 lbs.</weight>
+            </artifact0005>
+            <artifact0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Temporal accelerator</name>
+              <cost type="string">-</cost>
+              <weight type="string">1 lbs.</weight>
+            </artifact0006>
+          </equipment>
+        </Technological-Artifact-Head>
+        <Technological-Artifact-Generator>
+          <description type="string">Technological Artifact</description>
+          <subdescription type="string">Generator</subdescription>
+          <equipment>
+            <artifact0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Fission reactor</name>
+              <cost type="string">-</cost>
+              <weight type="string"> lbs.</weight>
+            </artifact0007>
+            <artifact0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Fusion reator</name>
+              <cost type="string">-</cost>
+              <weight type="string"> lbs.</weight>
+            </artifact0008>
+            <artifact0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0009@Technology Guide</recordname>
+              </link>
+              <name type="string">Geothermal reactor</name>
+              <cost type="string">-</cost>
+              <weight type="string"> lbs.</weight>
+            </artifact0009>
+            <artifact0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0010@Technology Guide</recordname>
+              </link>
+              <name type="string">Graviton reactor</name>
+              <cost type="string">-</cost>
+              <weight type="string"> lbs.</weight>
+            </artifact0010>
+            <artifact0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.artifact0011@Technology Guide</recordname>
+              </link>
+              <name type="string">Solar generator</name>
+              <cost type="string">-</cost>
+              <weight type="string"> lbs.</weight>
+            </artifact0011>
+          </equipment>
+        </Technological-Artifact-Generator>
+      </groups>
+    </artifact>
     <weapon>
       <description type="string">weapon</description>
       <groups>
