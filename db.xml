@@ -33,6 +33,27 @@
           </librarylink>
           <name type="string">[Items] Artifact</name>
         </DA.Artifact>
+        <EA.Cybertech>
+          <librarylink type="windowreference">
+            <class>reference_equipmenttablelist</class>
+            <recordname>lists.cybertech@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Cybertech</name>
+        </EA.Cybertech>
+        <FA.Pharmaceuticals>
+          <librarylink type="windowreference">
+            <class>reference_equipmenttablelist</class>
+            <recordname>lists.pharmaceutical@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Pharmaceuticals</name>
+        </FA.Pharmaceuticals>
+        <GA.TechnologicalGear>
+          <librarylink type="windowreference">
+            <class>reference_equipmenttablelist</class>
+            <recordname>lists.techgear@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Technological Gear</name>
+        </GA.TechnologicalGear>
         <HA.Weapon>
           <librarylink type="windowreference">
             <class>reference_weapontablelist</class>
@@ -5342,6 +5363,1644 @@
         </Technological-Artifact-Generator>
       </groups>
     </artifact>
+    <cybertech>
+      <description type="string">cybertech</description>
+      <groups>
+        <Cybertech-Arm>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Arm</subdescription>
+          <equipment>
+            <cybertech0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Cybernetic arm</name>
+              <cost type="string">4750 gp</cost>
+              <weight type="string">9 lbs.</weight>
+            </cybertech0001>
+            <cybertech0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Implanted weaponry</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0002>
+          </equipment>
+        </Cybertech-Arm>
+        <Cybertech-Body>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Body</subdescription>
+          <equipment>
+            <cybertech0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Biofilter</name>
+              <cost type="string">16000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </cybertech0003>
+            <cybertech0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Cyberfiber muscles (mark I)</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0004>
+            <cybertech0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Cyberfiber muscles (mark II)</name>
+              <cost type="string">32000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0005>
+            <cybertech0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Cyberfiber muscles (mark III)</name>
+              <cost type="string">72000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0006>
+            <cybertech0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Dermal plating (mark I)</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0007>
+            <cybertech0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Dermal plating (mark II)</name>
+              <cost type="string">16000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0008>
+            <cybertech0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0009@Technology Guide</recordname>
+              </link>
+              <name type="string">Dermal plating (mark III)</name>
+              <cost type="string">36000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0009>
+            <cybertech0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0010@Technology Guide</recordname>
+              </link>
+              <name type="string">Dermal plating (mark IV)</name>
+              <cost type="string">64000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0010>
+            <cybertech0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0011@Technology Guide</recordname>
+              </link>
+              <name type="string">Dermal plating (mark V)</name>
+              <cost type="string">100000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0011>
+            <cybertech0012>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0012@Technology Guide</recordname>
+              </link>
+              <name type="string">Thoracic nanite chamber (mark I)</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0012>
+            <cybertech0013>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0013@Technology Guide</recordname>
+              </link>
+              <name type="string">Thoracic nanite chamber (mark II)</name>
+              <cost type="string">32000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0013>
+            <cybertech0014>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0014@Technology Guide</recordname>
+              </link>
+              <name type="string">Thoracic nanite chamber (mark III)</name>
+              <cost type="string">72000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </cybertech0014>
+            <cybertech0015>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0015@Technology Guide</recordname>
+              </link>
+              <name type="string">Wirejack tendons (mark I)</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0015>
+            <cybertech0016>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0016@Technology Guide</recordname>
+              </link>
+              <name type="string">Wirejack tendons (mark II)</name>
+              <cost type="string">32000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0016>
+            <cybertech0017>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0017@Technology Guide</recordname>
+              </link>
+              <name type="string">Wirejack tendons (mark III)</name>
+              <cost type="string">72000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </cybertech0017>
+          </equipment>
+        </Cybertech-Body>
+        <Cybertech-Brain>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Brain</subdescription>
+          <equipment>
+            <cybertech0018>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0018@Technology Guide</recordname>
+              </link>
+              <name type="string">Frenzychip</name>
+              <cost type="string">36400 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0018>
+            <cybertech0019>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0019@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillslot</name>
+              <cost type="string">2000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0019>
+          </equipment>
+        </Cybertech-Brain>
+        <Cybertech-Ears>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Ears</subdescription>
+          <equipment>
+            <cybertech0020>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0020@Technology Guide</recordname>
+              </link>
+              <name type="string">Cybernetic ears</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0020>
+          </equipment>
+        </Cybertech-Ears>
+        <Cybertech-Eyes>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Eyes</subdescription>
+          <equipment>
+            <cybertech0021>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0021@Technology Guide</recordname>
+              </link>
+              <name type="string">Cybernetic eyes</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0021>
+          </equipment>
+        </Cybertech-Eyes>
+        <Cybertech-Head>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Head</subdescription>
+          <equipment>
+            <cybertech0022>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0022@Technology Guide</recordname>
+              </link>
+              <name type="string">Cranial bomb</name>
+              <cost type="string">4500 gp</cost>
+              <weight type="string">0.5 lbs.</weight>
+            </cybertech0022>
+          </equipment>
+        </Cybertech-Head>
+        <Cybertech-Legs>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Legs</subdescription>
+          <equipment>
+            <cybertech0023>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0023@Technology Guide</recordname>
+              </link>
+              <name type="string">Cybernetic legs</name>
+              <cost type="string">8500 gp</cost>
+              <weight type="string">12 lbs.</weight>
+            </cybertech0023>
+          </equipment>
+        </Cybertech-Legs>
+        <Cybertech-Slotless>
+          <description type="string">Cybertech</description>
+          <subdescription type="string">Slotless</subdescription>
+          <equipment>
+            <cybertech0024>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.cybertech0024@Technology Guide</recordname>
+              </link>
+              <name type="string">Cyberart</name>
+              <cost type="string">100 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </cybertech0024>
+          </equipment>
+        </Cybertech-Slotless>
+      </groups>
+    </cybertech>
+    <pharmaceutical>
+      <description type="string">pharmaceutical</description>
+      <groups>
+        <Pharmaceuticals->
+          <description type="string">Pharmaceuticals</description>
+          <subdescription type="string"></subdescription>
+          <equipment>
+            <pharmaceuticals0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Baseline</name>
+              <cost type="string">2250 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0001>
+            <pharmaceuticals0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Cardioamp</name>
+              <cost type="string">4550 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0002>
+            <pharmaceuticals0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Cureall</name>
+              <cost type="string">1400 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0003>
+            <pharmaceuticals0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Hemochem (Grade I)</name>
+              <cost type="string">250 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0004>
+            <pharmaceuticals0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Hemochem (Grade II)</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0005>
+            <pharmaceuticals0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Hemochem (Grade III)</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0006>
+            <pharmaceuticals0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Hemochem (Grade IV)</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0007>
+            <pharmaceuticals0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Hemochem (Grade V)</name>
+              <cost type="string">1250 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0008>
+            <pharmaceuticals0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0009@Technology Guide</recordname>
+              </link>
+              <name type="string">Hype</name>
+              <cost type="string">250 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0009>
+            <pharmaceuticals0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0010@Technology Guide</recordname>
+              </link>
+              <name type="string">Torpinal</name>
+              <cost type="string">300 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0010>
+            <pharmaceuticals0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0011@Technology Guide</recordname>
+              </link>
+              <name type="string">Vive</name>
+              <cost type="string">200 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0011>
+            <pharmaceuticals0012>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.pharmaceuticals0012@Technology Guide</recordname>
+              </link>
+              <name type="string">Zortaphen</name>
+              <cost type="string">2250 gp</cost>
+              <weight type="string">0 lbs.</weight>
+            </pharmaceuticals0012>
+          </equipment>
+        </Pharmaceuticals->
+      </groups>
+    </pharmaceutical>
+    <techgear>
+      <description type="string">techgear</description>
+      <groups>
+        <Technological-Gear-Access-and-Locks>
+          <description type="string">Technological Gear</description>
+          <subdescription type="string">Access and Locks</subdescription>
+          <equipment>
+            <techgear0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (brown)</name>
+              <cost type="string">3 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0001>
+            <techgear0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (black)</name>
+              <cost type="string">10 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0002>
+            <techgear0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (white)</name>
+              <cost type="string">40 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0003>
+            <techgear0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (gray)</name>
+              <cost type="string">90 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0004>
+            <techgear0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (green)</name>
+              <cost type="string">160 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0005>
+            <techgear0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (red)</name>
+              <cost type="string">250 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0006>
+            <techgear0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (blue)</name>
+              <cost type="string">360 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0007>
+            <techgear0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (orange)</name>
+              <cost type="string">490 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0008>
+            <techgear0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0009@Technology Guide</recordname>
+              </link>
+              <name type="string">Access card (prismatic)</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0009>
+            <techgear0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0010@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (brown)</name>
+              <cost type="string">30 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0010>
+            <techgear0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0011@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (black)</name>
+              <cost type="string">100 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0011>
+            <techgear0012>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0012@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (white)</name>
+              <cost type="string">400 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0012>
+            <techgear0013>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0013@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (gray)</name>
+              <cost type="string">900 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0013>
+            <techgear0014>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0014@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (green)</name>
+              <cost type="string">1600 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0014>
+            <techgear0015>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0015@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (red)</name>
+              <cost type="string">2500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0015>
+            <techgear0016>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0016@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (blue)</name>
+              <cost type="string">3600 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0016>
+            <techgear0017>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0017@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (orange)</name>
+              <cost type="string">4900 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0017>
+            <techgear0018>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0018@Technology Guide</recordname>
+              </link>
+              <name type="string">E-pick (prismatic)</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0018>
+            <techgear0019>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0019@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (brown)</name>
+              <cost type="string">600 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0019>
+            <techgear0020>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0020@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (black)</name>
+              <cost type="string">2000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0020>
+            <techgear0021>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0021@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (white)</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0021>
+            <techgear0022>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0022@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (gray)</name>
+              <cost type="string">18000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0022>
+            <techgear0023>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0023@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (green)</name>
+              <cost type="string">32000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0023>
+            <techgear0024>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0024@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (red)</name>
+              <cost type="string">50000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0024>
+            <techgear0025>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0025@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (blue)</name>
+              <cost type="string">72000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0025>
+            <techgear0026>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0026@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (orange)</name>
+              <cost type="string">98000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0026>
+            <techgear0027>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0027@Technology Guide</recordname>
+              </link>
+              <name type="string">Lock coder (prismatic)</name>
+              <cost type="string">200000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0027>
+          </equipment>
+        </Technological-Gear-Access-and-Locks>
+        <Technological-Gear-Batteries-and-Power>
+          <description type="string">Technological Gear</description>
+          <subdescription type="string">Batteries and Power</subdescription>
+          <equipment>
+            <techgear0028>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0028@Technology Guide</recordname>
+              </link>
+              <name type="string">Battery</name>
+              <cost type="string">100 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0028>
+            <techgear0029>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0029@Technology Guide</recordname>
+              </link>
+              <name type="string">Power cable</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0029>
+            <techgear0030>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0030@Technology Guide</recordname>
+              </link>
+              <name type="string">Power receiver</name>
+              <cost type="string">5000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0030>
+          </equipment>
+        </Technological-Gear-Batteries-and-Power>
+        <Technological-Gear-Grenades-and-Explosives->
+          <description type="string">Technological Gear</description>
+          <subdescription type="string">Grenades and Explosives </subdescription>
+          <equipment>
+            <techgear0031>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0031@Technology Guide</recordname>
+              </link>
+              <name type="string">Arc grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0031>
+            <techgear0032>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0032@Technology Guide</recordname>
+              </link>
+              <name type="string">Atom grenade</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0032>
+            <techgear0033>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0033@Technology Guide</recordname>
+              </link>
+              <name type="string">Bang grenade</name>
+              <cost type="string">250 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0033>
+            <techgear0034>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0034@Technology Guide</recordname>
+              </link>
+              <name type="string">Bio grenade</name>
+              <cost type="string">3300 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0034>
+            <techgear0035>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0035@Technology Guide</recordname>
+              </link>
+              <name type="string">Concussion grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0035>
+            <techgear0036>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0036@Technology Guide</recordname>
+              </link>
+              <name type="string">Cylex</name>
+              <cost type="string">3600 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0036>
+            <techgear0037>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0037@Technology Guide</recordname>
+              </link>
+              <name type="string">Detonator</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0037>
+            <techgear0038>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0038@Technology Guide</recordname>
+              </link>
+              <name type="string">EMP grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0038>
+            <techgear0039>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0039@Technology Guide</recordname>
+              </link>
+              <name type="string">Flash grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0039>
+            <techgear0040>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0040@Technology Guide</recordname>
+              </link>
+              <name type="string">Flechette grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0040>
+            <techgear0041>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0041@Technology Guide</recordname>
+              </link>
+              <name type="string">Fragmentation grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0041>
+            <techgear0042>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0042@Technology Guide</recordname>
+              </link>
+              <name type="string">Gravity grenade</name>
+              <cost type="string">2250 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0042>
+            <techgear0043>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0043@Technology Guide</recordname>
+              </link>
+              <name type="string">Inferno grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0043>
+            <techgear0044>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0044@Technology Guide</recordname>
+              </link>
+              <name type="string">Plasma grenade</name>
+              <cost type="string">1600 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0044>
+            <techgear0045>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0045@Technology Guide</recordname>
+              </link>
+              <name type="string">Soft grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0045>
+            <techgear0046>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0046@Technology Guide</recordname>
+              </link>
+              <name type="string">Sonic grenade</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0046>
+            <techgear0047>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0047@Technology Guide</recordname>
+              </link>
+              <name type="string">Zero grenade</name>
+              <cost type="string">750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0047>
+          </equipment>
+        </Technological-Gear-Grenades-and-Explosives->
+        <Technological-Gear-Implants--Medical-Devices--and-Nanotech>
+          <description type="string">Technological Gear</description>
+          <subdescription type="string">Implants, Medical Devices, and Nanotech</subdescription>
+          <equipment>
+            <techgear0048>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0048@Technology Guide</recordname>
+              </link>
+              <name type="string">Chemalyzer</name>
+              <cost type="string">2500 gp</cost>
+              <weight type="string">8 lbs.</weight>
+            </techgear0048>
+            <techgear0049>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0049@Technology Guide</recordname>
+              </link>
+              <name type="string">Clonepod</name>
+              <cost type="string">60000 gp</cost>
+              <weight type="string">95 lbs.</weight>
+            </techgear0049>
+            <techgear0050>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0050@Technology Guide</recordname>
+              </link>
+              <name type="string">Cortex gun (mark I)</name>
+              <cost type="string">30250 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0050>
+            <techgear0051>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0051@Technology Guide</recordname>
+              </link>
+              <name type="string">Cortex gun (mark II)</name>
+              <cost type="string">60500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0051>
+            <techgear0052>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0052@Technology Guide</recordname>
+              </link>
+              <name type="string">Cortex gun (mark III)</name>
+              <cost type="string">90750 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0052>
+            <techgear0053>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0053@Technology Guide</recordname>
+              </link>
+              <name type="string">Cortex gun (mark IV)</name>
+              <cost type="string">120000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0053>
+            <techgear0054>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0054@Technology Guide</recordname>
+              </link>
+              <name type="string">Cortex gun (mark V)</name>
+              <cost type="string">151250 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0054>
+            <techgear0055>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0055@Technology Guide</recordname>
+              </link>
+              <name type="string">Filter mask</name>
+              <cost type="string">4500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0055>
+            <techgear0056>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0056@Technology Guide</recordname>
+              </link>
+              <name type="string">Goo tube</name>
+              <cost type="string">6 gp</cost>
+              <weight type="string">0.1 lbs.</weight>
+            </techgear0056>
+            <techgear0057>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0057@Technology Guide</recordname>
+              </link>
+              <name type="string">Medlance</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0057>
+            <techgear0058>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0058@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite canister</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0058>
+            <techgear0059>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0059@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (brown)</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0059>
+            <techgear0060>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0060@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (black)</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0060>
+            <techgear0061>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0061@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (white)</name>
+              <cost type="string">15000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0061>
+            <techgear0062>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0062@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (gray)</name>
+              <cost type="string">28000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0062>
+            <techgear0063>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0063@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (green)</name>
+              <cost type="string">45000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0063>
+            <techgear0064>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0064@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (red)</name>
+              <cost type="string">66000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0064>
+            <techgear0065>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0065@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (blue)</name>
+              <cost type="string">91000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0065>
+            <techgear0066>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0066@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (orange)</name>
+              <cost type="string">125000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0066>
+            <techgear0067>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0067@Technology Guide</recordname>
+              </link>
+              <name type="string">Nanite hypogun (prismatic)</name>
+              <cost type="string">178000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0067>
+            <techgear0068>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0068@Technology Guide</recordname>
+              </link>
+              <name type="string">Neurocam</name>
+              <cost type="string">36000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </techgear0068>
+            <techgear0069>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0069@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillchip (mark I)</name>
+              <cost type="string">400 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0069>
+            <techgear0070>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0070@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillchip (mark II)</name>
+              <cost type="string">1600 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0070>
+            <techgear0071>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0071@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillchip (mark III)</name>
+              <cost type="string">3600 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0071>
+            <techgear0072>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0072@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillchip (mark IV)</name>
+              <cost type="string">6400 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0072>
+            <techgear0073>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0073@Technology Guide</recordname>
+              </link>
+              <name type="string">Skillchip (mark V)</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0073>
+            <techgear0074>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0074@Technology Guide</recordname>
+              </link>
+              <name type="string">Trauma pack</name>
+              <cost type="string">1500 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0074>
+            <techgear0075>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0075@Technology Guide</recordname>
+              </link>
+              <name type="string">Trauma pack plus</name>
+              <cost type="string">11250 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0075>
+            <techgear0076>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0076@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (brown)</name>
+              <cost type="string">200 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0076>
+            <techgear0077>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0077@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (black)</name>
+              <cost type="string">400 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0077>
+            <techgear0078>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0078@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (white)</name>
+              <cost type="string">2500 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0078>
+            <techgear0079>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0079@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (gray)</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0079>
+            <techgear0080>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0080@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (green)</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0080>
+            <techgear0081>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0081@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (red)</name>
+              <cost type="string">12000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0081>
+            <techgear0082>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0082@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (blue)</name>
+              <cost type="string">20000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0082>
+            <techgear0083>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0083@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (orange)</name>
+              <cost type="string">30000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0083>
+            <techgear0084>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0084@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod (prismatic)</name>
+              <cost type="string">50000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0084>
+            <techgear0085>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0085@Technology Guide</recordname>
+              </link>
+              <name type="string">Veemod goggles</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0085>
+          </equipment>
+        </Technological-Gear-Implants--Medical-Devices--and-Nanotech>
+        <Technological-Gear-Other-Tools-and-Accessories->
+          <description type="string">Technological Gear</description>
+          <subdescription type="string">Other Tools and Accessories </subdescription>
+          <equipment>
+            <techgear0086>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0086@Technology Guide</recordname>
+              </link>
+              <name type="string">Camera</name>
+              <cost type="string">3000 gp</cost>
+              <weight type="string">3 lbs.</weight>
+            </techgear0086>
+            <techgear0087>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0087@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (brown)</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0087>
+            <techgear0088>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0088@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (black)</name>
+              <cost type="string">3000 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0088>
+            <techgear0089>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0089@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (white)</name>
+              <cost type="string">7500 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0089>
+            <techgear0090>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0090@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (gray)</name>
+              <cost type="string">14000 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0090>
+            <techgear0091>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0091@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (green)</name>
+              <cost type="string">22500 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0091>
+            <techgear0092>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0092@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (red)</name>
+              <cost type="string">33000 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0092>
+            <techgear0093>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0093@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (blue)</name>
+              <cost type="string">45500 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0093>
+            <techgear0094>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0094@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (orange)</name>
+              <cost type="string">60000 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0094>
+            <techgear0095>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0095@Technology Guide</recordname>
+              </link>
+              <name type="string">Chipfinder (prismatic)</name>
+              <cost type="string">76500 gp</cost>
+              <weight type="string">4 lbs.</weight>
+            </techgear0095>
+            <techgear0096>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0096@Technology Guide</recordname>
+              </link>
+              <name type="string">Commset</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </techgear0096>
+            <techgear0097>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0097@Technology Guide</recordname>
+              </link>
+              <name type="string">Emergency beacon</name>
+              <cost type="string">900 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </techgear0097>
+            <techgear0098>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0098@Technology Guide</recordname>
+              </link>
+              <name type="string">Emergency raft</name>
+              <cost type="string">3600 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </techgear0098>
+            <techgear0099>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0099@Technology Guide</recordname>
+              </link>
+              <name type="string">Emergency shelter</name>
+              <cost type="string">18000 gp</cost>
+              <weight type="string">15 lbs.</weight>
+            </techgear0099>
+            <techgear0100>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0100@Technology Guide</recordname>
+              </link>
+              <name type="string">Fire extinguisher</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">7 lbs.</weight>
+            </techgear0100>
+            <techgear0101>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0101@Technology Guide</recordname>
+              </link>
+              <name type="string">Flashlight</name>
+              <cost type="string">30 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0101>
+            <techgear0102>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0102@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (brown)</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0102>
+            <techgear0103>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0103@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (black)</name>
+              <cost type="string">20000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0103>
+            <techgear0104>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0104@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (white)</name>
+              <cost type="string">40000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0104>
+            <techgear0105>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0105@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (gray)</name>
+              <cost type="string">60000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0105>
+            <techgear0106>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0106@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (green)</name>
+              <cost type="string">80000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0106>
+            <techgear0107>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0107@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (red)</name>
+              <cost type="string">100000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0107>
+            <techgear0108>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0108@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (blue)</name>
+              <cost type="string">120000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0108>
+            <techgear0109>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0109@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (orange)</name>
+              <cost type="string">140000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0109>
+            <techgear0110>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0110@Technology Guide</recordname>
+              </link>
+              <name type="string">Force field (prismatic)</name>
+              <cost type="string">220000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0110>
+            <techgear0111>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0111@Technology Guide</recordname>
+              </link>
+              <name type="string">Gravity clip</name>
+              <cost type="string">2000 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0111>
+            <techgear0112>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0112@Technology Guide</recordname>
+              </link>
+              <name type="string">Grippers</name>
+              <cost type="string">100 gp</cost>
+              <weight type="string">5 lbs.</weight>
+            </techgear0112>
+            <techgear0113>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0113@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (brown)</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0113>
+            <techgear0114>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0114@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (black)</name>
+              <cost type="string">1000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0114>
+            <techgear0115>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0115@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (white)</name>
+              <cost type="string">2000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0115>
+            <techgear0116>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0116@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (gray)</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0116>
+            <techgear0117>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0117@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (green)</name>
+              <cost type="string">30000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0117>
+            <techgear0118>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0118@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (red)</name>
+              <cost type="string">40000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0118>
+            <techgear0119>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0119@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (blue)</name>
+              <cost type="string">50000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0119>
+            <techgear0120>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0120@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (orange)</name>
+              <cost type="string">60000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0120>
+            <techgear0121>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0121@Technology Guide</recordname>
+              </link>
+              <name type="string">Hologram generator (prismatic)</name>
+              <cost type="string">90000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0121>
+            <techgear0122>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0122@Technology Guide</recordname>
+              </link>
+              <name type="string">Inertial dampening belt</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </techgear0122>
+            <techgear0123>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0123@Technology Guide</recordname>
+              </link>
+              <name type="string">Ion tape</name>
+              <cost type="string">100 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0123>
+            <techgear0124>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0124@Technology Guide</recordname>
+              </link>
+              <name type="string">Jetpack</name>
+              <cost type="string">18000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+            </techgear0124>
+            <techgear0125>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0125@Technology Guide</recordname>
+              </link>
+              <name type="string">Laser sight</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0125>
+            <techgear0126>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0126@Technology Guide</recordname>
+              </link>
+              <name type="string">Lighter</name>
+              <cost type="string">10 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0126>
+            <techgear0127>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0127@Technology Guide</recordname>
+              </link>
+              <name type="string">Magboots</name>
+              <cost type="string">5000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+            </techgear0127>
+            <techgear0128>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0128@Technology Guide</recordname>
+              </link>
+              <name type="string">Motion tracker</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </techgear0128>
+            <techgear0129>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0129@Technology Guide</recordname>
+              </link>
+              <name type="string">Quantum box</name>
+              <cost type="string">40000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+            </techgear0129>
+            <techgear0130>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0130@Technology Guide</recordname>
+              </link>
+              <name type="string">Radiation detector</name>
+              <cost type="string">2000 gp</cost>
+              <weight type="string">3 lbs.</weight>
+            </techgear0130>
+            <techgear0131>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0131@Technology Guide</recordname>
+              </link>
+              <name type="string">Robojack</name>
+              <cost type="string">30000 gp</cost>
+              <weight type="string">3 lbs.</weight>
+            </techgear0131>
+            <techgear0132>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0132@Technology Guide</recordname>
+              </link>
+              <name type="string">Signal booster</name>
+              <cost type="string">9000 gp</cost>
+              <weight type="string">7 lbs.</weight>
+            </techgear0132>
+            <techgear0133>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0133@Technology Guide</recordname>
+              </link>
+              <name type="string">Signal jammer</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">8 lbs.</weight>
+            </techgear0133>
+            <techgear0134>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0134@Technology Guide</recordname>
+              </link>
+              <name type="string">Tracker chip</name>
+              <cost type="string">500 gp</cost>
+              <weight type="string">- lbs.</weight>
+            </techgear0134>
+            <techgear0135>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.equipment.techgear0135@Technology Guide</recordname>
+              </link>
+              <name type="string">Zipstick</name>
+              <cost type="string">20 gp</cost>
+              <weight type="string">1 lbs.</weight>
+            </techgear0135>
+          </equipment>
+        </Technological-Gear-Other-Tools-and-Accessories->
+      </groups>
+    </techgear>
     <weapon>
       <description type="string">weapon</description>
       <groups>
