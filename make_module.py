@@ -34,7 +34,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"AA.License",
                     "Link type":"librarylink",
                     "Window class":"referencetext",
-                    "Record name": "License"}]
+                    "Record name": "License"},
+                    {"Entry name":"[Items] All Items",
+                    "Entry tag":"BA.AllItems",
+                    "Link type":"librarylink",
+                    "Window class":"reference_equipmenttablelist",
+                    "Record name": "lists.Allitems@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -113,21 +118,69 @@ def generate_xml_structure(xml_root):
     xml_ref_weapon = etree.SubElement(xml_reference,"weapon")
     xml_lists = etree.SubElement(xml_root, "lists", static="true")
 
+    #All items description
+    xml_list_allitems = etree.SubElement(xml_lists, "Allitems")
+    xml_list_allitems_description = etree.SubElement(xml_list_allitems, "description", type="string")
+    xml_list_allitems_description.text = "All Items"
+    xml_list_allitems_groups = etree.SubElement(xml_list_allitems, "groups")
+    #All items armor
+    xml_list_allitems_groups_armor = etree.SubElement(xml_list_allitems_groups, "armor")
+    xml_list_allitems_groups_armor_description = etree.SubElement(xml_list_allitems_groups_armor, "description", type="string")
+    xml_list_allitems_groups_armor_description.text = "All Items"
+    xml_list_allitems_groups_armor_subdescription = etree.SubElement(xml_list_allitems_groups_armor, "subdescription", type="string")
+    xml_list_allitems_groups_armor_subdescription.text = "Armor"
+    xml_list_allitems_groups_armor_equipment = etree.SubElement(xml_list_allitems_groups_armor, "equipment")
+    #All items artifacts
+    xml_list_allitems_groups_artifacts = etree.SubElement(xml_list_allitems_groups, "artifacts")
+    xml_list_allitems_groups_artifacts_description = etree.SubElement(xml_list_allitems_groups_artifacts, "description", type="string")
+    xml_list_allitems_groups_artifacts_description.text = "All Items"
+    xml_list_allitems_groups_artifacts_subdescription = etree.SubElement(xml_list_allitems_groups_artifacts, "subdescription", type="string")
+    xml_list_allitems_groups_artifacts_subdescription.text = "Artifacts"
+    xml_list_allitems_groups_artifacts_equipment = etree.SubElement(xml_list_allitems_groups_artifacts, "equipment")
+    #All items cybertech
+    xml_list_allitems_groups_cybertech = etree.SubElement(xml_list_allitems_groups, "cybertech")
+    xml_list_allitems_groups_cybertech_description = etree.SubElement(xml_list_allitems_groups_cybertech, "description", type="string")
+    xml_list_allitems_groups_cybertech_description.text = "All Items"
+    xml_list_allitems_groups_cybertech_subdescription = etree.SubElement(xml_list_allitems_groups_cybertech, "subdescription", type="string")
+    xml_list_allitems_groups_cybertech_subdescription.text = "Cybertech"
+    xml_list_allitems_groups_cybertech_equipment = etree.SubElement(xml_list_allitems_groups_cybertech, "equipment")
+    #All items pharmaceuticals
+    xml_list_allitems_groups_pharmaceutical = etree.SubElement(xml_list_allitems_groups, "pharmaceutical")
+    xml_list_allitems_groups_pharmaceutical_description = etree.SubElement(xml_list_allitems_groups_pharmaceutical, "description", type="string")
+    xml_list_allitems_groups_pharmaceutical_description.text = "All Items"
+    xml_list_allitems_groups_pharmaceutical_subdescription = etree.SubElement(xml_list_allitems_groups_pharmaceutical, "subdescription", type="string")
+    xml_list_allitems_groups_pharmaceutical_subdescription.text = "Pharmaceutical"
+    xml_list_allitems_groups_pharmaceutical_equipment = etree.SubElement(xml_list_allitems_groups_pharmaceutical, "equipment")
+    #All items technological gear
+    xml_list_allitems_groups_techgear = etree.SubElement(xml_list_allitems_groups, "techgear")
+    xml_list_allitems_groups_techgear_description = etree.SubElement(xml_list_allitems_groups_techgear, "description", type="string")
+    xml_list_allitems_groups_techgear_description.text = "All Items"
+    xml_list_allitems_groups_techgear_subdescription = etree.SubElement(xml_list_allitems_groups_techgear, "subdescription", type="string")
+    xml_list_allitems_groups_techgear_subdescription.text = "Technological Gear"
+    xml_list_allitems_groups_techgear_equipment = etree.SubElement(xml_list_allitems_groups_techgear, "equipment")
+    #All items weapon
+    xml_list_allitems_groups_weapon = etree.SubElement(xml_list_allitems_groups, "weapon")
+    xml_list_allitems_groups_weapon_description = etree.SubElement(xml_list_allitems_groups_weapon, "description", type="string")
+    xml_list_allitems_groups_weapon_description.text = "All Items"
+    xml_list_allitems_groups_weapon_subdescription = etree.SubElement(xml_list_allitems_groups_weapon, "subdescription", type="string")
+    xml_list_allitems_groups_weapon_subdescription.text = "Weapon"
+    xml_list_allitems_groups_weapon_equipment = etree.SubElement(xml_list_allitems_groups_weapon, "equipment")
+
     populate_library_entries(xml_library_entries)
     populate_license(xml_root)
 
-    populate_armor(xml_ref_armor)
-    populate_artifact(xml_ref_equipment)
+    populate_armor(xml_ref_armor, xml_list_allitems_groups_armor_equipment)
+    populate_artifact(xml_ref_equipment, xml_list_allitems_groups_artifacts_equipment)
     populate_ai(xml_ref_npcdata)
-    populate_cybertech(xml_ref_equipment)
+    populate_cybertech(xml_ref_equipment, xml_list_allitems_groups_cybertech_equipment)
     populate_feats(xml_ref_feats)
-    populate_pharmaceuticals(xml_ref_equipment)
+    populate_pharmaceuticals(xml_ref_equipment, xml_list_allitems_groups_pharmaceutical_equipment)
     populate_skills(xml_ref_skills)
     populate_spells(xml_ref_spells)
-    populate_tech_gear(xml_ref_equipment)
+    populate_tech_gear(xml_ref_equipment, xml_list_allitems_groups_techgear_equipment)
     populate_timeworn_tables(xml_ref_tables)
     populate_traps(xml_ref_npcdata)
-    populate_weapon(xml_ref_weapon)
+    populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -270,7 +323,7 @@ def populate_spells(xml_ref_spells):
 
 
 
-def populate_tech_gear(xml_ref_equipment):
+def populate_tech_gear(xml_ref_equipment, xml_allitemslist):
     with open(tech_gear_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -306,9 +359,22 @@ def populate_tech_gear(xml_ref_equipment):
             #Crafting
             xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
             xml_ref_reqs.text = i_crafting.strip()
+            #Link item to allitems list
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "referenceequipment"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.equipment." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = i_price.replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = i_weight.replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
 
 
-def populate_cybertech(xml_ref_equipment):
+def populate_cybertech(xml_ref_equipment, xml_allitemslist):
     with open(cybertech_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -344,9 +410,22 @@ def populate_cybertech(xml_ref_equipment):
             #Crafting
             xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
             xml_ref_reqs.text = i_crafting.strip()
+            #Link item to allitems list
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "referenceequipment"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.equipment." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = i_price
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = i_weight
 
 
-def populate_pharmaceuticals(xml_ref_equipment):
+def populate_pharmaceuticals(xml_ref_equipment, xml_allitemslist):
     with open(pharmaceuticals_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -374,6 +453,19 @@ def populate_pharmaceuticals(xml_ref_equipment):
             #Crafting
             xml_ref_reqs = etree.SubElement(xml_ref, "prerequisites", type="string")
             xml_ref_reqs.text = i_crafting.strip()
+            #Link item to allitems list
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "referenceequipment"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.equipment." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = i_price
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = "0"
 
 def populate_ai(xml_ref_npcdata):
     with open(ai_file, 'r',encoding="utf-8") as csvfile:
@@ -401,7 +493,7 @@ def populate_traps(xml_ref_npcdata):
             xml_ref.text = i_data.strip()
 
 
-def populate_armor(xml_ref_armor):
+def populate_armor(xml_ref_armor, xml_allitemslist):
     with open(armor_csv_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -458,9 +550,24 @@ def populate_armor(xml_ref_armor):
             #Description
             xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
             xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "item"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.armor." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = i_price
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = i_weight
 
 
-def populate_artifact(xml_ref_equipment):
+
+
+
+def populate_artifact(xml_ref_equipment, xml_allitemslist):
     with open(artifact_csv_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -489,9 +596,22 @@ def populate_artifact(xml_ref_equipment):
             #Description
             xml_ref_desc = etree.SubElement(xml_ref, "description", type="formattedtext")
             xml_ref_desc.text = "<p><b>Capacity:</b> {0}; <b>Usage:</b> {1}</p>{2}".format(i_capacity, i_usage, i_description).strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            #Link item to allitems list
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "referenceequipment"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.equipment." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = ""
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = i_weight
 
 
-def populate_weapon(xml_ref_weapons):
+def populate_weapon(xml_ref_weapons, xml_allitemslist):
     with open(weapon_csv_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
@@ -557,6 +677,20 @@ def populate_weapon(xml_ref_weapons):
             if i_cl != "":
                 xml_ref_cl = etree.SubElement(xml_ref, "cl", type="number")
                 xml_ref_cl.text = i_cl.strip()
+            #Link item to allitems list
+            xml_allitemslist_ref = etree.SubElement(xml_allitemslist, item_ref)
+            xml_allitemslist_ref_link = etree.SubElement(xml_allitemslist_ref, "link", type="windowreference")
+            xml_allitemslist_ref_link_class = etree.SubElement(xml_allitemslist_ref_link, "class")
+            xml_allitemslist_ref_link_class.text = "item"
+            xml_allitemslist_ref_link_recordname = etree.SubElement(xml_allitemslist_ref_link, "recordname")
+            xml_allitemslist_ref_link_recordname.text = "reference.weapon." + item_ref + '@' + module_name
+            xml_allitemslist_ref_name = etree.SubElement(xml_allitemslist_ref, "name", type="string")
+            xml_allitemslist_ref_name.text = i_name
+            xml_allitemslist_ref_cost = etree.SubElement(xml_allitemslist_ref, "cost", type="string")
+            xml_allitemslist_ref_cost.text = i_price
+            xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
+            xml_allitemslist_ref_weight.text = i_weight
+
 
 
 weapon_csv_file
