@@ -96,6 +96,13 @@
           </librarylink>
           <name type="string">[Rules] Equipment</name>
         </MA.Equipment>
+        <NA.Feats>
+          <librarylink type="windowreference">
+            <class>referencetextwide</class>
+            <recordname>lists.FeatsRules@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Rules] Feats</name>
+        </NA.Feats>
       </entries>
     </TechnologyGuide>
   </library>
@@ -8004,6 +8011,37 @@
 <p>The equipment presented in this section is described in full working condition and priced as such. While a high-technology setting may have many fully functional technological devices in it, that isn't the case in the campaign setting. Equipment that has been damaged or degraded over time works less consistently and is worth less money than new technological items. Such equipment is called "timeworn."</p>
 </text>
     </EquipmentRules>
+    <FeatsRules>
+      <name type="string">Technological feats</name>
+      <text type="formattedtext"><h>Feats</h>
+<p>Several new technology-related feats interact with Numerian technology.</p>
+
+<table>
+	<tbody>
+		<tr><td><b>Feat</b></td><td><b>Prerequisites</b></td><td><b>Benefits</b></td></tr>
+		<tr><td>Craft Cybernetics</td><td>Technologist, Heal 9 ranks, Knowledge (engineering) 9 ranks</td><td>Create and install cybertech</td></tr>
+		<tr><td>Craft Pharmaceutical</td><td>Technologist, Heal 9 ranks, Knowledge (nature) 9 ranks</td><td>Create pharmaceutical items</td></tr>
+		<tr><td>Craft Technological Arms and Armor</td><td>Technologist, Craft (mechanical) 7 ranks, Knowledge (engineering) 7 ranks</td><td>Create technological weapons and armor</td></tr>
+		<tr><td>Craft Technological Item</td><td>Technologist, Craft (mechanical) 5, Knowledge (engineering) 5 ranks</td><td>Create technological items</td></tr>
+		<tr><td>Robot's Bane</td><td>Knowledge (engineering) 5 ranks</td><td>Gain offensive and defensive bonuses against robots</td></tr>
+		<tr><td>Scavenger's Luck</td><td>Knowledge (engineering) 1 rank</td><td>When using timeworn technology, roll twice to determine the glitch effect</td></tr>
+		<tr><td>Technologist</td><td>--</td><td>Can use skills with technological subjects</td></tr>
+		<tr><td>Technology Adept</td><td>Dex 13, Exotic Weapon Proficiency (firearms), Point-Blank Shot</td><td>Gain a bonus on save DCs to resist the effects of technological firearms</td></tr>
+		<tr><td>Technophobe</td><td>Improved Sunder</td><td>Gain a morale bonus when you destroy a robot or technological item</td></tr>
+		<tr><td>Wrest Charge</td><td>Disable Device 5 ranks, Knowledge (engineering) 5 ranks</td><td>Jury-rig a depleted battery to hold 1 charge</td></tr>
+	</tbody>
+</table>
+<link class="referencefeat" recordname="reference.feats.feat0001">Craft Cybernetics</link>
+<link class="referencefeat" recordname="reference.feats.feat0002">Craft Pharmaceutical</link>
+<link class="referencefeat" recordname="reference.feats.feat0003">Craft Technological Arms and Armor</link>
+<link class="referencefeat" recordname="reference.feats.feat0004">Craft Technological Item</link>
+<link class="referencefeat" recordname="reference.feats.feat0005">Robot's Bane</link>
+<link class="referencefeat" recordname="reference.feats.feat0006">Scavenger's Luck</link>
+<link class="referencefeat" recordname="reference.feats.feat0007">Technologist</link>
+<link class="referencefeat" recordname="reference.feats.feat0008">Technology Adept</link>
+<link class="referencefeat" recordname="reference.feats.feat0009">Technophobe</link>
+<link class="referencefeat" recordname="reference.feats.feat0010">Wrest Charge</link></text>
+    </FeatsRules>
   </lists>
   <License static="true">
     <librarylink type="windowreference">
