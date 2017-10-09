@@ -26,6 +26,13 @@
           </librarylink>
           <name type="string">[Items] Armor</name>
         </CA.Armor>
+        <HA.Weapon>
+          <librarylink type="windowreference">
+            <class>reference_weapontablelist</class>
+            <recordname>lists.weapon@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Items] Weapon</name>
+        </HA.Weapon>
       </entries>
     </TechnologyGuide>
   </library>
@@ -4890,7 +4897,7 @@
                 <recordname>reference.armor.armor0001@Technology Guide</recordname>
               </link>
               <name type="string">Chameleon suit</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">2</ac>
               <maxstatbonus type="string">6</maxstatbonus>
               <checkpenalty type="string">0</checkpenalty>
@@ -4904,7 +4911,7 @@
                 <recordname>reference.armor.armor0002@Technology Guide</recordname>
               </link>
               <name type="string">Deep diving suit</name>
-              <weight type="string">20lbs.</weight>
+              <weight type="string">20 lbs.</weight>
               <ac type="string">3</ac>
               <maxstatbonus type="string">5</maxstatbonus>
               <checkpenalty type="string">-2</checkpenalty>
@@ -4918,7 +4925,7 @@
                 <recordname>reference.armor.armor0003@Technology Guide</recordname>
               </link>
               <name type="string">Gravity suit</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">Varies</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">0</checkpenalty>
@@ -4932,7 +4939,7 @@
                 <recordname>reference.armor.armor0004@Technology Guide</recordname>
               </link>
               <name type="string">Heavy weapon harness</name>
-              <weight type="string">10lbs.</weight>
+              <weight type="string">10 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">6</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -4946,7 +4953,7 @@
                 <recordname>reference.armor.armor0005@Technology Guide</recordname>
               </link>
               <name type="string">Inssuit</name>
-              <weight type="string">10lbs.</weight>
+              <weight type="string">10 lbs.</weight>
               <ac type="string">3</ac>
               <maxstatbonus type="string">6</maxstatbonus>
               <checkpenalty type="string">0</checkpenalty>
@@ -4960,7 +4967,7 @@
                 <recordname>reference.armor.armor0006@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (black)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -4974,7 +4981,7 @@
                 <recordname>reference.armor.armor0007@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (blue)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -4988,7 +4995,7 @@
                 <recordname>reference.armor.armor0008@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (brown)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5002,7 +5009,7 @@
                 <recordname>reference.armor.armor0009@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (gray)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5016,7 +5023,7 @@
                 <recordname>reference.armor.armor0010@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (green)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5030,7 +5037,7 @@
                 <recordname>reference.armor.armor0011@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (orange)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5044,7 +5051,7 @@
                 <recordname>reference.armor.armor0012@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (prismatic)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5058,7 +5065,7 @@
                 <recordname>reference.armor.armor0013@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (red)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5072,7 +5079,7 @@
                 <recordname>reference.armor.armor0014@Technology Guide</recordname>
               </link>
               <name type="string">Scatterlight suit (white)</name>
-              <weight type="string">5lbs.</weight>
+              <weight type="string">5 lbs.</weight>
               <ac type="string">1</ac>
               <maxstatbonus type="string">8</maxstatbonus>
               <checkpenalty type="string">-1</checkpenalty>
@@ -5086,7 +5093,7 @@
                 <recordname>reference.armor.armor0015@Technology Guide</recordname>
               </link>
               <name type="string">Smart armor (compact form)</name>
-              <weight type="string">20lbs.</weight>
+              <weight type="string">20 lbs.</weight>
               <ac type="string">4</ac>
               <maxstatbonus type="string">4</maxstatbonus>
               <checkpenalty type="string">-2</checkpenalty>
@@ -5106,7 +5113,7 @@
                 <recordname>reference.armor.armor0016@Technology Guide</recordname>
               </link>
               <name type="string">HEV suit</name>
-              <weight type="string">20lbs.</weight>
+              <weight type="string">20 lbs.</weight>
               <ac type="string">4</ac>
               <maxstatbonus type="string">3</maxstatbonus>
               <checkpenalty type="string">-4</checkpenalty>
@@ -5120,7 +5127,7 @@
                 <recordname>reference.armor.armor0017@Technology Guide</recordname>
               </link>
               <name type="string">Nanite ablative armor</name>
-              <weight type="string">35lbs.</weight>
+              <weight type="string">35 lbs.</weight>
               <ac type="string">4</ac>
               <maxstatbonus type="string">4</maxstatbonus>
               <checkpenalty type="string">-3</checkpenalty>
@@ -5134,7 +5141,7 @@
                 <recordname>reference.armor.armor0018@Technology Guide</recordname>
               </link>
               <name type="string">Panic suit</name>
-              <weight type="string">2lbs.</weight>
+              <weight type="string">2 lbs.</weight>
               <ac type="string">2</ac>
               <maxstatbonus type="string">2</maxstatbonus>
               <checkpenalty type="string">-4</checkpenalty>
@@ -5154,7 +5161,7 @@
                 <recordname>reference.armor.armor0019@Technology Guide</recordname>
               </link>
               <name type="string">Smart armor (expanded form)</name>
-              <weight type="string">20lbs.</weight>
+              <weight type="string">20 lbs.</weight>
               <ac type="string">8</ac>
               <maxstatbonus type="string">1</maxstatbonus>
               <checkpenalty type="string">-5</checkpenalty>
@@ -5168,7 +5175,7 @@
                 <recordname>reference.armor.armor0020@Technology Guide</recordname>
               </link>
               <name type="string">Spacesuit</name>
-              <weight type="string">35lbs.</weight>
+              <weight type="string">35 lbs.</weight>
               <ac type="string">7</ac>
               <maxstatbonus type="string">0</maxstatbonus>
               <checkpenalty type="string">-8</checkpenalty>
@@ -5188,7 +5195,7 @@
                 <recordname>reference.armor.armor0021@Technology Guide</recordname>
               </link>
               <name type="string">Hard light shield</name>
-              <weight type="string">1lbs.</weight>
+              <weight type="string">1 lbs.</weight>
               <ac type="string">2</ac>
               <maxstatbonus type="string">-</maxstatbonus>
               <checkpenalty type="string">0</checkpenalty>
@@ -5200,6 +5207,651 @@
         </Armor-Shield>
       </groups>
     </armor>
+    <weapon>
+      <description type="string">weapon</description>
+      <groups>
+        <Weapon-Martial-One-Handed-Melee>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Martial One-Handed Melee</subdescription>
+          <weapons>
+            <weapon0001>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0001@Technology Guide</recordname>
+              </link>
+              <name type="string">Laser torch</name>
+              <cost type="string">6000 gp</cost>
+              <weight type="string">4 lbs.</weight>
+              <damage type="string">1d10</damage>
+              <critical type="string">x3</critical>
+              <range type="string">-</range>
+              <properties type="string">touch</properties>
+              <damagetype type="string">fire</damagetype>
+            </weapon0001>
+          </weapons>
+        </Weapon-Martial-One-Handed-Melee>
+        <Weapon-Martial-One-Handed-Melee>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Martial One-Handed Melee</subdescription>
+          <weapons>
+            <weapon0002>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0002@Technology Guide</recordname>
+              </link>
+              <name type="string">Stun baton</name>
+              <cost type="string">5000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">x2</critical>
+              <range type="string">-</range>
+              <properties type="string">touch</properties>
+              <damagetype type="string">bludgeoning and electricity</damagetype>
+            </weapon0002>
+          </weapons>
+        </Weapon-Martial-One-Handed-Melee>
+        <Weapon-Exotic-Light-Melee>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Exotic Light Melee</subdescription>
+          <weapons>
+            <weapon0003>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0003@Technology Guide</recordname>
+              </link>
+              <name type="string">Monowhip</name>
+              <cost type="string">70000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">18-20/x3</critical>
+              <range type="string">-</range>
+              <properties type="string">performance, reach, touch</properties>
+              <damagetype type="string">slashing</damagetype>
+            </weapon0003>
+          </weapons>
+        </Weapon-Exotic-Light-Melee>
+        <Weapon-Exotic-One-Handed-Melee>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Exotic One-Handed Melee</subdescription>
+          <weapons>
+            <weapon0004>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0004@Technology Guide</recordname>
+              </link>
+              <name type="string">Null blade</name>
+              <cost type="string">58835 gp</cost>
+              <weight type="string">4 lbs.</weight>
+              <damage type="string">1d10</damage>
+              <critical type="string">19-20/x2</critical>
+              <range type="string">-</range>
+              <properties type="string">-</properties>
+              <damagetype type="string">slashing</damagetype>
+            </weapon0004>
+          </weapons>
+        </Weapon-Exotic-One-Handed-Melee>
+        <Weapon-Exotic-Two-Handed-Melee>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Exotic Two-Handed Melee</subdescription>
+          <weapons>
+            <weapon0005>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0005@Technology Guide</recordname>
+              </link>
+              <name type="string">Chainsaw</name>
+              <cost type="string">2700 gp</cost>
+              <weight type="string">10 lbs.</weight>
+              <damage type="string">3d6</damage>
+              <critical type="string">18-20/x2</critical>
+              <range type="string">-</range>
+              <properties type="string">deadly, distracting</properties>
+              <damagetype type="string">slashing</damagetype>
+            </weapon0005>
+          </weapons>
+        </Weapon-Exotic-Two-Handed-Melee>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0006>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0006@Technology Guide</recordname>
+              </link>
+              <name type="string">Arc pistol</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">electricity</damagetype>
+            </weapon0006>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0007>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0007@Technology Guide</recordname>
+              </link>
+              <name type="string">Dart gun</name>
+              <cost type="string">3000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d4</damage>
+              <critical type="string">x2</critical>
+              <range type="string">30</range>
+              <properties type="string">-</properties>
+              <damagetype type="string">piercing</damagetype>
+            </weapon0007>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0008>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0008@Technology Guide</recordname>
+              </link>
+              <name type="string">Death ray</name>
+              <cost type="string">140000 gp</cost>
+              <weight type="string">1 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">-</critical>
+              <range type="string">200</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">special</damagetype>
+            </weapon0008>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0009>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0009@Technology Guide</recordname>
+              </link>
+              <name type="string">EMP pistol</name>
+              <cost type="string">12000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">electricity</damagetype>
+            </weapon0009>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0010>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0010@Technology Guide</recordname>
+              </link>
+              <name type="string">Flare gun</name>
+              <cost type="string">300 gp</cost>
+              <weight type="string">1 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x3</critical>
+              <range type="string">240</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">fire</damagetype>
+            </weapon0010>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0011>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0011@Technology Guide</recordname>
+              </link>
+              <name type="string">Gravity pistol</name>
+              <cost type="string">95000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">force</damagetype>
+            </weapon0011>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0012>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0012@Technology Guide</recordname>
+              </link>
+              <name type="string">Laser pistol</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">fire</damagetype>
+            </weapon0012>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0013>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0013@Technology Guide</recordname>
+              </link>
+              <name type="string">Mindrender</name>
+              <cost type="string">56000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">x2</critical>
+              <range type="string">40</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">special</damagetype>
+            </weapon0013>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0014>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0014@Technology Guide</recordname>
+              </link>
+              <name type="string">Sonic pistol</name>
+              <cost type="string">13000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">sonic</damagetype>
+            </weapon0014>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0015>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0015@Technology Guide</recordname>
+              </link>
+              <name type="string">Stun gun</name>
+              <cost type="string">3000 gp</cost>
+              <weight type="string">3 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">20</range>
+              <properties type="string">nonlethal, semi-automatic, touch</properties>
+              <damagetype type="string">-</damagetype>
+            </weapon0015>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-One-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm One-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0016>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0016@Technology Guide</recordname>
+              </link>
+              <name type="string">Zero pistol</name>
+              <cost type="string">10000 gp</cost>
+              <weight type="string">2 lbs.</weight>
+              <damage type="string">1d8</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">semi-automatic, touch</properties>
+              <damagetype type="string">cold</damagetype>
+            </weapon0016>
+          </weapons>
+        </Weapon-Firearm-One-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0017>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0017@Technology Guide</recordname>
+              </link>
+              <name type="string">Arc rifle</name>
+              <cost type="string">20000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">electricity</damagetype>
+            </weapon0017>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0018>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0018@Technology Guide</recordname>
+              </link>
+              <name type="string">Autograpnel</name>
+              <cost type="string">4000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+              <damage type="string">1d8+6</damage>
+              <critical type="string">x3</critical>
+              <range type="string">30</range>
+              <properties type="string">grapple, slow-firing</properties>
+              <damagetype type="string">piercing</damagetype>
+            </weapon0018>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0019>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0019@Technology Guide</recordname>
+              </link>
+              <name type="string">EMP rifle</name>
+              <cost type="string">24000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">3d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">electricity</damagetype>
+            </weapon0019>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0020>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0020@Technology Guide</recordname>
+              </link>
+              <name type="string">Gravity rifle</name>
+              <cost type="string">165000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">force</damagetype>
+            </weapon0020>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0021>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0021@Technology Guide</recordname>
+              </link>
+              <name type="string">Id rifle</name>
+              <cost type="string">50000 gp</cost>
+              <weight type="string">5 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">x2</critical>
+              <range type="string">50</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">special</damagetype>
+            </weapon0021>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0022>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0022@Technology Guide</recordname>
+              </link>
+              <name type="string">Laser rifle</name>
+              <cost type="string">20000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">fire</damagetype>
+            </weapon0022>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0023>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0023@Technology Guide</recordname>
+              </link>
+              <name type="string">Sonic rifle</name>
+              <cost type="string">26000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">sonic</damagetype>
+            </weapon0023>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Firearm-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Firearm Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0024>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0024@Technology Guide</recordname>
+              </link>
+              <name type="string">Zero rifle</name>
+              <cost type="string">20000 gp</cost>
+              <weight type="string">6 lbs.</weight>
+              <damage type="string">2d6</damage>
+              <critical type="string">x2</critical>
+              <range type="string">150</range>
+              <properties type="string">automatic, touch</properties>
+              <damagetype type="string">cold</damagetype>
+            </weapon0024>
+          </weapons>
+        </Weapon-Firearm-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0025>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0025@Technology Guide</recordname>
+              </link>
+              <name type="string">Atom gun</name>
+              <cost type="string">144000 gp</cost>
+              <weight type="string">24 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">-</critical>
+              <range type="string">40</range>
+              <properties type="string">scatter, slow-firing, touch</properties>
+              <damagetype type="string">special</damagetype>
+            </weapon0025>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0026>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0026@Technology Guide</recordname>
+              </link>
+              <name type="string">Grenade launcher</name>
+              <cost type="string">8000 gp</cost>
+              <weight type="string">8 lbs.</weight>
+              <damage type="string">Varies</damage>
+              <critical type="string">-</critical>
+              <range type="string">100</range>
+              <properties type="string">slow-firing</properties>
+              <damagetype type="string">varies</damagetype>
+            </weapon0026>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0027>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0027@Technology Guide</recordname>
+              </link>
+              <name type="string">Nuclear resonator</name>
+              <cost type="string">90000 gp</cost>
+              <weight type="string">11 lbs.</weight>
+              <damage type="string">Special</damage>
+              <critical type="string">18-20/x2</critical>
+              <range type="string">80</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">sonic</damagetype>
+            </weapon0027>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0028>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0028@Technology Guide</recordname>
+              </link>
+              <name type="string">Plasmathrower</name>
+              <cost type="string">30000 gp</cost>
+              <weight type="string">15 lbs.</weight>
+              <damage type="string">4d6</damage>
+              <critical type="string">19-20/x2</critical>
+              <range type="string">60</range>
+              <properties type="string">automatic or slow-firing, scatter, touch</properties>
+              <damagetype type="string">electricity and fire</damagetype>
+            </weapon0028>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0029>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0029@Technology Guide</recordname>
+              </link>
+              <name type="string">Rail gun</name>
+              <cost type="string">30000 gp</cost>
+              <weight type="string">14 lbs.</weight>
+              <damage type="string">3d10</damage>
+              <critical type="string">x4</critical>
+              <range type="string">200</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">bluggeoning and piercing</damagetype>
+            </weapon0029>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0030>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0030@Technology Guide</recordname>
+              </link>
+              <name type="string">Rocket launcher</name>
+              <cost type="string">10800 gp</cost>
+              <weight type="string">10 lbs.</weight>
+              <damage type="string">12d6</damage>
+              <critical type="string">-</critical>
+              <range type="string">120</range>
+              <properties type="string">slow-firing, touch</properties>
+              <damagetype type="string">bludgeoning and fire</damagetype>
+            </weapon0030>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0031>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0031@Technology Guide</recordname>
+              </link>
+              <name type="string">Vortex gun</name>
+              <cost type="string">182000 gp</cost>
+              <weight type="string">15 lbs.</weight>
+              <damage type="string">10d6</damage>
+              <critical type="string">19-20/x2</critical>
+              <range type="string">100</range>
+              <properties type="string">slow-firing, scatter, touch</properties>
+              <damagetype type="string">force</damagetype>
+            </weapon0031>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+        <Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+          <description type="string">Weapon</description>
+          <subdescription type="string">Heavy Weaponry Two-Handed Ranged</subdescription>
+          <weapons>
+            <weapon0032>
+              <link type="windowreference">
+                <class>item</class>
+                <recordname>reference.weapon.weapon0032@Technology Guide</recordname>
+              </link>
+              <name type="string">X-laser</name>
+              <cost type="string">40000 gp</cost>
+              <weight type="string">10 lbs.</weight>
+              <damage type="string">5d6</damage>
+              <critical type="string">x4</critical>
+              <range type="string">200</range>
+              <properties type="string">touch</properties>
+              <damagetype type="string">fire</damagetype>
+            </weapon0032>
+          </weapons>
+        </Weapon-Heavy-Weaponry-Two-Handed-Ranged>
+      </groups>
+    </weapon>
   </lists>
   <License static="true">
     <librarylink type="windowreference">

@@ -44,7 +44,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"CA.Armor",
                     "Link type":"librarylink",
                     "Window class":"reference_armortablelist",
-                    "Record name": "lists.armor@" + module_name}]
+                    "Record name": "lists.armor@" + module_name},
+                    {"Entry name":"[Items] Weapon",
+                    "Entry tag":"HA.Weapon",
+                    "Link type":"librarylink",
+                    "Window class":"reference_weapontablelist",
+                    "Record name": "lists.weapon@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -177,11 +182,15 @@ def generate_xml_structure(xml_root):
     xml_list_armor_description.text = "Armor"
     xml_list_armor_groups = etree.SubElement(xml_list_armor, "groups")
 
+    #Weapon library
+    xml_list_weapon = etree.SubElement(xml_lists, "weapon")
+    xml_list_weapon_description = etree.SubElement(xml_list_weapon, "description", type="string")
+    xml_list_weapon_description.text = "weapon"
+    xml_list_weapon_groups = etree.SubElement(xml_list_weapon, "groups")
 
-
+    #Populate data
     populate_library_entries(xml_library_entries)
     populate_license(xml_root)
-
     populate_armor(xml_ref_armor, xml_list_allitems_groups_armor_equipment, xml_list_armor_groups)
     populate_artifact(xml_ref_equipment, xml_list_allitems_groups_artifacts_equipment)
     populate_ai(xml_ref_npcdata)
@@ -193,7 +202,7 @@ def generate_xml_structure(xml_root):
     populate_tech_gear(xml_ref_equipment, xml_list_allitems_groups_techgear_equipment)
     populate_timeworn_tables(xml_ref_tables)
     populate_traps(xml_ref_npcdata)
-    populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment)
+    populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment, xml_list_weapon_groups)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -596,9 +605,9 @@ def populate_armor(xml_ref_armor, xml_allitemslist, xml_armorlist):
             xml_armorlist_section_armor_ref_name = etree.SubElement(xml_armorlist_section_armor_ref, "name", type="string")
             xml_armorlist_section_armor_ref_name.text = i_name.strip()
             #xml_armorlist_section_armor_ref_cost = etree.SubElement(xml_armorlist_section_armor_ref, "cost", type="string")
-            #xml_armorlist_section_armor_ref_cost = i_price.strip()
+            #xml_armorlist_section_armor_ref_cost.text = i_price.strip()
             xml_armorlist_section_armor_ref_weight = etree.SubElement(xml_armorlist_section_armor_ref, "weight", type="string")
-            xml_armorlist_section_armor_ref_weight.text = i_weight.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-') + "lbs."
+            xml_armorlist_section_armor_ref_weight.text = i_weight.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-') + " lbs."
             xml_armorlist_section_armor_ref_ac = etree.SubElement(xml_armorlist_section_armor_ref, "ac", type="string")
             xml_armorlist_section_armor_ref_ac.text = i_armor_bonus.strip()
             xml_armorlist_section_armor_ref_maxstatbonus = etree.SubElement(xml_armorlist_section_armor_ref, "maxstatbonus", type="string")
@@ -662,12 +671,14 @@ def populate_artifact(xml_ref_equipment, xml_allitemslist):
             xml_allitemslist_ref_weight.text = i_weight
 
 
-def populate_weapon(xml_ref_weapons, xml_allitemslist):
+def populate_weapon(xml_ref_weapons, xml_allitemslist, xml_weaponlist):
     with open(weapon_csv_file, 'r',encoding="utf-8") as csvfile:
         csvreader = csv.reader(csvfile, delimiter="\t", quotechar='"')
         row = next(csvreader) #skip header
         item_number = 0
         prefix = "weapon"
+        previous_type = ""
+        previous_subtype = ""
 
         for row in csvreader:
             item_number += 1
@@ -741,6 +752,38 @@ def populate_weapon(xml_ref_weapons, xml_allitemslist):
             xml_allitemslist_ref_cost.text = i_price
             xml_allitemslist_ref_weight = etree.SubElement(xml_allitemslist_ref, "weight", type="string")
             xml_allitemslist_ref_weight.text = i_weight
+
+            #Weapon library ref
+            if (i_type != previous_type) or (i_subtype != previous_subtype):
+                xml_weaponlist_section = etree.SubElement(xml_weaponlist, "{0}-{1}".format(i_type, i_subtype).replace(" ","-"))
+                xml_weaponlist_section_description = etree.SubElement(xml_weaponlist_section, "description", type="string")
+                xml_weaponlist_section_description.text = i_type
+                xml_weaponlist_section_subdescription = etree.SubElement(xml_weaponlist_section, "subdescription", type="string")
+                xml_weaponlist_section_subdescription.text = i_subtype
+                xml_weaponlist_section_weapon = etree.SubElement(xml_weaponlist_section, "weapons")
+            xml_weaponlist_section_weapon_ref = etree.SubElement(xml_weaponlist_section_weapon, item_ref)
+            xml_weaponlist_section_weapon_ref_link = etree.SubElement(xml_weaponlist_section_weapon_ref, "link", type="windowreference")
+            xml_weaponlist_section_weapon_ref_link_class = etree.SubElement(xml_weaponlist_section_weapon_ref_link, "class")
+            xml_weaponlist_section_weapon_ref_link_class.text = "item"
+            xml_weaponlist_section_weapon_ref_link_recordname = etree.SubElement(xml_weaponlist_section_weapon_ref_link, "recordname")
+            xml_weaponlist_section_weapon_ref_link_recordname.text = "reference.weapon.{0}@{1}".format(item_ref, module_name)
+            xml_weaponlist_section_weapon_ref_name = etree.SubElement(xml_weaponlist_section_weapon_ref, "name", type="string")
+            xml_weaponlist_section_weapon_ref_name.text = i_name.strip()
+            xml_weaponlist_section_weapon_ref_cost = etree.SubElement(xml_weaponlist_section_weapon_ref, "cost", type="string")
+            xml_weaponlist_section_weapon_ref_cost.text = i_price.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_weaponlist_section_weapon_ref_weight = etree.SubElement(xml_weaponlist_section_weapon_ref, "weight", type="string")
+            xml_weaponlist_section_weapon_ref_weight.text = i_weight.strip().strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-') + " lbs."
+            xml_weaponlist_section_weapon_ref_damage = etree.SubElement(xml_weaponlist_section_weapon_ref, "damage", type="string")
+            xml_weaponlist_section_weapon_ref_damage.text = i_dmg_m.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_weaponlist_section_weapon_ref_critical = etree.SubElement(xml_weaponlist_section_weapon_ref, "critical", type="string")
+            xml_weaponlist_section_weapon_ref_critical.text = i_critical.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_weaponlist_section_weapon_ref_range = etree.SubElement(xml_weaponlist_section_weapon_ref, "range", type="string")
+            xml_weaponlist_section_weapon_ref_range.text = i_range.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_weaponlist_section_weapon_ref_properties = etree.SubElement(xml_weaponlist_section_weapon_ref, "properties", type="string")
+            xml_weaponlist_section_weapon_ref_properties.text = i_special.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+            xml_weaponlist_section_weapon_ref_damagetype = etree.SubElement(xml_weaponlist_section_weapon_ref, "damagetype", type="string")
+            xml_weaponlist_section_weapon_ref_damagetype.text = i_dmg_type.strip().replace('\ufffd','-').replace('\u2014','-').replace('\u2013','-')
+
 
 
 
