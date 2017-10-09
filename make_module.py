@@ -22,6 +22,7 @@ traps_file = "data/Traps.csv"
 weapon_csv_file = "data/Weapons.csv"
 artifact_rules_file = "data/artifacts.html"
 archetype_rules_file = "data/Technology-Themed Archetypes.html"
+ai_rules_file = "data/ai.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -73,7 +74,7 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Window class":"reference_weapontablelist",
                     "Record name": "lists.weapon@" + module_name},
                     {"Entry name":"[Rules] Archetypes",
-                    "Entry tag":"JA.Archetypes",
+                    "Entry tag":"IA.Archetypes",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.archetyperules.archetypelist@" + module_name},
@@ -81,7 +82,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"JA.Artifacts",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
-                    "Record name": "lists.artifactrules@" + module_name}]
+                    "Record name": "lists.artifactrules@" + module_name},
+                    {"Entry name":"[Rules] Artificial Intelligences",
+                    "Entry tag":"KA.ArtificialIntelligences",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.AIRules@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -242,6 +248,8 @@ def generate_xml_structure(xml_root):
     xml_list_artifactrules = etree.SubElement(xml_lists, "artifactrules")
     #Archetype rules
     xml_list_archetyperules = etree.SubElement(xml_lists, "archetyperules")
+    #AI rules
+    xml_list_airules = etree.SubElement(xml_lists, "AIRules")
 
 
     #Populate data
@@ -261,6 +269,7 @@ def generate_xml_structure(xml_root):
     populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment, xml_list_weapon_groups)
     populate_artifact_rules(xml_list_artifactrules)
     populate_archetypes_rules(xml_list_archetyperules)
+    populate_ai_rules(xml_list_airules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -952,6 +961,15 @@ def populate_archetypes_rules(xml_list_archetyperules):
     with open(archetype_rules_file, 'r') as file:
         archetype_rules = file.read()
     xml_list_archetyperules.text = archetype_rules
+
+
+def populate_ai_rules(xml_list_airules):
+    xml_list_airules_name = etree.SubElement(xml_list_airules, "name", type="string")
+    xml_list_airules_name.text = "Artificial Intelligences"
+    xml_list_airules_text = etree.SubElement(xml_list_airules, "text", type="formattedtext")
+    with open(ai_rules_file, 'r') as file:
+        ai_rules = file.read()
+    xml_list_airules_text.text = ai_rules
 
 
 def main():
