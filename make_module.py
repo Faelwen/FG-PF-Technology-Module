@@ -26,6 +26,7 @@ ai_rules_file = "data/ai.html"
 craft_rules_file = "data/Crafting High-Tech Items.html"
 equipment_rules_file = "data/Technological Equipment.html"
 feat_rules_file = "data/feats.html"
+hasards_rules_file = "data/hasards.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -105,7 +106,12 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"NA.Feats",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
-                    "Record name": "lists.FeatsRules@" + module_name}]
+                    "Record name": "lists.FeatsRules@" + module_name},
+                    {"Entry name":"[Rules] Hazards",
+                    "Entry tag":"OA.Hazards",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.HazardsRules@" + module_name}]
 
 def populate_library_entries(xml_library_entries):
     for entry in library_entries:
@@ -274,6 +280,8 @@ def generate_xml_structure(xml_root):
     xml_list_equipmentrules = etree.SubElement(xml_lists, "EquipmentRules")
     #Feats rules
     xml_list_featsrules = etree.SubElement(xml_lists, "FeatsRules")
+    #Hazards rules
+    xml_list_hazardsrules = etree.SubElement(xml_lists, "HazardsRules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -296,6 +304,7 @@ def generate_xml_structure(xml_root):
     populate_craft_rules(xml_list_craftingrules)
     populate_equipment_rules(xml_list_equipmentrules)
     populate_feats_rules(xml_list_featsrules)
+    populate_hazard_rules(xml_list_hazardsrules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1023,6 +1032,16 @@ def populate_feats_rules(xml_list_featsrules):
     with open(feat_rules_file, 'r') as file:
         feats_rules = file.read()
     xml_list_featsrules_text.text = feats_rules
+
+
+def populate_hazard_rules(xml_list_hazardsrules):
+    xml_list_hazardsrules_name = etree.SubElement(xml_list_hazardsrules, "name", type="string")
+    xml_list_hazardsrules_name.text = "Technological hazards"
+    xml_list_hazardsrules_text = etree.SubElement(xml_list_hazardsrules, "text", type="formattedtext")
+    with open(hasards_rules_file, 'r') as file:
+        hazards_rules = file.read()
+    xml_list_hazardsrules_text.text = hazards_rules
+
 
 def main():
     xml_root = etree.Element('root', version="2.0")
