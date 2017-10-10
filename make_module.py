@@ -33,6 +33,7 @@ weapon_rules_file = "data/weapon.html"
 skills_rules_file = "data/skills.html"
 techgear_rules_file = "data/Technological Gear.html"
 prestigeclass_rules_file = "data/Prestige Class - Technomancer.html"
+techequip_rules_file = "data/Technological Equipment.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -138,12 +139,17 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.spellrules@" + module_name},
+                    {"Entry name":"[Rules] Technological Equipment",
+                    "Entry tag":"PA.TechnologicalEquipment",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.techequiprules@" + module_name},
                     {"Entry name":"[Rules] Technological Gear",
                     "Entry tag":"PA.TechnologicalGear",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.techgearrules@" + module_name},
-                     {"Entry name":"[Rules] Weapon",
+                     {"Entry name":"[Rules] Weapons",
                     "Entry tag":"PA.Weapon",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
@@ -330,6 +336,8 @@ def generate_xml_structure(xml_root):
     xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
     #Skill rules
     xml_list_skillrules = etree.SubElement(xml_lists, "skillrules")
+    #Technical equipment rules
+    xml_list_techequiprules = etree.SubElement(xml_lists, "techequiprules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -359,6 +367,7 @@ def generate_xml_structure(xml_root):
     populate_weapon_rules(xml_list_weaponrules)
     populate_prestige_rules(xml_list_prestigerules)
     populate_skill_rules(xml_list_skillrules)
+    populate_techequip_rules(xml_list_techequiprules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1146,6 +1155,16 @@ def populate_skill_rules(xml_list_skillrules):
     with open(skills_rules_file, 'r') as file:
         skill_rules = file.read()
     xml_list_skillrules_text.text = skill_rules
+
+
+def populate_techequip_rules(xml_list_techequiprules):
+    xml_list_techequiprules_name = etree.SubElement(xml_list_techequiprules, "name", type="string")
+    xml_list_techequiprules_name.text = "techequips"
+    xml_list_techequiprules_text = etree.SubElement(xml_list_techequiprules, "text", type="formattedtext")
+    with open(techequip_rules_file, 'r') as file:
+        techequip_rules = file.read()
+    xml_list_techequiprules_text.text = techequip_rules
+
 
 def main():
     xml_root = etree.Element('root', version="2.0")

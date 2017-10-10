@@ -138,6 +138,13 @@
           </librarylink>
           <name type="string">[Rules] Spells</name>
         </PA.Spells>
+        <PA.TechnologicalEquipment>
+          <librarylink type="windowreference">
+            <class>referencetextwide</class>
+            <recordname>lists.techequiprules@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Rules] Technological Equipment</name>
+        </PA.TechnologicalEquipment>
         <PA.TechnologicalGear>
           <librarylink type="windowreference">
             <class>referencetextwide</class>
@@ -150,7 +157,7 @@
             <class>referencetextwide</class>
             <recordname>lists.weaponrules@Technology Guide</recordname>
           </librarylink>
-          <name type="string">[Rules] Weapon</name>
+          <name type="string">[Rules] Weapons</name>
         </PA.Weapon>
       </entries>
     </TechnologyGuide>
@@ -8938,6 +8945,37 @@
 <p><link class="referenceskill" recordname="reference.skills.skill0006"><b>Knowledge (engineering)</b></link>: This is the most important skill with regard to technological subjects. Knowledge (engineering) can be used to identify a robot's abilities and weaknesses. Knowledge (engineering) is also used to identify and understand unknown technological objects in a similar manner to how Spellcraft is used to identify the properties of a magic item. The DC to correctly identify and understand an unknown technological object is equal to the object's Craft DC. An object with a Craft DC of 15 or less can be automatically identified and understood by someone trained in Knowledge (engineering) who also has the Technologist feat.</p>
 <p><link class="referenceskill" recordname="reference.skills.skill0007"><b>Knowledge (geography)</b></link>: Used for astronomy.</p></text>
     </skillrules>
+    <techequiprules>
+      <name type="string">techequips</name>
+      <text type="formattedtext"><h>Technological Equipment</h>
+<p>To set a technological campaign apart from a standard fantasy adventure, you need a variety of unusual futuristic items. But be it a laser gun in the hands of a terrible enemy or a set of strange gravity armor found in the treasure trove of an oddly uniform metal dungeon, technology from the future (or even the present-day real world) in a fantasy setting should be handled in a manner similar to magic items elsewhere in the Pathfinder Roleplaying Game.</p>
+<p>Many technological items replicate specific spells or magical effects. However, they do not use magic in any way, and thus function normally in areas of antimagic or primal magic, and are otherwise unaffected by any effects that target or affect magic items.</p>
+<p>This section collects dozens of new items in the following categories.</p>
+<p><b>Weapons</b>: The majority of technological weapons are ranged weapons, although some high-tech melee weapons can be found in dungeons as well.</p>
+<p><b>Armor</b>: Technological armor works in a similar manner to standard armor, but often requires a power source to fully function.</p>
+<p><b>Pharmaceuticals</b>: Pharmaceuticals include drugs, poisons, and medicines. They can be ingested or injected, and generally have relatively minor or temporary effects.</p>
+<p><b>Cybertech</b>: Cybertech is a form of technology that must be implanted in a body before it can function. Cybertech typically augments a character's abilities and statistics.</p>
+<p><b>Technological Gear</b>: This catchall category includes a wide range of devices, from relatively minor gizmos like zipsticks to technological wonders like clonepods.</p>
+
+<h>Color Code</h>
+<p>Many technological items follow a color code that organizes similar items (such as nanite hypoguns, force fields, or gravity clips) according to their overall power. The power level for each color is listed below. Note that there are nine colors in the scale--the effects of an item of any individual color should roughly correspond to the power level of a spell of the associated level. Seven of these colors are associated with the seven skymetals. The least of the colors, brown, is associated with base ores, while the greatest of the colors, prismatic, is associated with all of the skymetals. In some technological items, actual skymetals of the appropriate color are used in the creation of the object, but in most, synthetic plastics and metals are used in place of the more valuable skymetals.</p>
+<p><b>Brown</b>: Roughly equivalent to a 1st-level spell. This color is not associated with skymetal.</p>
+<p><b>Black</b>: Roughly equivalent to a 2nd-level spell. This color is associated with adamantine.</p>
+<p><b>White</b>: Roughly equivalent to a 3rd-level spell. This color is associated with siccatite.</p>
+<p><b>Gray</b>: Roughly equivalent to a 4th-level spell. This color is associated with inubrix.</p>
+<p><b>Green</b>: Roughly equivalent to a 5th-level spell. This color is associated with noqual.</p>
+<p><b>Red</b>: Roughly equivalent to a 6th-level spell. This color is associated with djezet.</p>
+<p><b>Blue</b>: Roughly equivalent to a 7th-level spell. This color is associated with abysium.</p>
+<p><b>Orange</b>: Roughly equivalent to an 8th-level spell. This color is associated with horacalcum.</p>
+<p><b>Prismatic</b>: Roughly equivalent to a 9th-level spell. This color is associated with all skymetals.</p>
+
+<h>Power Sources</h>
+<p>Most of the technological wonders presented here require energy to function. These items each have a capacity score, which indicates the maximum number of charges the item can store at any one time. The number of charges an item consumes when it is used varies from item to item. An item's capacity can be filled from any power source--like a battery or a generator--as a standard action. When an item is charged, it always takes as many charges from the attached power source as it can hold, filling as close to its capacity as possible. Note that charging an item from a generator is more efficient, as any charges drained from a battery in excess of the number of charges an item can store are lost.</p>
+
+<h>Timeworn Technology</h>
+<p>The equipment presented in this section is described in full working condition and priced as such. While a high-technology setting may have many fully functional technological devices in it, that isn't the case in the campaign setting. Equipment that has been damaged or degraded over time works less consistently and is worth less money than new technological items. Such equipment is called "timeworn."</p>
+</text>
+    </techequiprules>
   </lists>
   <License static="true">
     <librarylink type="windowreference">
