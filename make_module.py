@@ -31,6 +31,7 @@ hasards_rules_file = "data/hasards.html"
 spells_rules_file = "data/spells.html"
 weapon_rules_file = "data/weapon.html"
 techgear_rules_file = "data/Technological Gear.html"
+prestigeclass_rules_file = "data/Prestige Class - Technomancer.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -121,6 +122,11 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.HazardsRules@" + module_name},
+                    {"Entry name":"[Rules] Prestige Class: Technomancer",
+                    "Entry tag":"PA.Technomancer",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.prestigerules.technomancer.statblock@" + module_name},
                     {"Entry name":"[Rules] Spells",
                     "Entry tag":"PA.Spells",
                     "Link type":"librarylink",
@@ -314,6 +320,8 @@ def generate_xml_structure(xml_root):
     xml_list_techgearrules = etree.SubElement(xml_lists, "techgearrules")
     #weapon rules
     xml_list_weaponrules = etree.SubElement(xml_lists, "weaponrules")
+    #prestige rules
+    xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -341,6 +349,7 @@ def generate_xml_structure(xml_root):
     populate_spell_rules(xml_list_spellrules)
     populate_techgear_rules(xml_list_techgearrules)
     populate_weapon_rules(xml_list_weaponrules)
+    populate_prestige_rules(xml_list_prestigerules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1032,6 +1041,12 @@ def populate_archetypes_rules(xml_list_archetyperules):
     with open(archetype_rules_file, 'r') as file:
         archetype_rules = file.read()
     xml_list_archetyperules.text = archetype_rules
+
+
+def populate_prestige_rules(xml_list_prestigerules):
+    with open(prestigeclass_rules_file, 'r') as file:
+        prestige_rules = file.read()
+    xml_list_prestigerules.text = prestige_rules
 
 
 def populate_armor_rules(xml_list_armorrules):
