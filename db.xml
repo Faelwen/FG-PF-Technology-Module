@@ -8131,6 +8131,119 @@
 <p>When you're adding technological items to the game, remember that some abilities should remain the purview of magic. Effects that technological items should not have include summoning extraplanar creatures through summoning or calling, influencing the attitudes of others through enchantments, divining the future or the best course of action through divination, and traveling on or between other planes of existence. GMs should, however, feel free to add such devices to their games should these devices meet the GMs' needs.</p>
 </text>
     </CraftingRules>
+    <cybertechrules>
+      <name type="string">cybertechs</name>
+      <text type="formattedtext"><h>Cybertech</h>
+<p>Cybertech is a form of technology that must be surgically implanted into a host body before it functions. Cybertech takes up a special set of slots that correspond to a creature's body. Most cybertech is designed for a creature with a humanoid shape--installing cybertech in a non-humanoid-shaped body is more difficult, but possible.</p>
+<p>Each piece of cybertech has an implantation value that indicates how invasive the implant is. The total combined implantation values of all cybertech implanted in a single creature can't exceed either that creature's Constitution score or Intelligence score--a creature's Constitution sets the physical limit of what its body can accept in the form of cybernetic implants, while the creature's Intelligence sets the mental limit of what its brain can control. An implant whose implantation value would cause the total to exceed either of these two scores does not function but still takes up a body slot. In addition, as long as a character has cybernetic implants installed whose combined implantation exceeds his Constitution or Intelligence, he takes a -4 penalty on all saving throws.</p>
+<p>A creature with neither a Constitution score nor an Intelligence score cannot receive benefits from cybertech, but a creature with only one of these scores can.</p>
+<p>Installing a piece of cybertech takes a number of hours equal to the cybertech's implantation value if the installation is done by hand--certain technological items can speed this installation time. The target must be willing or helpless during the entire installation, at the end of which the installer attempts a Heal check against the cybertech's Install DC--this specific value is listed for each cybertech item. On a success, the target takes Constitution damage equal to the cybertech's implantation value and the cybertech immediately activates. On a failed check, the target still takes the Constitution damage but the installation fails; a new attempt to install the cybertech can be made, although it's wise to wait for the Constitution damage to heal before trying again.</p>
+<p>Cybertech can be extracted using the same procedure as implanting it, with a failed Heal check indicating the attempt to extract the item failed. Fortunately, extraction is a simpler task than installment, and Heal checks to remove cybertech gain a +10 bonus. Extracting a piece of cybertech from a dead body requires no Heal check but takes a number of rounds equal to the cybertech's implantation value. You can only install or extract a single piece of cybertech at a time.</p>
+<p>An NPC generally charges an amount equal to 1/10 the total price of a piece of cybertech for the service of installing the item.</p>
+<p>Each piece of cybertech has a full description, including a set of abbreviated statistics at the start. This information is organized as follows.</p>
+<p><b>Price</b>: This is the cost in gold pieces to buy the implant if it's available for sale. This value does not include the cost to have the object surgically implanted. As with magic items, a piece of cybertech can be sold by PCs for half this value.</p>
+<p><b>Slot</b>: This is the part of the body into which the cybertech must be implanted. A single slot can only ever host a single piece of cybertech. Cybertech slots are separate from normal magic item slots and do not count as being used for the purposes of worn magic items.<b></b></p>
+<p><b>Weight</b>: This is the weight of the cybertech in pounds. Once installed, the cybertech's weight does not count against a creature's encumbrance or maximum load.</p>
+<p><b>Install</b>: This is the Heal check DC required to successfully implant or remove the cybertech from a creature.</p>
+<p><b>Implantation</b>: A numerical value indicating how invasive the cybertech is. The higher the number, the more invasive the cybertech. Implantation influences the time and difficulty of installing and removing the cybertech.</p>
+<p><b>Description</b>: This section describes the cybertech's appearance and abilities.</p>
+<p><b>Construction</b>: Certain requirements must be met for a character to craft cybertech. These requirements generally consist of having a feat and access to a manufacturing facility.</p>
+<p><b>Craft</b>: This is the Craft DC required to create the cybertech. It is also the Knowledge (engineering) DC to correctly identify the cybertech.</p>
+<p><b>Cost</b>: This is the cost in gold pieces to create the item. Generally this cost is equal to half the price of the item.</p>
+
+<table>
+	<thead>
+		<tr><td><b>Arm Slot Cybertech</b></td><td><b>Price</b></td><td><b>Weight</b></td><td><b>Implant</b></td><td><b>Install</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cybernetic arm</td><td>4,750 gp</td><td>9 lbs.</td><td>2</td><td>DC 28</td></tr>
+		<tr><td>Implanted weaponry</td><td>10,000 gp (special)</td><td>1 lb.</td><td>2</td><td>DC 26</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Body Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Dermal plating (mark I)</td><td>4,000 gp</td><td>5 lbs.</td><td>2</td><td>DC 24</td></tr>
+		<tr><td>Cyberfiber muscles (mark I)</td><td>8,000 gp</td><td>10 lbs.</td><td>2</td><td>DC 24</td></tr>
+		<tr><td>Thoracic nanite chamber (mark I)</td><td>8,000 gp</td><td>5 lbs.</td><td>2</td><td>DC 24</td></tr>
+		<tr><td>Wirejack tendons (mark I)</td><td>8,000 gp</td><td>10 lbs.</td><td>2</td><td>DC 24</td></tr>
+		<tr><td>Biofilter</td><td>16,000 gp</td><td>2 lbs.</td><td>3 </td><td>DC 25</td></tr>
+		<tr><td>Dermal plating (mark II)</td><td>16,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 26</td></tr>
+		<tr><td>Cyberfiber muscles (mark II)</td><td>32,000 gp</td><td>10 lbs.</td><td>4</td><td>DC 28</td></tr>
+		<tr><td>Thoracic nanite chamber (mark II)</td><td>32,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 28</td></tr>
+		<tr><td>Wirejack tendons (mark II)</td><td>32,000 gp</td><td>10 lbs.</td><td>4</td><td>DC 28</td></tr>
+		<tr><td>Dermal plating (mark III)</td><td>36,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 28</td></tr>
+		<tr><td>Dermal plating (mark IV)</td><td>64,000 gp</td><td>5 lbs.</td><td>8</td><td>DC 30</td></tr>
+		<tr><td>Cyberfiber muscles (mark III)</td><td>72,000 gp</td><td>10 lbs.</td><td>8</td><td>DC 36</td></tr>
+		<tr><td>Thoracic nanite chamber (mark III)</td><td>72,000 gp</td><td>5 lbs.</td><td>8</td><td>DC 36</td></tr>
+		<tr><td>Wirejack tendons (mark III)</td><td>72,000 gp</td><td>10 lbs.</td><td>8</td><td>DC 36</td></tr>
+		<tr><td>Dermal plating (mark V)</td><td>100,000 gp</td><td>5 lbs.</td><td>10</td><td>DC 32</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Brain Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Skillslot</td><td>2,000 gp</td><td>1 lb.</td><td>1</td><td>DC 30</td></tr>
+		<tr><td>Frenzychip</td><td>36,400 gp</td><td>1 lb.</td><td>1</td><td>DC 32</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Ears Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cybernetic ears</td><td>4,000 gp</td><td>1 lb.</td><td>1</td><td>DC 28</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Eyes Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cybernetic eyes</td><td>4,000 gp</td><td>1 lb.</td><td>1</td><td>DC 28</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Head Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cranial bomb</td><td>4,500 gp</td><td>1/2 lb.</td><td>1</td><td>DC 25</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Legs Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cybernetic legs</td><td>8,500 gp</td><td>12 lbs.</td><td>4</td><td>DC 28</td></tr>
+	</tbody>
+	<thead>
+		<tr><td colspan = "5"><b>Body Slot Cybertech</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Cyberart</td><td>100 gp</td><td>1 lb.</td><td>0</td><td>DC 20</td></tr>
+	</tbody>
+</table>
+
+<link class="item" recordname="reference.equipment.cybertech0003"><b>Biofilter</b></link>
+<link class="item" recordname="reference.equipment.cybertech0022"><b>Cranial bomb</b></link>
+<link class="item" recordname="reference.equipment.cybertech0024"><b>Cyberart</b></link>
+<link class="item" recordname="reference.equipment.cybertech0004"><b>Cyberfiber muscles (mark I)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0005"><b>Cyberfiber muscles (mark II)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0006"><b>Cyberfiber muscles (mark III)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0001"><b>Cybernetic arm</b></link>
+<link class="item" recordname="reference.equipment.cybertech0020"><b>Cybernetic ears</b></link>
+<link class="item" recordname="reference.equipment.cybertech0021"><b>Cybernetic eyes</b></link>
+<link class="item" recordname="reference.equipment.cybertech0023"><b>Cybernetic legs</b></link>
+<link class="item" recordname="reference.equipment.cybertech0007"><b>Dermal plating (mark I)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0008"><b>Dermal plating (mark II)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0009"><b>Dermal plating (mark III)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0010"><b>Dermal plating (mark IV)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0011"><b>Dermal plating (mark V)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0018"><b>Frenzychip</b></link>
+<link class="item" recordname="reference.equipment.cybertech0002"><b>Implanted weaponry</b></link>
+<link class="item" recordname="reference.equipment.cybertech0019"><b>Skillslot</b></link>
+<link class="item" recordname="reference.equipment.cybertech0012"><b>Thoracic nanite chamber (mark I)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0013"><b>Thoracic nanite chamber (mark II)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0014"><b>Thoracic nanite chamber (mark III)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0015"><b>Wirejack tendons (mark I)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0016"><b>Wirejack tendons (mark II)</b></link>
+<link class="item" recordname="reference.equipment.cybertech0017"><b>Wirejack tendons (mark III)</b></link>
+</text>
+    </cybertechrules>
     <EquipmentRules>
       <name type="string">Technological Equipment</name>
       <text type="formattedtext"><h>Technological Equipment</h>
@@ -8275,6 +8388,227 @@
 
 </text>
     </HazardsRules>
+    <pharmarules>
+      <name type="string">pharmas</name>
+      <text type="formattedtext"><h>Pharmaceuticals</h>
+<p>A pharmaceutical takes a standard action to consume, or a move action if administered by a medlance. A single dose of any pharmaceutical weighs only a tenth of a pound--no entry for weight is given for the following item descriptions. Individual doses of pharmaceuticals can take various forms, from an injected serum to an ingested pill. Each pharmaceutical is assumed to contain a means of delivery included in its weight and cost. Any pharmaceutical can be used with a medlance to speed up its administration time, regardless of its form.</p>
+<p>Each pharmaceutical has a full description, including a set of abbreviated statistics, organized as follows.</p>
+<p><b>Price</b>: This is the cost in gold pieces to purchase the pharmaceutical if it's available for sale. As with magic potions, a pharmaceutical can be sold by PCs for half this value.</p>
+<p><b>Construction Requirements</b>: Certain requirements must be met for a character to craft a pharmaceutical. These requirements generally include a feat and access to a medical laboratory. Crafting components are consumed during construction and are not counted as part of the item's cost; if the crafting attempt fails, new crafting components must be provided for the next attempt.</p>
+<p><b>Craft</b>: This is the Craft DC required to create the pharmaceutical. It is also the Knowledge (engineering) or Heal DC to correctly identify the pharmaceutical.</p>
+<p><b>Cost</b>: This is the cost in gold pieces to create the pharmaceutical. Generally this cost is equal to half the price of the pharmaceutical.</p>
+
+<table>
+	<caption>Pharmaceuticals</caption>
+	<thead>
+		<tr><td><b>Pharmaceutical</b></td><td><b>Price</b></td></tr>
+	</thead>
+	<tbody>
+		<tr><td>Baseline</td><td>2,250 gp</td></tr>
+		<tr><td>Cardioamp</td><td>4,550 gp</td></tr>
+		<tr><td>Cureall</td><td>1,400 gp</td></tr>
+		<tr><td>Hemochem (Grade I)</td><td>250 gp</td></tr>
+		<tr><td>Hemochem (Grade II)</td><td>500 gp</td></tr>
+		<tr><td>Hemochem (Grade III)</td><td>750 gp</td></tr>
+		<tr><td>Hemochem (Grade IV)</td><td>1,000 gp</td></tr>
+		<tr><td>Hemochem (Grade V)</td><td>1,250 gp</td></tr>
+		<tr><td>Hype</td><td>250 gp</td></tr>
+		<tr><td>Torpinal</td><td>300 gp</td></tr>
+		<tr><td>Vive</td><td>200 gp</td></tr>
+		<tr><td>Zortaphen</td><td>2,250 gp</td></tr>
+	</tbody>
+</table>
+
+<link class="item" recordname="reference.equipment.pharmaceuticals0001"><b>Baseline</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0002"><b>Cardioamp</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0003"><b>Cureall</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0004"><b>Hemochem (Grade I)</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0005"><b>Hemochem (Grade II)</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0006"><b>Hemochem (Grade III)</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0007"><b>Hemochem (Grade IV)</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0008"><b>Hemochem (Grade V)</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0009"><b>Hype</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0010"><b>Torpinal</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0011"><b>Vive</b></link>
+<link class="item" recordname="reference.equipment.pharmaceuticals0012"><b>Zortaphen</b></link></text>
+    </pharmarules>
+    <prestigerules><technomancer>
+<statblock>
+<name type="string">Prestige Class: Technomancer</name>
+<text type="formattedtext">
+<h>Prestige Class: Technomancer</h>
+<p><b>Role</b>: Technomancers master the art of blending magic and super-science, unlock the secrets of stolen technology, and devise cunning new inventions from the remnants of ruined devices.</p>
+<p><b>Hit Die</b>: d6.</p>
+
+<h>Requirements</h>
+<p>To qualify to become a technomancer, a character must fulfill all the following criteria.</p>
+<p><b>Feats</b>: Skill Focus (Knowledge [engineering]), Technologist.</p>
+<p><b>Skills</b>: Disable Device 6 ranks, Knowledge (engineering) 6 ranks, Spellcraft 6 ranks.</p>
+<p><b>Special</b>: Ability to cast 3rd-level arcane spells.</p>
+
+<table>
+	<tbody>
+		<tr><td><b>Level</b></td><td><b>Base Attack Bonus</b></td><td><b>Fort Save</b></td><td><b>Ref Save</b></td><td><b>Will Save</b></td><td><b>Special</b></td><td><b>Spells per Day</b></td></tr>
+		<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td>Recondition (1 item), technical expertise</td><td>-</td></tr>
+		<tr><td>2nd</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td>Efficient construction, technic spell mastery 1</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td>Arcane battery, study technology</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td>Recondition (2 items), recycle technology</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>5th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td>Command robot (1/day), technic spell mastery 2</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td>Unified energy</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td>Command robot (2/day), recondition (3 items)</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>8th</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td>Applied learning, technic spell mastery 3</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td>Command robot (3/day)</td><td>+1 level of arcane spellcasting</td></tr>
+		<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td>Field improvisation, recondition (4 items)</td><td>+1 level of arcane spellcasting</td></tr>
+	</tbody>
+</table>
+
+<h>Class Skills</h>
+<p>The technomancer's class skills (and the key ability for each skill) are Appraise (Int), Craft (Int), Disable Device (Dex), Fly (Dex), Intimidate (Cha), Knowledge (all) (Int), Linguistics (Int), Perception (Wis), Profession (Wis), and Spellcraft (Int).</p>
+<p><b>Skill Ranks per Level</b>: 4 + Int modifier.</p>
+
+<h>Class Features</h>
+<p>The following are all class features of the technomancer.</p>
+<p><b>Weapon and Armor Proficiency</b>: A technomancer gains proficiency with all firearms.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.recondition"><b>Recondition (Su):</b></link> Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.technical-expertise"><b>Technical Expertise (Ex)</b></link>: A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.efficient-construction"><b>Efficient Construction (Ex)</b></link><b>Efficient Construction (Ex)</b>: At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.technic-spell-mastery"><b>Technic Spell Mastery (Ex)</b></link><b>Technic Spell Mastery (Ex)</b>: At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p>
+<p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.arcane-battery"><b>Arcane Battery (Su)</b></link>: At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.study-technology"><b>Study Technology (Ex)</b></link>: At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.recycle-technology"><b>Recycle Technology (Ex)</b></link>: At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p>
+
+<table>
+	<tbody>
+		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
+		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
+		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
+		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
+		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
+	</tbody>
+</table>
+
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.command-robot"><b>Command Robot (Sp)</b></link>: At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.unified-energy"><b>Unified Energy (Su)</b></link>: At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.applied-learning"><b>Applied Learning (Ex)</b></link>: At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p>
+<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.field-improvisation"><b>Field Improvisation (Ex)</b></link>: At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items. </p>
+</text>
+</statblock>
+<recondition>
+<name type="string">Recondition (Su):</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p></benefit>
+<text type="formattedtext"><p>Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p></text>
+</recondition>
+
+<technical-expertise>
+<name type="string">Technical Expertise (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p></benefit>
+<text type="formattedtext"><p>A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p></text>
+</technical-expertise>
+
+<efficient-construction>
+<name type="string">Efficient Construction (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p></benefit>
+<text type="formattedtext"><p>At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p></text>
+</efficient-construction>
+
+<technic-spell-mastery>
+<name type="string">Technic Spell Mastery (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p><p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p></benefit>
+<text type="formattedtext"><p>At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p><p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p></text>
+</technic-spell-mastery>
+
+<arcane-battery>
+<name type="string">Arcane Battery (Su)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p></benefit>
+<text type="formattedtext"><p>At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p></text>
+</arcane-battery>
+
+<study-technology>
+<name type="string">Study Technology (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p></benefit>
+<text type="formattedtext"><p>At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p></text>
+</study-technology>
+
+<recycle-technology>
+<name type="string">Recycle Technology (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p>
+<table>
+	<tbody>
+		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
+		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
+		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
+		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
+		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
+	</tbody>
+</table></benefit>
+<text type="formattedtext"><p>At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p><table><tbody>
+		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
+		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
+		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
+		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
+		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
+	</tbody>
+</table></text>
+</recycle-technology>
+
+<command-robot>
+<name type="string">Command Robot (Sp)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p></benefit>
+<text type="formattedtext"><p>At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p></text>
+</command-robot>
+
+<unified-energy>
+<name type="string">Unified Energy (Su)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p></benefit>
+<text type="formattedtext"><p>At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p></text>
+</unified-energy>
+
+<applied-learning>
+<name type="string">Applied Learning (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p></benefit>
+<text type="formattedtext"><p>At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p></text>
+</applied-learning>
+
+<field-improvisation>
+<name type="string">Field Improvisation (Ex)</name>
+<type type="string">Class</type>
+<mult type="number">0</mult>
+<stack type="number">0</stack>
+<benefit type="formattedtext"><p>At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items.</p></benefit>
+<text type="formattedtext"><p>At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items.</p></text>
+</field-improvisation>
+</technomancer></prestigerules>
     <spellrules>
       <name type="string">Spells</name>
       <text type="formattedtext"><h>Spells</h>
@@ -8619,6 +8953,36 @@
 <link class="item" recordname="reference.equipment.techgear0047"><b>Zero grenade</b></link>
 <link class="item" recordname="reference.equipment.techgear0135"><b>Zipstick</b></link></text>
     </techgearrules>
+    <skillrules>
+      <name type="string">Skills</name>
+      <text type="formattedtext"><h>Skills</h>
+<p>No new skills are introduced to the Pathfinder RPG to model how characters interact with technology--rather, existing skills are expanded to allow for such interaction. Additional rules for how skills interact with technology are listed below. Without the Technologist feat, a character is treated as untrained in the skill in question when using it on technology.</p>
+
+<h>Craft (Int)</h>
+<link class="referenceskill" recordname="reference.skills.skill0001"><b>Craft (Int)</b></link>
+<p>Those who wish to construct or repair technological items use the Craft (mechanical) skill in conjunction with the technological item crafting feats. Without the Technologist feat, Craft (mechanical) can still be used to craft less advanced forms of technology such as gears, hinges, and pulleys. Note that in the campaign setting, NPCs with the means of crafting technological items are extremely rare, and it is not assumed that PCs have access to such resources. GMs are encouraged to discuss such considerations with their players before allowing technological crafting into the game.</p>
+
+<h>Disable Device (Dex; AC Penalty; Trained Only)</h>
+<link class="referenceskill" recordname="reference.skills.skill0002"><b>Disable Device (Dex; AC Penalty; Trained Only)</b></link>
+<p>With the Technologist feat, you can use Disable Device to arm or disarm high-tech explosives or disable electronic triggers or locks. The Technologist feat is not required to disable a high-tech trap or object, but such traps and objects often have significantly higher DCs to disable than low-tech versions of a similar device would have.</p>
+<p><i>Arm Explosive</i>: If you possess a detonator, you can arm an explosive weapon as a trap. Connecting a detonator to an explosive requires a successful DC 10 Disable Device check. Failure means that the attempt fails, but you can attempt to arm the explosive again. Failure by 5 or more means the explosive is triggered as the detonator is installed. You can attempt to make an explosive difficult to disarm. To do so, choose a target disarm DC of 15 or higher, with a DC increment of 5. This becomes your target DC to set the explosive as well as the DC to disarm the explosive.</p>
+<p><i>Disable Electronic Lock or Trigger</i>: Disabling an electronic lock on a door or an electronic trigger for a trap (not the trap itself) is easier if you use an e-pick--without an e-pick, you take a �5 penalty on such checks.</p>
+<p><i>Disarm Explosive</i>: Disarming an explosive requires the character to succeed at a Disable Device check as if disarming a trap. The DC is usually 10, unless the person who set the explosive successfully did so with a higher disarm DC. A failure to disarm an explosive by 5 or more immediately triggers the explosive.</p>
+<p><b>Special</b>: A character can take 10 when using Disable Device to arm or disarm explosives, but cannot take 20.</p>
+<p><b>Time</b>: Arming an explosive device takes 1 minute or more, depending on the scope of the job. Disarming an explosive is treated as if the explosive were a complex trap, and takes 2d4 rounds to attempt.</p>
+
+<h>Linguistics (Int; Trained Only)</h>
+<link class="referenceskill" recordname="reference.skills.skill0003"><b>Linguistics (Int; Trained Only)</b></link>
+<p>A character with the Technologist feat can attempt a Linguistics check to decipher certain complex messages that appear in ruins. Note that many of these messages are written in Androffan. This language is spoken outside only rarely, and even within its borders, some have tried (quite unsuccessfully) to keep it a secret language.</p>
+<p><b>Androffan</b>: Some robots may also know it (either in addition to Common and Hallit or replacing these languages), depending on the robots' nature. Androffan cannot be chosen as a bonus language for high Intelligence without GM permission.</p>
+
+<h>Researching Technology</h>
+<p>A character can use the following skills to research technological subjects. Other skills may have research applications as well, subject to GM approval.</p>
+<p><link class="referenceskill" recordname="reference.skills.skill0004"><b>Heal</b></link>: Used to identify and understand pharmaceuticals.</p>
+<p><link class="referenceskill" recordname="reference.skills.skill0005"><b>Knowledge (arcana)</b></link>: Although robots are constructs, Knowledge (arcana) cannot be used to identify robots or their abilities and weaknesses.</p>
+<p><link class="referenceskill" recordname="reference.skills.skill0006"><b>Knowledge (engineering)</b></link>: This is the most important skill with regard to technological subjects. Knowledge (engineering) can be used to identify a robot's abilities and weaknesses. Knowledge (engineering) is also used to identify and understand unknown technological objects in a similar manner to how Spellcraft is used to identify the properties of a magic item. The DC to correctly identify and understand an unknown technological object is equal to the object's Craft DC. An object with a Craft DC of 15 or less can be automatically identified and understood by someone trained in Knowledge (engineering) who also has the Technologist feat.</p>
+<p><link class="referenceskill" recordname="reference.skills.skill0007"><b>Knowledge (geography)</b></link>: Used for astronomy.</p></text>
+    </skillrules>
     <weaponrules>
       <name type="string">Weapons</name>
       <text type="formattedtext"><h>Weapons</h>
@@ -8745,370 +9109,6 @@
 
 </text>
     </weaponrules>
-    <prestigerules><technomancer>
-<statblock>
-<name type="string">Prestige Class: Technomancer</name>
-<text type="formattedtext">
-<h>Prestige Class: Technomancer</h>
-<p><b>Role</b>: Technomancers master the art of blending magic and super-science, unlock the secrets of stolen technology, and devise cunning new inventions from the remnants of ruined devices.</p>
-<p><b>Hit Die</b>: d6.</p>
-
-<h>Requirements</h>
-<p>To qualify to become a technomancer, a character must fulfill all the following criteria.</p>
-<p><b>Feats</b>: Skill Focus (Knowledge [engineering]), Technologist.</p>
-<p><b>Skills</b>: Disable Device 6 ranks, Knowledge (engineering) 6 ranks, Spellcraft 6 ranks.</p>
-<p><b>Special</b>: Ability to cast 3rd-level arcane spells.</p>
-
-<table>
-	<tbody>
-		<tr><td><b>Level</b></td><td><b>Base Attack Bonus</b></td><td><b>Fort Save</b></td><td><b>Ref Save</b></td><td><b>Will Save</b></td><td><b>Special</b></td><td><b>Spells per Day</b></td></tr>
-		<tr><td>1st</td><td>+0</td><td>+0</td><td>+0</td><td>+2</td><td>Recondition (1 item), technical expertise</td><td>-</td></tr>
-		<tr><td>2nd</td><td>+1</td><td>+0</td><td>+0</td><td>+3</td><td>Efficient construction, technic spell mastery 1</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>3rd</td><td>+1</td><td>+1</td><td>+1</td><td>+3</td><td>Arcane battery, study technology</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>4th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td>Recondition (2 items), recycle technology</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>5th</td><td>+2</td><td>+1</td><td>+1</td><td>+4</td><td>Command robot (1/day), technic spell mastery 2</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>6th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td>Unified energy</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>7th</td><td>+3</td><td>+2</td><td>+2</td><td>+5</td><td>Command robot (2/day), recondition (3 items)</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>8th</td><td>+4</td><td>+2</td><td>+2</td><td>+6</td><td>Applied learning, technic spell mastery 3</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>9th</td><td>+4</td><td>+3</td><td>+3</td><td>+6</td><td>Command robot (3/day)</td><td>+1 level of arcane spellcasting</td></tr>
-		<tr><td>10th</td><td>+5</td><td>+3</td><td>+3</td><td>+7</td><td>Field improvisation, recondition (4 items)</td><td>+1 level of arcane spellcasting</td></tr>
-	</tbody>
-</table>
-
-<h>Class Skills</h>
-<p>The technomancer's class skills (and the key ability for each skill) are Appraise (Int), Craft (Int), Disable Device (Dex), Fly (Dex), Intimidate (Cha), Knowledge (all) (Int), Linguistics (Int), Perception (Wis), Profession (Wis), and Spellcraft (Int).</p>
-<p><b>Skill Ranks per Level</b>: 4 + Int modifier.</p>
-
-<h>Class Features</h>
-<p>The following are all class features of the technomancer.</p>
-<p><b>Weapon and Armor Proficiency</b>: A technomancer gains proficiency with all firearms.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.recondition"><b>Recondition (Su):</b></link> Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.technical-expertise"><b>Technical Expertise (Ex)</b></link>: A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.efficient-construction"><b>Efficient Construction (Ex)</b></link><b>Efficient Construction (Ex)</b>: At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.technic-spell-mastery"><b>Technic Spell Mastery (Ex)</b></link><b>Technic Spell Mastery (Ex)</b>: At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p>
-<p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.arcane-battery"><b>Arcane Battery (Su)</b></link>: At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.study-technology"><b>Study Technology (Ex)</b></link>: At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.recycle-technology"><b>Recycle Technology (Ex)</b></link>: At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p>
-
-<table>
-	<tbody>
-		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
-		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
-		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
-		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
-		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
-	</tbody>
-</table>
-
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.command-robot"><b>Command Robot (Sp)</b></link>: At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.unified-energy"><b>Unified Energy (Su)</b></link>: At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.applied-learning"><b>Applied Learning (Ex)</b></link>: At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p>
-<p><link class="referencefeat" recordname="lists.prestigerules.technomancer.field-improvisation"><b>Field Improvisation (Ex)</b></link>: At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items. </p>
-</text>
-</statblock>
-<recondition>
-<name type="string">Recondition (Su):</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p></benefit>
-<text type="formattedtext"><p>Through constant maintenance, a technomancer can keep a single piece of still-functioning timeworn technology in good working order. Reconditioning a timeworn technological item takes 8 hours, after which the item no longer has a chance of glitching when used by the technomancer and can be recharged normally by the technomancer but no one else. Keeping the item working requires 1 hour of maintenance each day (this can overlap with the time needed to prepare spells), or the item reverts to a normal piece of timeworn technology and must be reconditioned again. At 4th level and every 3 levels thereafter, a technomancer can keep an additional item in good working order, without increasing his daily maintenance time.</p></text>
-</recondition>
-
-<technical-expertise>
-<name type="string">Technical Expertise (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p></benefit>
-<text type="formattedtext"><p>A technomancer adds his class level to Craft, Disable Device, Knowledge (engineering), and Linguistics checks regarding technology.</p></text>
-</technical-expertise>
-
-<efficient-construction>
-<name type="string">Efficient Construction (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p></benefit>
-<text type="formattedtext"><p>At 2nd level, a technomancer using a technological crafting lab reduces the necessary energy expenditure of the facility by 25%. At 10th level, this energy reduction increases to 50%.</p></text>
-</efficient-construction>
-
-<technic-spell-mastery>
-<name type="string">Technic Spell Mastery (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p><p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p></benefit>
-<text type="formattedtext"><p>At 2nd level, a technomancer selects one of the following spells: <i>antitech field</i>, <i>destroy robot</i>, <i>detect radiation</i>, <i>discharge</i>, <i>greater</i> <i>discharge</i>, <i>greater</i> <i>remove radioactivity</i>, <i>infuse robot</i>, <i>irradiate</i>, <i>magic circle against technology</i>, <i>memory of function</i>, <i>rebuke technology</i>, <i>recharge</i>, <i>remove radioactivity</i>, <i>protection from technology</i>, or <i>technomancy</i>. (Additional technology-related spells can be added to this list at the GM's discretion.) If the spell chosen isn't one that's normally on his class spell list, he adds it to his class spell list at the level a wizard casts the spell. The spell chosen must be of a spell level he would otherwise be able to cast. If he prepares spells, he can prepare this spell one additional time in excess of the normal maximum number of spells he can prepare. If he casts spells spontaneously, he adds the spell to his spells known, and can cast this spell once per day without using a daily spell slot.</p><p>At 5th level, he picks another spell from the list above, and at 8th level, he picks a 3rd spell from the list above.</p></text>
-</technic-spell-mastery>
-
-<arcane-battery>
-<name type="string">Arcane Battery (Su)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p></benefit>
-<text type="formattedtext"><p>At 3rd level as a swift action, a technomancer can expend an unused spell slot (if he's a spontaneous caster) or a prepared spell (if he prepares spells) to power a technological device he touches. Each spell level expended in this way grants the device 1 charge. Any charges unused at the end of the round are lost, and any charges used by the device that round that aren't provided by the technomancer must come from the device's own power reserves. He can use this ability to power timeworn technology. He can't power devices that don't use charges.</p></text>
-</arcane-battery>
-
-<study-technology>
-<name type="string">Study Technology (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p></benefit>
-<text type="formattedtext"><p>At 3rd level, a technomancer can study a robot, technological object, or technological trap within 30 feet as a move action and attempt a Knowledge (engineering) check to identify it. If he succeeds, he gains a competence bonus equal to 1/2 his level on attack rolls, combat maneuver checks, saving throws, and skill checks involving the studied creature, object, or trap, as well as a dodge bonus of the same amount against attacks from the subject of his study. This bonus lasts a number of rounds equal to his Intelligence modifier (minimum 1). If he studies a new subject, he loses his bonus against the previous subject.</p></text>
-</study-technology>
-
-<recycle-technology>
-<name type="string">Recycle Technology (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p>
-<table>
-	<tbody>
-		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
-		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
-		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
-		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
-		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
-	</tbody>
-</table></benefit>
-<text type="formattedtext"><p>At 4th level, a technomancer can dismantle existing technological items and construct new ones from the parts, though such creations are prone to malfunctioning. He trades in each item for an amount of crafting potential based on a fraction of its crafting cost (not price), as described below. He can use this potential and his technological crafting feats to make a new item. For example, a technomancer could use a broken laser pistol in place of 500 gp for crafting technological items (10% of the laser pistol's crafting cost of 5,000 gp). He then follows the normal rules for crafting a technological item (see page 16), except that he must pay at least 50% of the crafting cost using recycled technology. If he pays 100% of the cost in this fashion, he crafts the item at double the normal speed. In the process of cannibalizing the old items, the new items are destroyed and any excess gold value is lost. The item he creates is considered timeworn technology, even if new items were broken down to build it. Recycle technology cannot be used to build constructs, cybertech, pharmaceuticals, or technology that uses nanites.</p><table><tbody>
-		<tr><td><b>Technology Status</b></td><td><b>Crafting Potential</b></td></tr>
-		<tr><td>Fully functioning</td><td>100% of crafting cost</td></tr>
-		<tr><td>Reconditioned</td><td>75% of crafting cost</td></tr>
-		<tr><td>Timeworn technology</td><td>50% of crafting cost</td></tr>
-		<tr><td>Broken or nonfunctional</td><td>10% of crating cost</td></tr>
-	</tbody>
-</table></text>
-</recycle-technology>
-
-<command-robot>
-<name type="string">Command Robot (Sp)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p></benefit>
-<text type="formattedtext"><p>At 5th level, a technomancer can issue a command to a robot within 30 feet as a standard action once per day. The command must be in a language the robot can understand. The robot can resist the effects of this ability by succeeding at a Will saving throw against a DC of 10 + 1/2 the technomancer's class level + the technomancer's Charisma or Intelligence modifier (whichever is higher). At 7th level, a technomancer can use this ability twice per day, and at 9th level he can use it three times per day. This ability otherwise functions as <i>suggestion</i>, save that it is not mind-affecting and can only affect constructs with the robot subtype.</p></text>
-</command-robot>
-
-<unified-energy>
-<name type="string">Unified Energy (Su)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p></benefit>
-<text type="formattedtext"><p>At 6th level, a technomancer can draw power from a technological device in his possession to cast a spell he knows (if a spontaneous caster) or a spell he currently has prepared (if he prepares spells) without expending a spell slot or prepared spell. He consumes 2 charges from the device for each spell level of the spell being cast. In the process of casting the spell, he can apply any of his metamagic feats, using a number of charges appropriate to the increase in spell level, but he cannot exceed the highest effective level of spell he is able to cast. He can use this ability multiple times per day, but never in excess of a number of charges equal to twice his technomancer level (so at 6th level, he can consume no more than 12 charges per day using this ability).</p></text>
-</unified-energy>
-
-<applied-learning>
-<name type="string">Applied Learning (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p></benefit>
-<text type="formattedtext"><p>At 8th level, when a technomancer succeeds at a saving throw against a technological effect that has reduced effects on a successful save, he instead avoids the effect entirely. A helpless or flat-footed technomancer does not benefit from this ability.</p></text>
-</applied-learning>
-
-<field-improvisation>
-<name type="string">Field Improvisation (Ex)</name>
-<type type="string">Class</type>
-<mult type="number">0</mult>
-<stack type="number">0</stack>
-<benefit type="formattedtext"><p>At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items.</p></benefit>
-<text type="formattedtext"><p>At 10th level, a technomancer can recycle technology with astounding speed. Each hour of crafting when using his recycle technology ability is equivalent to 8 hours of uninterrupted crafting; he can perform up to 8 hours of such amazingly efficient work per day. Any item he completes is treated as reconditioned for the remainder of that day. It can be added permanently to his group of reconditioned items if he has an available slot or stops maintaining one of his current reconditioned items.</p></text>
-</field-improvisation>
-</technomancer></prestigerules>
-    <skillrules>
-      <name type="string">Skills</name>
-      <text type="formattedtext"><h>Skills</h>
-<p>No new skills are introduced to the Pathfinder RPG to model how characters interact with technology--rather, existing skills are expanded to allow for such interaction. Additional rules for how skills interact with technology are listed below. Without the Technologist feat, a character is treated as untrained in the skill in question when using it on technology.</p>
-
-<h>Craft (Int)</h>
-<link class="referenceskill" recordname="reference.skills.skill0001"><b>Craft (Int)</b></link>
-<p>Those who wish to construct or repair technological items use the Craft (mechanical) skill in conjunction with the technological item crafting feats. Without the Technologist feat, Craft (mechanical) can still be used to craft less advanced forms of technology such as gears, hinges, and pulleys. Note that in the campaign setting, NPCs with the means of crafting technological items are extremely rare, and it is not assumed that PCs have access to such resources. GMs are encouraged to discuss such considerations with their players before allowing technological crafting into the game.</p>
-
-<h>Disable Device (Dex; AC Penalty; Trained Only)</h>
-<link class="referenceskill" recordname="reference.skills.skill0002"><b>Disable Device (Dex; AC Penalty; Trained Only)</b></link>
-<p>With the Technologist feat, you can use Disable Device to arm or disarm high-tech explosives or disable electronic triggers or locks. The Technologist feat is not required to disable a high-tech trap or object, but such traps and objects often have significantly higher DCs to disable than low-tech versions of a similar device would have.</p>
-<p><i>Arm Explosive</i>: If you possess a detonator, you can arm an explosive weapon as a trap. Connecting a detonator to an explosive requires a successful DC 10 Disable Device check. Failure means that the attempt fails, but you can attempt to arm the explosive again. Failure by 5 or more means the explosive is triggered as the detonator is installed. You can attempt to make an explosive difficult to disarm. To do so, choose a target disarm DC of 15 or higher, with a DC increment of 5. This becomes your target DC to set the explosive as well as the DC to disarm the explosive.</p>
-<p><i>Disable Electronic Lock or Trigger</i>: Disabling an electronic lock on a door or an electronic trigger for a trap (not the trap itself) is easier if you use an e-pick--without an e-pick, you take a �5 penalty on such checks.</p>
-<p><i>Disarm Explosive</i>: Disarming an explosive requires the character to succeed at a Disable Device check as if disarming a trap. The DC is usually 10, unless the person who set the explosive successfully did so with a higher disarm DC. A failure to disarm an explosive by 5 or more immediately triggers the explosive.</p>
-<p><b>Special</b>: A character can take 10 when using Disable Device to arm or disarm explosives, but cannot take 20.</p>
-<p><b>Time</b>: Arming an explosive device takes 1 minute or more, depending on the scope of the job. Disarming an explosive is treated as if the explosive were a complex trap, and takes 2d4 rounds to attempt.</p>
-
-<h>Linguistics (Int; Trained Only)</h>
-<link class="referenceskill" recordname="reference.skills.skill0003"><b>Linguistics (Int; Trained Only)</b></link>
-<p>A character with the Technologist feat can attempt a Linguistics check to decipher certain complex messages that appear in ruins. Note that many of these messages are written in Androffan. This language is spoken outside only rarely, and even within its borders, some have tried (quite unsuccessfully) to keep it a secret language.</p>
-<p><b>Androffan</b>: Some robots may also know it (either in addition to Common and Hallit or replacing these languages), depending on the robots' nature. Androffan cannot be chosen as a bonus language for high Intelligence without GM permission.</p>
-
-<h>Researching Technology</h>
-<p>A character can use the following skills to research technological subjects. Other skills may have research applications as well, subject to GM approval.</p>
-<p><link class="referenceskill" recordname="reference.skills.skill0004"><b>Heal</b></link>: Used to identify and understand pharmaceuticals.</p>
-<p><link class="referenceskill" recordname="reference.skills.skill0005"><b>Knowledge (arcana)</b></link>: Although robots are constructs, Knowledge (arcana) cannot be used to identify robots or their abilities and weaknesses.</p>
-<p><link class="referenceskill" recordname="reference.skills.skill0006"><b>Knowledge (engineering)</b></link>: This is the most important skill with regard to technological subjects. Knowledge (engineering) can be used to identify a robot's abilities and weaknesses. Knowledge (engineering) is also used to identify and understand unknown technological objects in a similar manner to how Spellcraft is used to identify the properties of a magic item. The DC to correctly identify and understand an unknown technological object is equal to the object's Craft DC. An object with a Craft DC of 15 or less can be automatically identified and understood by someone trained in Knowledge (engineering) who also has the Technologist feat.</p>
-<p><link class="referenceskill" recordname="reference.skills.skill0007"><b>Knowledge (geography)</b></link>: Used for astronomy.</p></text>
-    </skillrules>
-    <pharmarules>
-      <name type="string">pharmas</name>
-      <text type="formattedtext"><h>Pharmaceuticals</h>
-<p>A pharmaceutical takes a standard action to consume, or a move action if administered by a medlance. A single dose of any pharmaceutical weighs only a tenth of a pound--no entry for weight is given for the following item descriptions. Individual doses of pharmaceuticals can take various forms, from an injected serum to an ingested pill. Each pharmaceutical is assumed to contain a means of delivery included in its weight and cost. Any pharmaceutical can be used with a medlance to speed up its administration time, regardless of its form.</p>
-<p>Each pharmaceutical has a full description, including a set of abbreviated statistics, organized as follows.</p>
-<p><b>Price</b>: This is the cost in gold pieces to purchase the pharmaceutical if it's available for sale. As with magic potions, a pharmaceutical can be sold by PCs for half this value.</p>
-<p><b>Construction Requirements</b>: Certain requirements must be met for a character to craft a pharmaceutical. These requirements generally include a feat and access to a medical laboratory. Crafting components are consumed during construction and are not counted as part of the item's cost; if the crafting attempt fails, new crafting components must be provided for the next attempt.</p>
-<p><b>Craft</b>: This is the Craft DC required to create the pharmaceutical. It is also the Knowledge (engineering) or Heal DC to correctly identify the pharmaceutical.</p>
-<p><b>Cost</b>: This is the cost in gold pieces to create the pharmaceutical. Generally this cost is equal to half the price of the pharmaceutical.</p>
-
-<table>
-	<caption>Pharmaceuticals</caption>
-	<thead>
-		<tr><td><b>Pharmaceutical</b></td><td><b>Price</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Baseline</td><td>2,250 gp</td></tr>
-		<tr><td>Cardioamp</td><td>4,550 gp</td></tr>
-		<tr><td>Cureall</td><td>1,400 gp</td></tr>
-		<tr><td>Hemochem (Grade I)</td><td>250 gp</td></tr>
-		<tr><td>Hemochem (Grade II)</td><td>500 gp</td></tr>
-		<tr><td>Hemochem (Grade III)</td><td>750 gp</td></tr>
-		<tr><td>Hemochem (Grade IV)</td><td>1,000 gp</td></tr>
-		<tr><td>Hemochem (Grade V)</td><td>1,250 gp</td></tr>
-		<tr><td>Hype</td><td>250 gp</td></tr>
-		<tr><td>Torpinal</td><td>300 gp</td></tr>
-		<tr><td>Vive</td><td>200 gp</td></tr>
-		<tr><td>Zortaphen</td><td>2,250 gp</td></tr>
-	</tbody>
-</table>
-
-<link class="item" recordname="reference.equipment.pharmaceuticals0001"><b>Baseline</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0002"><b>Cardioamp</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0003"><b>Cureall</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0004"><b>Hemochem (Grade I)</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0005"><b>Hemochem (Grade II)</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0006"><b>Hemochem (Grade III)</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0007"><b>Hemochem (Grade IV)</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0008"><b>Hemochem (Grade V)</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0009"><b>Hype</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0010"><b>Torpinal</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0011"><b>Vive</b></link>
-<link class="item" recordname="reference.equipment.pharmaceuticals0012"><b>Zortaphen</b></link></text>
-    </pharmarules>
-    <cybertechrules>
-      <name type="string">cybertechs</name>
-      <text type="formattedtext"><h>Cybertech</h>
-<p>Cybertech is a form of technology that must be surgically implanted into a host body before it functions. Cybertech takes up a special set of slots that correspond to a creature's body. Most cybertech is designed for a creature with a humanoid shape--installing cybertech in a non-humanoid-shaped body is more difficult, but possible.</p>
-<p>Each piece of cybertech has an implantation value that indicates how invasive the implant is. The total combined implantation values of all cybertech implanted in a single creature can't exceed either that creature's Constitution score or Intelligence score--a creature's Constitution sets the physical limit of what its body can accept in the form of cybernetic implants, while the creature's Intelligence sets the mental limit of what its brain can control. An implant whose implantation value would cause the total to exceed either of these two scores does not function but still takes up a body slot. In addition, as long as a character has cybernetic implants installed whose combined implantation exceeds his Constitution or Intelligence, he takes a -4 penalty on all saving throws.</p>
-<p>A creature with neither a Constitution score nor an Intelligence score cannot receive benefits from cybertech, but a creature with only one of these scores can.</p>
-<p>Installing a piece of cybertech takes a number of hours equal to the cybertech's implantation value if the installation is done by hand--certain technological items can speed this installation time. The target must be willing or helpless during the entire installation, at the end of which the installer attempts a Heal check against the cybertech's Install DC--this specific value is listed for each cybertech item. On a success, the target takes Constitution damage equal to the cybertech's implantation value and the cybertech immediately activates. On a failed check, the target still takes the Constitution damage but the installation fails; a new attempt to install the cybertech can be made, although it's wise to wait for the Constitution damage to heal before trying again.</p>
-<p>Cybertech can be extracted using the same procedure as implanting it, with a failed Heal check indicating the attempt to extract the item failed. Fortunately, extraction is a simpler task than installment, and Heal checks to remove cybertech gain a +10 bonus. Extracting a piece of cybertech from a dead body requires no Heal check but takes a number of rounds equal to the cybertech's implantation value. You can only install or extract a single piece of cybertech at a time.</p>
-<p>An NPC generally charges an amount equal to 1/10 the total price of a piece of cybertech for the service of installing the item.</p>
-<p>Each piece of cybertech has a full description, including a set of abbreviated statistics at the start. This information is organized as follows.</p>
-<p><b>Price</b>: This is the cost in gold pieces to buy the implant if it's available for sale. This value does not include the cost to have the object surgically implanted. As with magic items, a piece of cybertech can be sold by PCs for half this value.</p>
-<p><b>Slot</b>: This is the part of the body into which the cybertech must be implanted. A single slot can only ever host a single piece of cybertech. Cybertech slots are separate from normal magic item slots and do not count as being used for the purposes of worn magic items.<b></b></p>
-<p><b>Weight</b>: This is the weight of the cybertech in pounds. Once installed, the cybertech's weight does not count against a creature's encumbrance or maximum load.</p>
-<p><b>Install</b>: This is the Heal check DC required to successfully implant or remove the cybertech from a creature.</p>
-<p><b>Implantation</b>: A numerical value indicating how invasive the cybertech is. The higher the number, the more invasive the cybertech. Implantation influences the time and difficulty of installing and removing the cybertech.</p>
-<p><b>Description</b>: This section describes the cybertech's appearance and abilities.</p>
-<p><b>Construction</b>: Certain requirements must be met for a character to craft cybertech. These requirements generally consist of having a feat and access to a manufacturing facility.</p>
-<p><b>Craft</b>: This is the Craft DC required to create the cybertech. It is also the Knowledge (engineering) DC to correctly identify the cybertech.</p>
-<p><b>Cost</b>: This is the cost in gold pieces to create the item. Generally this cost is equal to half the price of the item.</p>
-
-<table>
-	<thead>
-		<tr><td><b>Arm Slot Cybertech</b></td><td><b>Price</b></td><td><b>Weight</b></td><td><b>Implant</b></td><td><b>Install</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cybernetic arm</td><td>4,750 gp</td><td>9 lbs.</td><td>2</td><td>DC 28</td></tr>
-		<tr><td>Implanted weaponry</td><td>10,000 gp (special)</td><td>1 lb.</td><td>2</td><td>DC 26</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Body Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Dermal plating (mark I)</td><td>4,000 gp</td><td>5 lbs.</td><td>2</td><td>DC 24</td></tr>
-		<tr><td>Cyberfiber muscles (mark I)</td><td>8,000 gp</td><td>10 lbs.</td><td>2</td><td>DC 24</td></tr>
-		<tr><td>Thoracic nanite chamber (mark I)</td><td>8,000 gp</td><td>5 lbs.</td><td>2</td><td>DC 24</td></tr>
-		<tr><td>Wirejack tendons (mark I)</td><td>8,000 gp</td><td>10 lbs.</td><td>2</td><td>DC 24</td></tr>
-		<tr><td>Biofilter</td><td>16,000 gp</td><td>2 lbs.</td><td>3 </td><td>DC 25</td></tr>
-		<tr><td>Dermal plating (mark II)</td><td>16,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 26</td></tr>
-		<tr><td>Cyberfiber muscles (mark II)</td><td>32,000 gp</td><td>10 lbs.</td><td>4</td><td>DC 28</td></tr>
-		<tr><td>Thoracic nanite chamber (mark II)</td><td>32,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 28</td></tr>
-		<tr><td>Wirejack tendons (mark II)</td><td>32,000 gp</td><td>10 lbs.</td><td>4</td><td>DC 28</td></tr>
-		<tr><td>Dermal plating (mark III)</td><td>36,000 gp</td><td>5 lbs.</td><td>4</td><td>DC 28</td></tr>
-		<tr><td>Dermal plating (mark IV)</td><td>64,000 gp</td><td>5 lbs.</td><td>8</td><td>DC 30</td></tr>
-		<tr><td>Cyberfiber muscles (mark III)</td><td>72,000 gp</td><td>10 lbs.</td><td>8</td><td>DC 36</td></tr>
-		<tr><td>Thoracic nanite chamber (mark III)</td><td>72,000 gp</td><td>5 lbs.</td><td>8</td><td>DC 36</td></tr>
-		<tr><td>Wirejack tendons (mark III)</td><td>72,000 gp</td><td>10 lbs.</td><td>8</td><td>DC 36</td></tr>
-		<tr><td>Dermal plating (mark V)</td><td>100,000 gp</td><td>5 lbs.</td><td>10</td><td>DC 32</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Brain Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Skillslot</td><td>2,000 gp</td><td>1 lb.</td><td>1</td><td>DC 30</td></tr>
-		<tr><td>Frenzychip</td><td>36,400 gp</td><td>1 lb.</td><td>1</td><td>DC 32</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Ears Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cybernetic ears</td><td>4,000 gp</td><td>1 lb.</td><td>1</td><td>DC 28</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Eyes Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cybernetic eyes</td><td>4,000 gp</td><td>1 lb.</td><td>1</td><td>DC 28</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Head Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cranial bomb</td><td>4,500 gp</td><td>1/2 lb.</td><td>1</td><td>DC 25</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Legs Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cybernetic legs</td><td>8,500 gp</td><td>12 lbs.</td><td>4</td><td>DC 28</td></tr>
-	</tbody>
-	<thead>
-		<tr><td colspan = "5"><b>Body Slot Cybertech</b></td></tr>
-	</thead>
-	<tbody>
-		<tr><td>Cyberart</td><td>100 gp</td><td>1 lb.</td><td>0</td><td>DC 20</td></tr>
-	</tbody>
-</table>
-
-<link class="item" recordname="reference.equipment.cybertech0003"><b>Biofilter</b></link>
-<link class="item" recordname="reference.equipment.cybertech0022"><b>Cranial bomb</b></link>
-<link class="item" recordname="reference.equipment.cybertech0024"><b>Cyberart</b></link>
-<link class="item" recordname="reference.equipment.cybertech0004"><b>Cyberfiber muscles (mark I)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0005"><b>Cyberfiber muscles (mark II)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0006"><b>Cyberfiber muscles (mark III)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0001"><b>Cybernetic arm</b></link>
-<link class="item" recordname="reference.equipment.cybertech0020"><b>Cybernetic ears</b></link>
-<link class="item" recordname="reference.equipment.cybertech0021"><b>Cybernetic eyes</b></link>
-<link class="item" recordname="reference.equipment.cybertech0023"><b>Cybernetic legs</b></link>
-<link class="item" recordname="reference.equipment.cybertech0007"><b>Dermal plating (mark I)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0008"><b>Dermal plating (mark II)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0009"><b>Dermal plating (mark III)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0010"><b>Dermal plating (mark IV)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0011"><b>Dermal plating (mark V)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0018"><b>Frenzychip</b></link>
-<link class="item" recordname="reference.equipment.cybertech0002"><b>Implanted weaponry</b></link>
-<link class="item" recordname="reference.equipment.cybertech0019"><b>Skillslot</b></link>
-<link class="item" recordname="reference.equipment.cybertech0012"><b>Thoracic nanite chamber (mark I)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0013"><b>Thoracic nanite chamber (mark II)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0014"><b>Thoracic nanite chamber (mark III)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0015"><b>Wirejack tendons (mark I)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0016"><b>Wirejack tendons (mark II)</b></link>
-<link class="item" recordname="reference.equipment.cybertech0017"><b>Wirejack tendons (mark III)</b></link>
-</text>
-    </cybertechrules>
   </lists>
   <License static="true">
     <librarylink type="windowreference">
@@ -9116,6 +9116,193 @@
       <recordname>..</recordname>
     </librarylink>
     <name type="string">License</name>
-    <text type="formattedtext"> <h>Open Game License Version 1.0a</h><p>The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.</p><p>1. Definitions: (a)"Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b)"Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)"Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.</p><p>2. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.</p><p>3.Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.</p><p>4. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.</p><p>5.Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.</p><p>6.Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.</p><p>7. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.</p><p>8. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.</p><p>9. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.</p><p>10 Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You Distribute.</p><p>11. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.</p><p>12 Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.</p><p>13 Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.</p><p>14 Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.</p><h>COPYRIGHT NOTICE</h><p><i>Open Game License v 1.0</i> Copyright 2000, Wizards of the Coast, Inc.</p><p><i>System Reference Document</i> Copyright 2000, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on material by E. Gary Gygax and Dave Arneson.</p><p><i>Pathfinder Roleplaying Game Reference Document</i> Copyright 2011, Paizo Publishing, LLC; Author: Paizo Publishing, LLC</p><p><i>Pathfinder Roleplaying Game Core Rulebook</i> Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p><p><i>Pathfinder Roleplaying Game Bestiary</i> Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p><p><i>Fantasy Grounds Modules</i> Copyright 2009-2014, SmiteWorks USA, LLC</p></text>
+    <text type="formattedtext"><p><b>Product Identity:</b> The following items are hereby identified as Product Identity, as defined in the Open Game License 1.0a, Section 1(e), and are not Open Content: All trademarks, registered trademarks, proper names (characters, deities, etc.), dialogue, plots, storylines, locations, characters, artworks, and trade dress. (Elements that have previously been designated as Open Game Content are not included in this declaration.)</p><p><b> Open Content:</b> Except for material designated as Product Identity (see above), the game mechanics of this Paizo Publishing game product are Open Game Content, as defined in the Open Game License version 1.0a Section 1(d). No portion of this work other than the material designated as Open Game Content may be reproduced in any form without written permission.</p>
+<p>OPEN GAME LICENSE Version 1.0a</p>
+<p>The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.</p>
+<p>1. Definitions: (a) "Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b) "Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d) "Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts, creatures, characters, stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.</p>
+<p>2. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.</p>
+<p>3. Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.</p>
+<p>4. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.</p>
+<p>5. Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.</p>
+<p>6. Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.</p>
+<p>7. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.</p>
+<p>8. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.</p>
+<p>9. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.</p>
+<p>10. Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You distribute.</p>
+<p>11. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.</p>
+<p>12. Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.</p>
+<p>13. Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.</p>
+<p>14. Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.</p>
+<p>15. COPYRIGHT NOTICE</p>
+<p>Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.</p>
+<p><b>System Reference Document</b>. Copyright 2000, Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on material by E. Gary Gygax and Dave Arneson.</p>
+<p><b>Pathfinder Roleplaying Game Reference Document.</b> copyright 2011, Paizo Publishing, LLC; Author: Paizo Publishing, LLC.</p>
+<p><b>Pathfinder Roleplaying Game Core Rulebook</b>. copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p>
+<p><b>Pathfinder Roleplaying Game Bestiary</b>. copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p>
+<p><b>Pathfinder Roleplaying Game Bestiary 2</b>. copyright 2010, Paizo Publishing, LLC; Authors Wolfgang Baur, Jason Bulmahn, Adam Daigle, Graeme Davis, Crystal Frasier, Joshua J. Frost, Tim Hitchcock, Brandon Hodge, James Jacobs, Steve Kenson, Hal MacLean, Martin Mason, Rob McCreary, Erik Mona, Jason Nelson, Patrick Renie, Sean K Reynolds, F. Wesley Schneider, Owen K.C. Stephens, James L. Sutter, Russ Taylor, and Greg A. Vaughan, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p>
+<p><b>Pathfinder Roleplaying Game Bestiary 3</b>. copyright 2011, Paizo Publishing, LLC; Authors: Jesse Benner, Jason Bulmahn, Adam Daigle, James Jacobs, Michael Kenway, Rob McCreary, Patrick Renie, Chris Sims, F. Wesley Schneider, James L. Sutter, and Russ Taylor, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p>
+<p><b>Pathfinder Roleplaying Game Bestiary 4</b>. copyright 2013, Paizo Publishing, LLC; Authors: Dennis Baker, Jesse Benner, Savannah Broadway, Ross Byers, Adam Daigle, Tim Hitchcock, Tracy Hurley, James Jacobs, Matt James, Rob McCreary, Jason Nelson, Tom Phillips, Stephen Radney- MacFarland, Sean K Reynolds, F. Wesley Schneider, Tork Shaw, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Bestiary 5</b>. copyright 2015, Paizo Inc.; AUthors: Dennis Baker, Jesse Benner, John Bennett, Logan Bonner, Creighton Broadhurst, Robert Brookes, Benjamin Bruck, Jason Bulmahn, Adam Daigle, Thurston Hillman, Eric Hindley, Joe Homes, James Jacobs, Amanda Hamon Kunz, Ben McFarland, Jason Nelson, Thom Phillips, Stephen Radney-MacFarland, Alistair Rigg, Alex Riggs, David N. Ross, Wes Schneider, David Schwwartz, Mark Seifter, Mike SHel, James L. Sutter, and Linda Zayas-Palmer.</p>
+<p><b>Pathfinder Roleplaying Game GameMastery Guide</b>. copyright 2010, Paizo Publishing, LLC; Author: Cam Banks, Wolfgang Buar, Jason Bulmahn, Jim Butler, Eric Cagle, Graeme Davis, Adam Daigle, Joshua J. Frost, James Jacobs, Kenneth Hite, Steven Kenson, Robin Laws, Tito Leati, Rob McCreary, Hal Maclean, Colin McComb, Jason Nelson, David Noonan, Richard Pett, Rich Redman, Sean K reynolds, F. Wesley Schneider, Amber Scorr, Doug Seacat, Mike Selinker, Lisa Stevens, James L. Sutter, Russ Taylor, Penny Williams, Skip Williams, Teeuwynn Woodruff.</p>
+<p><b>Pathfinder Roleplaying Game Advanced Class Guide</b> copyright 2014, Paizo Inc.; Authors: Dennis Baker, Ross Byers, Jesse Benner, Savannah Broadway, Jason Bulmahn, Jim Groves, Tim Hitchcock, Tracy Hurley, Jonathan H. Keith, Will McCardell, Dale C. McCoy, Jr., Tom Phillips, Stephen Radney-MacFarland, Thomas M. Reid, Sean K Reynolds, Tork Shaw, Owen K.C. Stephens, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Advanced Player's Guide</b>. copyright 2010, Paizo Publishing, LLC; Author: Jason Bulmahn</p>
+<p><b>Pathfinder Roleplaying Game Advanced Race Guide</b>. copyright 2012, Paizo Publishing, LLC; Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Jason Bulmahn, Adam Daigle, Jim Groves, Tim Hitchcock, Hal MacLean, Jason Nelson, Stephen Radney-MacFarland, Owen K.C. Stephens, Todd Stewart, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Monster Codex</b>. copyright 2014, Paizo Inc.; Authors: Dennis Baker, Jesse Benner, Logan Bonner, Jason Bulmahn, Ross Byers, John Compton, Robert N. Emerson, Jonathan H. Keith, Dale C. McCoy, Jr., Mark Moreland, Tom Phillips, Stephen Radney-MacFarland, Sean K Reynolds, Thomas M. Reid, Patrick Renie, Mark Seifter, Tork Shaw, Neil Spicer, Owen K.C. Stephens, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Mythic Adventures</b> copyright 2013, Paizo Publishing, LLC; Authors: Jason Bulmahn, Stephen Radney-MacFarland, Sean K Reynolds, Dennis Baker, Jesse Benner, Ben Bruck, Jim Groves, Tim Hitchcock, Tracy Hurley, Jonathan Keith, Jason Nelson, Tom Phillips, Ryan Macklin, F. Wesley Schneider, Amber Scott, Tork Shaw, Russ Taylor, and Ray Vallese.</p>
+<p><b>Pathfinder Roleplaying Game NPC Codex</b>. copyright 2012, Paizo Publishing, LLC; Authors: Jesse Benner, Jason Bulmahn, Adam Daigle, Alex Greenshields, Rob McCreary, Mark Moreland, Jason Nelson, Stephen Radney-MacFarland, Patrick Renie, Sean K Reynolds, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Occult Adventures</b>. copyright 2015, Paizo Inc.; Authors: John Bennett, Logan Bonner, Robert Brookes, Jason Bulmahn, Ross Byers, John Compton, Adam Daigle, Jim Groves, Thurston Hillman, Eric Hindley, Brandon Hodge, Ben McFarland, Erik Mona, Jason Nelson, Tom Phillips, Stephen Radney-MacFarland, Thomas M. Reid, Alex Riggs, Robert Schwalb, Mark Seifter, Russ Taylor, and Steve Townshend.</p>
+<p><b>Pathfinder Roleplaying Game Pathfinder Unchained</b>. copyright 2015, Paizo Inc.; Authors: Dennis Baker, Jesse Benner, Ross Byers, Logan Bonner, Jason Bulmahn, Robert Emerson, Tim Hitchcock, Jason Nelson, Tom Phillips, Stephen Radney-MacFarland, Thomas M. Reid, Robert Schwalb, Mark Seifter, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Ultimate Magic</b>. copyright 2011, Paizo Publishing, LLC; Authors: Jason Bulmahn, Tim Hitchcock, Colin McComb, Rob McCreary, Jason Nelson, Stephen Radney-MacFarland, Sean K Reynolds, Owen K.C. Stephens, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Ultimate Campaign</b>. copyright 2013, Paizo Publishing, LLC; Authors: Jesse Benner, Benjamin Bruck, Jason Bulmahn, Ryan Costello, Adam Daigle, Matt Goetz, Tim Hitchcock, James Jacobs, Ryan Macklin, Colin McComb, Jason Nelson, Richard Pett, Stephen Radney-MacFarland, Patrick Renie, Sean K Reynolds, F. Wesley Schneider, James L. Sutter, Russ Taylor, and Stephen Townshend.</p>
+<p><b>Pathfinder Roleplaying Game Ultimate Combat</b>. copyright 2011, Paizo Publishing, LLC; Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Jason Bulmahn, Brian J. Cortijo, Jim Groves, Tim Hitchcock, Richard A. Hunt, Colin McComb, Jason Nelson, Tom Phillips, Patrick Renie, Sean K Reynolds, and Russ Taylor.</p>
+<p><b>Pathfinder Roleplaying Game Ultimate Equipment</b>. copyright 2012 Paizo Publishing, LLC; Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Ross Byers, Brian J. Cortijo, Ryan Costello, Mike Ferguson, Matt Goetz, Jim Groves, Tracy Hurley, Matt James, Jonathan H. Keith, Michael Kenway, Hal MacLean, Jason Nelson, Tork Shaw, Owen KC Stephens, and Russ Taylor.</p>
+<p><b>Pathfinder Campaign Setting: Technology Guide</b>. copyright 2014, Paizo Inc.; Authors: James Jacobs and Russ Taylor.</p>
+
+<p><b>Anger of Angels</b>. copyright 2003, Sean K Reynolds.</p>
+<p><b>Advanced Bestiary</b>. copyright 2004, Green Ronin Publishing, LLC; Author: Matt Sernett.
+<p><b>Book of Fiends</b>. copyright 2003, Green Ronin Publishing; Authors: Aaron Loeb, Erik Mona, Chris Pramas, Robert J. Schwalb.</p>
+<p><b>The Book of Hallowed Might</b>. copyright 2002, Monte J. Cook.</p>
+<p><b>Monte Cook's Arcana Unearthed</b>. copyright 2003, Monte J. Cook.</p>
+<p><b>Path of the Magi</b>. copyright 2002 Citizen Games/Troll Lord Games; Authors: Mike McArtor, W. Jason Peck, Jeff Quick, and Sean K Reynolds.</p>
+<p><b>Skreyn's Register: The Bonds of Magic</b>. copyright 2002, Sean K Reynolds. </p>
+<p><b>The Book of Experimental Might</b>. copyright 2008, Monte J. Cook. All rights reserved.</p>
+<p><b>Tome of Horrors</b>. copyright 2002, Necromancer Games, Inc.; Authors: Scott Greene, with Clark Peterson, Erica Balsley, Kevin Baase, Casey Christofferson, Lance Hawvermale, Travis Hawvermale, Patrick Lawinger, and Bill Webb; Based on original content from TSR.</p>
+
+<p><b>Kobold Quarterly Issue 7</b>, copyright 2008, Open Design LLC, www.koboldquarterly.com; Authors: John Baichtal, Wolfgang Baur, Ross Byers, Matthew Cicci, John Flemming, Jeremy Jones, Derek Kagemann, Phillip Larwood, Richard Pett, and Stan!</p>
+<p><b>The Tome of Horrors III</b>, copyright 2005, Necromancer Games, Inc.; Author Scott Greene.</p>
+
+<p><b>Aerial Servant from the <em>Tome of Horrors Complete</em></b>, copyright 2011, Necromancer Games, Inc.; Published and distributed by Frog God Games; Authors: Clark Greene and Clark Peterseon, based on original material by Gary Gygax.</p>
+<p><b>Adherer from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Authors Scott Greene and Clark Peterson, based on original material by Guy Shearer.</p>
+<p><b>Amphisbaena from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Angel, Monadic Deva from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Angel, Movanic Deva from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Animal Lord from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games,Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Ascomid from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Atomie from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Aurumvorax from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Axe Beak from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Baphomet from the <i>Tome of Horrors Complete</i></b> copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Bat, Mobat from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Authors Scott Peterson and Clark Peterson, based on original material by Gary Gygax.</b></p>
+<p><b>Beetle, Slicer from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Blindheim from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Roger Musson.</b></p>
+<p><b>Basidirond from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Brownie from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Bunyip from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Dermot Jackson.</b></p>
+
+<p><b>Carbuncle from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Authors Scott Greene, based on original material by Albie Fiore.</p>
+<p><b>Caryatid Column from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Jean Wells.</p>
+<p><b>Cave Fisher from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Lawrence Schick.</p>
+<p><b>Crypt Thing from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Roger Musson.</b></p>
+<p><b>Crystal Ooze from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Daemon, Ceustodaemon (Guardian Daemon) from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Daemon, Derghodaemon from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Daemon, Guardian from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Daemon, Hydrodaemon from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Daemon, Piscodaemon from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Dark Creeper from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Rik Shepard.</p>
+<p><b>Dark Stalker from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Simon Muth.</p>
+<p><b>Death Dog from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Underworld Oracle.</p>
+<p><b>Death Worm from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene and Erica Balsley.</b></p>
+<p><b>Decapus from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Jean Wells.</b></p>
+<p><b>Demodand, Shaggy from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Demodand, Slimy from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Demodand, Tarry from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Demon, Shadow from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Neville White.</p>
+<p><b>Demon, Nabasu from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Demon Lord, Kostchtchie from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.
+<p><b>Demon Lord, Pazuzu from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Dire Corby from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Jeff Wyndham.</p>
+<p><b>Disenchanter from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Roger Musson.</p>
+<p><b>Dragon, Faerie from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Brian Jaeger and Gary Gygax.</p>
+<p><b>Dragon Horse from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Dracolisk from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Dust Digger from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+
+<p><b>Executioner's Hood from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Flail Snail from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Simon Tilbrook.</p>
+<p><b>Flind and Flindbar from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by J.D. Morris.</p>
+<p><b>Flumph from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Ian McDowell and Douglas Naismith.</p>
+<p><b>Froghemoth from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Foo Creature from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Forlarren from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Ian Livingstone.</b></p>
+
+<p><b>Genie, Marid from the <i>Tome of Horrors Complete</i></b> copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Giant Slug from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Giant, Wood from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Wizards of the Coast.</b></p>
+<p><b>Gloomwing from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Grippli from the <i>Tome of Horrors Complete</i></b> copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax. <b>Nereid from the <i>Tome of Horrors Complete</i></b> copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Gryph from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Peter Brown.</b></p>
+
+<p><b>Hangman Tree from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Hippocampus from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene and Erica Balsley, based on original material by Gary Gygax.
+<p><b>Huecuva from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Underworld Oracle.</p>
+
+<p><b>Ice Golem from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene.</p>
+<p><b>Iron Cobra from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Philip Masters.</p>
+
+<p><b>Jackalwere from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Jubilex from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Jubilex from the <em>Tome of Horrors Complete</em></b> copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Kamadan from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Nick Louth.</p>
+<p><b>Kech from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Kelpie from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Lawrence Schick.</b></p>
+<p><b>Korred from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+
+<p><b>Leprechaun from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Lurker Above from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Magma ooze from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene.</b></p>
+<p><b>Marid from the </b><i><b>Tome of Horrors III</b></i>, copyright 2005, Necromancer Games, Inc.; Author Scott Greene.</p>
+<p><b>Mihstu from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by E. Gary Gygax.</p>
+<p><b>Mite from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Ian Livingstone and Mark Barnes.</p>
+<p><b>Mongrelman from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Moon Dog from the <em>Tome of Horrors Complete</em></b>, copyright 2011, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Muckdweller from the <em>Tome of Horrors Complete</em></b>, copyright 20111, Necromancer Games, Inc., published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Nabasu Demon from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Necrophidius from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by Simon Tillbrook.</p>
+<p><b>Nereid from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+
+<p><b>Pech from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Phycomid from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Poltergeist from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Lewis Pulsipher.</b></p>
+
+<p><b>Quickling from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Quickwood from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+
+<p><b>Rot Grub from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene and Clark Peterson, based on original material by Gary Gygax.</p>
+<p><b>Russet Mold from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Sandman from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by Roger Musson.</p>
+<p><b>Scarecrow from the </b><i><b>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author: Scott Greene, based on original material by Roger Musson.</p>
+<p><b>Shadow Demon from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Neville White.</p>
+<p><b>Skulk from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Simon Muth.</b></p>
+<p><b>Slime Mold from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Slithering Tracker from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Soul Eater from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by David Cook.</b></p>
+<p><b>Spriggan from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene and Erica Balsley, based on original material by Roger Moore and Gary Gygax.</b></p>
+
+<p><b>Tenebrous Worm from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Tentamort from the <i>Tome of Horrors, Revised, copyright 2002</b></i>, Necromancer Games, Inc.; Author Scott Greene, based on original material by Mike Roberts.</b></p>
+<p><b>Tick, Giant & Dragon from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+<p><b>Trapper from the <i>Tome of Horrors Complete</i></b>, copyright 2011, Necromancer Games, Inc.; published and distributed by Frog God Games; Author: Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Troll, Ice from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Russell Cole.</b></p>
+<p><b>Troll, Rock from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene.</b></p>
+
+<p><b>Vegepygmy from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Wolf-In-Sheep's-Clothing from the <i>Tome of Horrors, Revised</i></b>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+<p><b>Wood Golem from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Authors Scott Greene and Patrick Lawinger.</p>
+
+<p><b>Yellow Musk Creeper from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Albie Fiore.</p>
+<p><b>Yellow Musk Zombie from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Albie Fiore.</p>
+<p><b>Yeti from the </b><i><b>Tome of Horrors</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</p>
+
+<p><b>Zombie, Juju from the <i>Tome of Horrors, Revised</b></i>, copyright 2002, Necromancer Games, Inc.; Author Scott Greene, based on original material by Gary Gygax.</b></p>
+</text>
   </License>
 </root>

@@ -327,26 +327,26 @@ def generate_xml_structure(xml_root):
     xml_list_airules = etree.SubElement(xml_lists, "AIRules")
     #Crafting rules
     xml_list_craftingrules = etree.SubElement(xml_lists, "CraftingRules")
+    #Cybertech rules
+    xml_list_cybertechrules = etree.SubElement(xml_lists, "cybertechrules")
     #Equipment rules
     xml_list_equipmentrules = etree.SubElement(xml_lists, "EquipmentRules")
     #Feats rules
     xml_list_featsrules = etree.SubElement(xml_lists, "FeatsRules")
     #Hazards rules
     xml_list_hazardsrules = etree.SubElement(xml_lists, "HazardsRules")
+    #Pharmaceutical rules
+    xml_list_pharmarules = etree.SubElement(xml_lists, "pharmarules")
+    #Prestige rules
+    xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
     #Spell rules
     xml_list_spellrules = etree.SubElement(xml_lists, "spellrules")
     #Technological gear rules
     xml_list_techgearrules = etree.SubElement(xml_lists, "techgearrules")
-    #Weapon rules
-    xml_list_weaponrules = etree.SubElement(xml_lists, "weaponrules")
-    #Prestige rules
-    xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
     #Skill rules
     xml_list_skillrules = etree.SubElement(xml_lists, "skillrules")
-    #Pharmaceutical rules
-    xml_list_pharmarules = etree.SubElement(xml_lists, "pharmarules")
-    #Cybertech rules
-    xml_list_cybertechrules = etree.SubElement(xml_lists, "cybertechrules")
+    #Weapon rules
+    xml_list_weaponrules = etree.SubElement(xml_lists, "weaponrules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
