@@ -35,6 +35,7 @@ techgear_rules_file = "data/Technological Gear.html"
 prestigeclass_rules_file = "data/Prestige Class - Technomancer.html"
 techequip_rules_file = "data/Technological Equipment.html"
 pharmas_rules_file = "data/pharmaceuticals.html"
+cybertech_rules_file = "data/Cybertech.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -91,72 +92,72 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Window class":"referencetextwide",
                     "Record name": "lists.archetyperules.archetypelist@" + module_name},
                     {"Entry name":"[Rules] Armor",
-                    "Entry tag":"IA.Armor",
+                    "Entry tag":"JA.Armor",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.armorrules@" + module_name},
                     {"Entry name":"[Rules] Artifacts",
-                    "Entry tag":"JA.Artifacts",
+                    "Entry tag":"KA.Artifacts",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.artifactrules@" + module_name},
                     {"Entry name":"[Rules] Artificial Intelligences",
-                    "Entry tag":"KA.ArtificialIntelligences",
+                    "Entry tag":"LA.ArtificialIntelligences",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.AIRules@" + module_name},
                     {"Entry name":"[Rules] Crafting",
-                    "Entry tag":"LA.Crafting",
+                    "Entry tag":"MA.Crafting",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.CraftingRules@" + module_name},
-                    {"Entry name":"[Rules] Equipment",
-                    "Entry tag":"MA.Equipment",
+                    {"Entry name":"[Rules] Cybertech",
+                    "Entry tag":"NA.Cybertech",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
-                    "Record name": "lists.EquipmentRules@" + module_name},
+                    "Record name": "lists.cybertechrules@" + module_name},
                     {"Entry name":"[Rules] Feats",
-                    "Entry tag":"NA.Feats",
+                    "Entry tag":"PA.Feats",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.FeatsRules@" + module_name},
                     {"Entry name":"[Rules] Hazards",
-                    "Entry tag":"OA.Hazards",
+                    "Entry tag":"QA.Hazards",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.HazardsRules@" + module_name},
                     {"Entry name":"[Rules] Pharmaceuticals",
-                    "Entry tag":"PA.Pharmaceuticals",
+                    "Entry tag":"RA.Pharmaceuticals",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.pharmarules@" + module_name},
                     {"Entry name":"[Rules] Prestige Class: Technomancer",
-                    "Entry tag":"PA.Technomancer",
+                    "Entry tag":"SA.Technomancer",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.prestigerules.technomancer.statblock@" + module_name},
                     {"Entry name":"[Rules] Skills",
-                    "Entry tag":"PA.Skills",
+                    "Entry tag":"TA.Skills",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.skillrules@" + module_name},
                     {"Entry name":"[Rules] Spells",
-                    "Entry tag":"PA.Spells",
+                    "Entry tag":"UA.Spells",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.spellrules@" + module_name},
                     {"Entry name":"[Rules] Technological Equipment",
-                    "Entry tag":"PA.TechnologicalEquipment",
+                    "Entry tag":"VA.TechnologicalEquipment",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.techequiprules@" + module_name},
                     {"Entry name":"[Rules] Technological Gear",
-                    "Entry tag":"PA.TechnologicalGear",
+                    "Entry tag":"WA.TechnologicalGear",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.techgearrules@" + module_name},
                      {"Entry name":"[Rules] Weapons",
-                    "Entry tag":"PA.Weapon",
+                    "Entry tag":"XA.Weapon",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.weaponrules@" + module_name}]
@@ -342,10 +343,10 @@ def generate_xml_structure(xml_root):
     xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
     #Skill rules
     xml_list_skillrules = etree.SubElement(xml_lists, "skillrules")
-    #Technical equipment rules
-    xml_list_techequiprules = etree.SubElement(xml_lists, "techequiprules")
     #Pharmaceutical rules
     xml_list_pharmarules = etree.SubElement(xml_lists, "pharmarules")
+    #Cybertech rules
+    xml_list_cybertechrules = etree.SubElement(xml_lists, "cybertechrules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -375,8 +376,8 @@ def generate_xml_structure(xml_root):
     populate_weapon_rules(xml_list_weaponrules)
     populate_prestige_rules(xml_list_prestigerules)
     populate_skill_rules(xml_list_skillrules)
-    populate_techequip_rules(xml_list_techequiprules)
     populate_pharma_rules(xml_list_pharmarules)
+    populate_cybertech_rules(xml_list_cybertechrules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1166,15 +1167,6 @@ def populate_skill_rules(xml_list_skillrules):
     xml_list_skillrules_text.text = skill_rules
 
 
-def populate_techequip_rules(xml_list_techequiprules):
-    xml_list_techequiprules_name = etree.SubElement(xml_list_techequiprules, "name", type="string")
-    xml_list_techequiprules_name.text = "techequips"
-    xml_list_techequiprules_text = etree.SubElement(xml_list_techequiprules, "text", type="formattedtext")
-    with open(techequip_rules_file, 'r') as file:
-        techequip_rules = file.read()
-    xml_list_techequiprules_text.text = techequip_rules
-
-
 def populate_pharma_rules(xml_list_pharmarules):
     xml_list_pharmarules_name = etree.SubElement(xml_list_pharmarules, "name", type="string")
     xml_list_pharmarules_name.text = "pharmas"
@@ -1182,6 +1174,15 @@ def populate_pharma_rules(xml_list_pharmarules):
     with open(pharmas_rules_file, 'r') as file:
         pharma_rules = file.read()
     xml_list_pharmarules_text.text = pharma_rules
+
+
+def populate_cybertech_rules(xml_list_cybertechrules):
+    xml_list_cybertechrules_name = etree.SubElement(xml_list_cybertechrules, "name", type="string")
+    xml_list_cybertechrules_name.text = "cybertechs"
+    xml_list_cybertechrules_text = etree.SubElement(xml_list_cybertechrules, "text", type="formattedtext")
+    with open(cybertech_rules_file, 'r') as file:
+        cybertech_rules = file.read()
+    xml_list_cybertechrules_text.text = cybertech_rules
 
 
 def main():
