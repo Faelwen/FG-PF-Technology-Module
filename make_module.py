@@ -30,6 +30,7 @@ feat_rules_file = "data/feats.html"
 hasards_rules_file = "data/hasards.html"
 spells_rules_file = "data/spells.html"
 weapon_rules_file = "data/weapon.html"
+skills_rules_file = "data/skills.html"
 techgear_rules_file = "data/Technological Gear.html"
 prestigeclass_rules_file = "data/Prestige Class - Technomancer.html"
 
@@ -127,6 +128,11 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.prestigerules.technomancer.statblock@" + module_name},
+                    {"Entry name":"[Rules] Skills",
+                    "Entry tag":"PA.Skills",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.skillrules@" + module_name},
                     {"Entry name":"[Rules] Spells",
                     "Entry tag":"PA.Spells",
                     "Link type":"librarylink",
@@ -318,10 +324,12 @@ def generate_xml_structure(xml_root):
     xml_list_spellrules = etree.SubElement(xml_lists, "spellrules")
     #Technological gear rules
     xml_list_techgearrules = etree.SubElement(xml_lists, "techgearrules")
-    #weapon rules
+    #Weapon rules
     xml_list_weaponrules = etree.SubElement(xml_lists, "weaponrules")
-    #prestige rules
+    #Prestige rules
     xml_list_prestigerules = etree.SubElement(xml_lists, "prestigerules")
+    #Skill rules
+    xml_list_skillrules = etree.SubElement(xml_lists, "skillrules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -350,6 +358,7 @@ def generate_xml_structure(xml_root):
     populate_techgear_rules(xml_list_techgearrules)
     populate_weapon_rules(xml_list_weaponrules)
     populate_prestige_rules(xml_list_prestigerules)
+    populate_skill_rules(xml_list_skillrules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1129,6 +1138,14 @@ def populate_techgear_rules(xml_list_techgearrules):
         techgear_rules = file.read()
     xml_list_techgearrules_text.text = techgear_rules
 
+
+def populate_skill_rules(xml_list_skillrules):
+    xml_list_skillrules_name = etree.SubElement(xml_list_skillrules, "name", type="string")
+    xml_list_skillrules_name.text = "Skills"
+    xml_list_skillrules_text = etree.SubElement(xml_list_skillrules, "text", type="formattedtext")
+    with open(skills_rules_file, 'r') as file:
+        skill_rules = file.read()
+    xml_list_skillrules_text.text = skill_rules
 
 def main():
     xml_root = etree.Element('root', version="2.0")
