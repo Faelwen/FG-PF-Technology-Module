@@ -22,6 +22,7 @@ traps_file = "data/Traps.csv"
 weapon_csv_file = "data/Weapons.csv"
 artifact_rules_file = "data/artifacts.html"
 archetype_rules_file = "data/Technology-Themed Archetypes.html"
+armor_rules_file = "data/armor.html"
 ai_rules_file = "data/ai.html"
 craft_rules_file = "data/Crafting High-Tech Items.html"
 equipment_rules_file = "data/Technological Equipment.html"
@@ -82,6 +83,11 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.archetyperules.archetypelist@" + module_name},
+                    {"Entry name":"[Rules] Armor",
+                    "Entry tag":"IA.Armor",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.armorrules@" + module_name},
                     {"Entry name":"[Rules] Artifacts",
                     "Entry tag":"JA.Artifacts",
                     "Link type":"librarylink",
@@ -268,6 +274,8 @@ def generate_xml_structure(xml_root):
     xml_list_weapon_description = etree.SubElement(xml_list_weapon, "description", type="string")
     xml_list_weapon_description.text = "weapon"
     xml_list_weapon_groups = etree.SubElement(xml_list_weapon, "groups")
+    #Armor rules
+    xml_list_armorrules = etree.SubElement(xml_lists, "armorrules")
     #Artifact rules
     xml_list_artifactrules = etree.SubElement(xml_lists, "artifactrules")
     #Archetype rules
@@ -298,6 +306,7 @@ def generate_xml_structure(xml_root):
     populate_timeworn_tables(xml_ref_tables)
     populate_traps(xml_ref_npcdata)
     populate_weapon(xml_ref_weapon, xml_list_allitems_groups_weapon_equipment, xml_list_weapon_groups)
+    populate_armor_rules(xml_list_armorrules)
     populate_artifact_rules(xml_list_artifactrules)
     populate_archetypes_rules(xml_list_archetyperules)
     populate_ai_rules(xml_list_airules)
@@ -996,6 +1005,15 @@ def populate_archetypes_rules(xml_list_archetyperules):
     with open(archetype_rules_file, 'r') as file:
         archetype_rules = file.read()
     xml_list_archetyperules.text = archetype_rules
+
+
+def populate_armor_rules(xml_list_armorrules):
+    xml_list_armorrules_name = etree.SubElement(xml_list_armorrules, "name", type="string")
+    xml_list_armorrules_name.text = "Armor"
+    xml_list_armorrules_text = etree.SubElement(xml_list_armorrules, "text", type="formattedtext")
+    with open(armor_rules_file, 'r') as file:
+        armor_rules = file.read()
+    xml_list_armorrules_text.text = armor_rules
 
 
 def populate_ai_rules(xml_list_airules):
