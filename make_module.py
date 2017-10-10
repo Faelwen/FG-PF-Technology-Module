@@ -185,8 +185,8 @@ def populate_license(xml_root):
     xml_license_name.text = "License"
     xml_license_text = etree.SubElement(xml_license,"text", type="formattedtext")
     with open(license_file, 'r') as file:
-        license_test = file.read()
-    xml_license_text.text = license_test
+        license_text = file.read()
+    xml_license_text.text = license_text
 
 
 def generate_xml_def_file():
