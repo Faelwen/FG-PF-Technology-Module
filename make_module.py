@@ -34,6 +34,7 @@ skills_rules_file = "data/skills.html"
 techgear_rules_file = "data/Technological Gear.html"
 prestigeclass_rules_file = "data/Prestige Class - Technomancer.html"
 techequip_rules_file = "data/Technological Equipment.html"
+pharmas_rules_file = "data/pharmaceuticals.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -124,6 +125,11 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.HazardsRules@" + module_name},
+                    {"Entry name":"[Rules] Pharmaceuticals",
+                    "Entry tag":"PA.Pharmaceuticals",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.pharmarules@" + module_name},
                     {"Entry name":"[Rules] Prestige Class: Technomancer",
                     "Entry tag":"PA.Technomancer",
                     "Link type":"librarylink",
@@ -338,6 +344,8 @@ def generate_xml_structure(xml_root):
     xml_list_skillrules = etree.SubElement(xml_lists, "skillrules")
     #Technical equipment rules
     xml_list_techequiprules = etree.SubElement(xml_lists, "techequiprules")
+    #Pharmaceutical rules
+    xml_list_pharmarules = etree.SubElement(xml_lists, "pharmarules")
 
     #Populate data
     populate_library_entries(xml_library_entries)
@@ -368,6 +376,7 @@ def generate_xml_structure(xml_root):
     populate_prestige_rules(xml_list_prestigerules)
     populate_skill_rules(xml_list_skillrules)
     populate_techequip_rules(xml_list_techequiprules)
+    populate_pharma_rules(xml_list_pharmarules)
 
 
 def populate_timeworn_tables(xml_ref_tables):
@@ -1164,6 +1173,15 @@ def populate_techequip_rules(xml_list_techequiprules):
     with open(techequip_rules_file, 'r') as file:
         techequip_rules = file.read()
     xml_list_techequiprules_text.text = techequip_rules
+
+
+def populate_pharma_rules(xml_list_pharmarules):
+    xml_list_pharmarules_name = etree.SubElement(xml_list_pharmarules, "name", type="string")
+    xml_list_pharmarules_name.text = "pharmas"
+    xml_list_pharmarules_text = etree.SubElement(xml_list_pharmarules, "text", type="formattedtext")
+    with open(pharmas_rules_file, 'r') as file:
+        pharma_rules = file.read()
+    xml_list_pharmarules_text.text = pharma_rules
 
 
 def main():
