@@ -30,6 +30,7 @@ feat_rules_file = "data/feats.html"
 hasards_rules_file = "data/hasards.html"
 spells_rules_file = "data/spells.html"
 weapon_rules_file = "data/weapon.html"
+techgear_rules_file = "data/Technological Gear.html"
 
 FG_module_directory = "E:\\Fantasy Grounds\\DataDir\\modules"
 
@@ -125,6 +126,11 @@ library_entries =   [{"Entry name":"---Legal Notice---",
                     "Link type":"librarylink",
                     "Window class":"referencetextwide",
                     "Record name": "lists.spellrules@" + module_name},
+                    {"Entry name":"[Rules] Technological Gear",
+                    "Entry tag":"PA.TechnologicalGear",
+                    "Link type":"librarylink",
+                    "Window class":"referencetextwide",
+                    "Record name": "lists.techgearrules@" + module_name},
                      {"Entry name":"[Rules] Weapon",
                     "Entry tag":"PA.Weapon",
                     "Link type":"librarylink",
@@ -304,6 +310,8 @@ def generate_xml_structure(xml_root):
     xml_list_hazardsrules = etree.SubElement(xml_lists, "HazardsRules")
     #Spell rules
     xml_list_spellrules = etree.SubElement(xml_lists, "spellrules")
+    #Technological gear rules
+    xml_list_techgearrules = etree.SubElement(xml_lists, "techgearrules")
     #weapon rules
     xml_list_weaponrules = etree.SubElement(xml_lists, "weaponrules")
 
@@ -331,6 +339,7 @@ def generate_xml_structure(xml_root):
     populate_feats_rules(xml_list_featsrules)
     populate_hazard_rules(xml_list_hazardsrules)
     populate_spell_rules(xml_list_spellrules)
+    populate_techgear_rules(xml_list_techgearrules)
     populate_weapon_rules(xml_list_weaponrules)
 
 
@@ -1095,6 +1104,15 @@ def populate_spell_rules(xml_list_spellsrules):
     with open(spells_rules_file, 'r') as file:
         spells_rules = file.read()
     xml_list_spellsrules_text.text = spells_rules
+
+
+def populate_techgear_rules(xml_list_techgearrules):
+    xml_list_techgearrules_name = etree.SubElement(xml_list_techgearrules, "name", type="string")
+    xml_list_techgearrules_name.text = "Technological Gear"
+    xml_list_techgearrules_text = etree.SubElement(xml_list_techgearrules, "text", type="formattedtext")
+    with open(techgear_rules_file, 'r') as file:
+        techgear_rules = file.read()
+    xml_list_techgearrules_text.text = techgear_rules
 
 
 def main():
