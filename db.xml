@@ -117,6 +117,13 @@
           </librarylink>
           <name type="string">[Rules] Hazards</name>
         </OA.Hazards>
+        <PA.Spells>
+          <librarylink type="windowreference">
+            <class>referencetextwide</class>
+            <recordname>lists.spellrules@Technology Guide</recordname>
+          </librarylink>
+          <name type="string">[Rules] Spells</name>
+        </PA.Spells>
         <PA.Weapon>
           <librarylink type="windowreference">
             <class>referencetextwide</class>
@@ -8233,6 +8240,32 @@
 
 </text>
     </HazardsRules>
+    <spellrules>
+      <name type="string">Spells</name>
+      <text type="formattedtext"><h>Spells</h>
+
+<p>While technology is nonmagical, in a world of magic such as Golarion, spells have been developed to interact with technology and defend against its presence in Numeria.</p>
+
+
+<link class="spelldesc" recordname="reference.spells.spell0001"><b>Antitech Field</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0002"><b>Destroy Robot</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0003"><b>Detect Radiation</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0004"><b>Discharge</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0005"><b>Discharge, Greater</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0006"><b>Infuse Robot</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0007"><b>Irradiate</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0008"><b>Magic Circle Against Technology</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0009"><b>Make Whole, Greater</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0010"><b>Memory of Function</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0011"><b>Protection from Technology</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0012"><b>Rebuke Technology</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0013"><b>Recharge</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0014"><b>Remove Radioactivity</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0015"><b>Remove Radioactivity, Greater</b></link>
+<link class="spelldesc" recordname="reference.spells.spell0016"><b>Technomancy</b></link>
+
+</text>
+    </spellrules>
     <weaponrules>
       <name type="string">Weapons</name>
       <text type="formattedtext"><h>Weapons</h>
