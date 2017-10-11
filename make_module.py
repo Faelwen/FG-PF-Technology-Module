@@ -4,7 +4,7 @@ import csv
 from lxml import etree
 import html
 
-module_file_name = "TechnologyGuide.mod"
+module_file_name = "PFRPG-TechnologyGuide.mod"
 xml_definition_file = "definition.xml"
 xml_database_file = "db.xml"
 license_file = "license.html"
@@ -44,7 +44,7 @@ module_author = "Faelwen"
 module_ruleset = "PFRPG"
 library_tag_name = "TechnologyGuide"
 library_name = "Technology Guide"
-library_category = "PFRPG"
+library_category = "PFRPG Extras"
 
 library_entries =   [{"Entry name":"---Legal Notice---",
                     "Entry tag":"AA.License",
@@ -211,7 +211,7 @@ def generate_module():
     with zipfile.ZipFile(module_file_name, 'w', zipfile.ZIP_DEFLATED) as file:
         file.write('db.xml')
         file.write('definition.xml')
-        #myzip.write('thumbnail.png')
+        file.write('thumbnail.png')
     print("Module generated")
 
 

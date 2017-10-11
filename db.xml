@@ -3,7 +3,7 @@
   <library static="true">
     <TechnologyGuide>
       <name type="string">Technology Guide</name>
-      <categoryname type="string">PFRPG</categoryname>
+      <categoryname type="string">PFRPG Extras</categoryname>
       <entries>
         <AA.License>
           <librarylink type="windowreference">
